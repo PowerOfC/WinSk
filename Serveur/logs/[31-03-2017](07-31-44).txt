@@ -1,3 +1,0 @@
-[07:31:47] send : Send_Pict 70
-[07:31:48] start downloading : dev-DEV-PC-[31-03-2017](07-31-47).jpg
-[07:31:48] finish downloading : dev-DEV-PC-[31-03-2017](07-31-47).jpg 188481 bytes received in 737 recv(s)

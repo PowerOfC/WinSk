@@ -1,4 +1,0 @@
-[14:49:08] information : La socket 108 est maintenant ouverte en mode TCP/IP
-[14:49:08] information : Listage du port 50999...
-[14:49:16] recv : dev-kl
-[14:49:16] ip : 127.0.0.1

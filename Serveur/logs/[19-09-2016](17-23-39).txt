@@ -1,1 +1,0 @@
-[17:23:39] information : La socket 104 est maintenant ouverte en mode TCP/IP

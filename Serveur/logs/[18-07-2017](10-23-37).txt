@@ -1,7 +1,0 @@
-[10:23:37] information : La socket 108 est maintenant ouverte en mode TCP/IP
-[10:23:37] information : Listage du port 50999...
-[10:24:41] recv : dev-kl
-[10:24:41] ip : 192.168.1.16
-[10:24:49] from : dev-kl
-[10:24:49] recv : 
-[10:24:49] information : dev-kl s'est déconnecté !

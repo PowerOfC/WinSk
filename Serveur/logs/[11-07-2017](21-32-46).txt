@@ -1,1 +1,0 @@
-[21:32:46] information : La socket 120 est maintenant ouverte en mode TCP/IP

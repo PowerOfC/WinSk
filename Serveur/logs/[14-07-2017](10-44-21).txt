@@ -1,7 +1,0 @@
-[10:44:21] information : La socket 116 est maintenant ouverte en mode TCP/IP
-[10:44:21] information : Listage du port 50999...
-[10:44:23] recv : dev-kl
-[10:44:23] ip : 127.0.0.1
-[10:44:25] send : List_ToDo
-[10:44:25] from : dev-kl
-[10:44:25] recv : [1]52|Test[2]116|Shell_Exec notepad

@@ -1,7 +1,0 @@
-[12:45:56] information : La socket 100 est maintenant ouverte en mode TCP/IP
-[12:45:56] information : Listage du port 50999...
-[12:46:13] recv : dev-kl
-[12:46:13] ip : 127.0.0.1
-[12:46:23] from : dev-kl
-[12:46:23] recv : 
-[12:46:23] information : dev-kl s'est déconnecté !

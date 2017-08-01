@@ -1,3 +1,0 @@
-[18:01:39] send : Send_File config
-[18:01:39] start downloading : (1)config.wsk
-[18:01:39] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
