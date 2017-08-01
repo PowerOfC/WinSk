@@ -1,0 +1,9 @@
+[20:57:35] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[20:57:35] information : Listage du port 50999...
+[20:57:54] recv : dev-kl
+[20:57:54] ip : 192.168.1.16
+[20:57:57] send : Explore_Drives
+[20:57:57] from : dev-kl
+[20:57:57] recv : C:\|Z:\|
+[20:57:59] from : dev-kl
+[20:57:59] information : dev-kl s'est déconnecté !

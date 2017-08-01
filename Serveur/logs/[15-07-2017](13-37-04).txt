@@ -1,0 +1,16 @@
+[13:37:04] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[13:37:04] information : Listage du port 50999...
+[13:37:19] recv : dev-kl
+[13:37:19] ip : 192.168.1.16
+[13:37:22] send : Current_Version
+[13:37:22] from : dev-kl
+[13:37:22] recv : WinSkv7.1
+[13:38:11] send : Reset_Log 1
+[13:38:11] from : dev-kl
+[13:38:12] recv : Reset_Log Success
+[13:38:17] send : File_Opr DELETE D:\WinSk.exe|-
+[13:38:17] from : dev-kl
+[13:38:17] recv : File_Opr Error
+[13:38:23] send : File_Opr DELETE 
+[13:38:23] from : dev-kl
+[13:38:23] recv : File_Opr Error

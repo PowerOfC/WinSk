@@ -1,0 +1,24 @@
+[16:32:59] send : Explore_Drives
+[16:32:59] from : Papa-PAPA-3CB0BE4627
+[16:32:59] recv : A:\|C:\|D:\|
+[16:33:38] send : Explore_Drives
+[16:33:38] from : Papa-PAPA-3CB0BE4627
+[16:33:38] recv : A:\|C:\|D:\|
+[16:33:43] send : Send_Pict 70
+[16:33:44] start downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-43).jpg
+[16:33:44] finish downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-43).jpg 237990 bytes received in 930 recv(s)
+[16:33:46] send : Send_Pict 70
+[16:33:47] start downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-46).jpg
+[16:33:47] finish downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-46).jpg 246131 bytes received in 963 recv(s)
+[16:33:49] send : Send_Pict 70
+[16:33:50] start downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-49).jpg
+[16:33:50] finish downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-49).jpg 230312 bytes received in 901 recv(s)
+[16:33:52] send : Send_Pict 70
+[16:33:53] start downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-52).jpg
+[16:33:53] finish downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-52).jpg 238656 bytes received in 933 recv(s)
+[16:33:55] send : Send_Pict 70
+[16:33:56] start downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-55).jpg
+[16:33:56] finish downloading : Papa-PAPA-3CB0BE4627-[24-09-2016](16-33-55).jpg 242414 bytes received in 947 recv(s)
+[16:34:24] send : Send_File tasks
+[16:34:24] start downloading : tasks.wsk
+[16:34:24] finish downloading : tasks.wsk 288 bytes received in 2 recv(s)

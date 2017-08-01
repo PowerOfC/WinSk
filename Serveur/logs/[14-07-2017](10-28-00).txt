@@ -1,0 +1,76 @@
+[10:28:00] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[10:28:00] information : Listage du port 50999...
+[10:28:02] recv : dev-kl
+[10:28:02] ip : 127.0.0.1
+[10:28:06] send : List_ToDo
+[10:28:06] from : dev-kl
+[10:28:06] recv : [No ToDo]
+[10:28:17] send : Add_ToDo 60|Test
+[10:28:17] from : dev-kl
+[10:28:17] recv : Add_ToDo Success
+[10:28:19] send : List_ToDo
+[10:28:19] from : dev-kl
+[10:28:19] recv : [1]60|Test
+[10:28:23] send : Delete_ToDo 1
+[10:28:23] from : dev-kl
+[10:28:23] recv : Done !
+[10:28:26] send : List_ToDo
+[10:28:26] from : dev-kl
+[10:28:26] recv : [No ToDo]
+[10:28:29] send : Add_ToDo 60|Test
+[10:28:29] from : dev-kl
+[10:28:29] recv : Add_ToDo Success
+[10:28:38] send : Add_ToDo 60|Test2
+[10:28:38] from : dev-kl
+[10:28:38] recv : Add_ToDo Success
+[10:28:39] send : List_ToDo
+[10:28:39] from : dev-kl
+[10:28:39] recv : [1]60|Test[2]60|Test2
+[10:28:42] send : Delete_ToDo 1
+[10:28:42] from : dev-kl
+[10:28:42] recv : Done !
+[10:28:45] send : List_ToDo
+[10:28:45] from : dev-kl
+[10:28:45] recv : [2]60|Test2
+[10:28:56] send : Delete_ToDo 2
+[10:28:57] from : dev-kl
+[10:28:57] recv : Done !
+[10:29:09] send : Delete_ToDo 2
+[10:29:09] from : dev-kl
+[10:29:09] recv : Done !
+[10:29:13] send : Delete_ToDo 2
+[10:29:13] from : dev-kl
+[10:29:14] recv : Done !
+[10:29:15] send : List_ToDo
+[10:29:15] from : dev-kl
+[10:29:15] recv : [No ToDo]
+[10:29:23] send : Add_ToDo 60|Test
+[10:29:23] from : dev-kl
+[10:29:23] recv : Add_ToDo Success
+[10:29:26] send : Add_ToDo 60|Test2
+[10:29:26] from : dev-kl
+[10:29:26] recv : Add_ToDo Success
+[10:29:27] send : List_ToDo
+[10:29:27] from : dev-kl
+[10:29:27] recv : [1]60|Test[2]60|Test2
+[10:29:30] send : Delete_ToDo 1
+[10:29:30] from : dev-kl
+[10:29:30] recv : Done !
+[10:29:32] send : Delete_ToDo 1
+[10:29:32] from : dev-kl
+[10:29:32] recv : Done !
+[10:29:34] send : List_ToDo
+[10:29:34] from : dev-kl
+[10:29:34] recv : [2]60|Test2
+[10:29:41] send : Delete_ToDo 2
+[10:29:41] from : dev-kl
+[10:29:41] recv : Done !
+[10:30:02] send : Delete_ToDo 2
+[10:30:02] from : dev-kl
+[10:30:02] recv : Done !
+[10:30:08] send : Delete_ToDo 2
+[10:30:08] from : dev-kl
+[10:30:08] recv : Done !
+[10:30:17] send : List_ToDo
+[10:30:17] from : dev-kl
+[10:30:17] recv : [No ToDo]

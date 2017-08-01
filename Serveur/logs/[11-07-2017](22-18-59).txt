@@ -1,0 +1,9 @@
+[22:18:59] information : La socket 120 est maintenant ouverte en mode TCP/IP
+[22:18:59] information : Listage du port 50999...
+[22:19:30] recv : test-mymachine
+[22:19:30] ip : 192.168.1.17
+[22:19:41] send : ok
+[22:19:49] from : test-mymachine
+[22:19:49] recv : coool
+[22:20:11] from : test-mymachine
+[22:20:11] recv : user-computer

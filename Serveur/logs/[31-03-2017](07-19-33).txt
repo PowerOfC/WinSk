@@ -1,0 +1,122 @@
+[07:19:33] information : La socket 248 est maintenant ouverte en mode TCP/IP
+[07:19:33] information : Listage du port 50999...
+[07:23:50] recv : dev-DEV-PC
+[07:23:50] ip : 127.0.0.1
+[07:24:18] from : dev-DEV-PC
+[07:24:18] information : dev-DEV-PC s'est déconnecté !
+[07:25:20] recv : dev-DEV-PC
+[07:25:20] ip : 127.0.0.1
+[07:25:24] from : dev-DEV-PC
+[07:25:25] information : dev-DEV-PC s'est déconnecté !
+[07:25:29] recv : dev-DEV-PC
+[07:25:29] ip : 127.0.0.1
+[07:25:59] from : dev-DEV-PC
+[07:25:59] information : dev-DEV-PC s'est déconnecté !
+[07:26:55] recv : dev-DEV-PC
+[07:26:55] ip : 127.0.0.1
+[07:27:01] from : dev-DEV-PC
+[07:27:01] information : dev-DEV-PC s'est déconnecté !
+[07:27:06] recv : dev-DEV-PC
+[07:27:06] ip : 127.0.0.1
+[07:27:21] from : dev-DEV-PC
+[07:27:21] information : dev-DEV-PC s'est déconnecté !
+[07:27:27] recv : dev-DEV-PC
+[07:27:27] ip : 127.0.0.1
+[07:27:36] send : Send_File config
+[07:27:36] start downloading : config.wsk
+[07:27:36] finish downloading : config.wsk 84 bytes received in 1 recv(s)
+[07:29:32] send : Send_Pict 70
+[07:29:32] start downloading : dev-DEV-PC-[31-03-2017](07-29-32).jpg
+[07:29:32] finish downloading : dev-DEV-PC-[31-03-2017](07-29-32).jpg 208496 bytes received in 815 recv(s)
+[07:29:35] send : Send_Pict 70
+[07:29:35] start downloading : dev-DEV-PC-[31-03-2017](07-29-35).jpg
+[07:29:35] finish downloading : dev-DEV-PC-[31-03-2017](07-29-35).jpg 213843 bytes received in 836 recv(s)
+[07:29:38] send : Send_Pict 70
+[07:29:38] start downloading : dev-DEV-PC-[31-03-2017](07-29-38).jpg
+[07:29:38] finish downloading : dev-DEV-PC-[31-03-2017](07-29-38).jpg 220010 bytes received in 860 recv(s)
+[07:29:41] send : Send_Pict 70
+[07:29:41] start downloading : dev-DEV-PC-[31-03-2017](07-29-41).jpg
+[07:29:41] finish downloading : dev-DEV-PC-[31-03-2017](07-29-41).jpg 231054 bytes received in 903 recv(s)
+[07:29:44] send : Send_Pict 70
+[07:29:44] start downloading : dev-DEV-PC-[31-03-2017](07-29-44).jpg
+[07:29:44] finish downloading : dev-DEV-PC-[31-03-2017](07-29-44).jpg 229044 bytes received in 895 recv(s)
+[07:29:47] send : Send_Pict 70
+[07:29:47] start downloading : dev-DEV-PC-[31-03-2017](07-29-47).jpg
+[07:29:47] finish downloading : dev-DEV-PC-[31-03-2017](07-29-47).jpg 229656 bytes received in 898 recv(s)
+[07:29:50] send : Send_Pict 70
+[07:29:50] start downloading : dev-DEV-PC-[31-03-2017](07-29-50).jpg
+[07:29:50] finish downloading : dev-DEV-PC-[31-03-2017](07-29-50).jpg 229671 bytes received in 898 recv(s)
+[07:29:53] send : Send_Pict 70
+[07:29:53] start downloading : dev-DEV-PC-[31-03-2017](07-29-53).jpg
+[07:29:53] finish downloading : dev-DEV-PC-[31-03-2017](07-29-53).jpg 229744 bytes received in 898 recv(s)
+[07:29:56] send : Send_Pict 70
+[07:29:56] start downloading : dev-DEV-PC-[31-03-2017](07-29-56).jpg
+[07:29:56] finish downloading : dev-DEV-PC-[31-03-2017](07-29-56).jpg 229820 bytes received in 898 recv(s)
+[07:29:59] send : Send_Pict 70
+[07:29:59] start downloading : dev-DEV-PC-[31-03-2017](07-29-59).jpg
+[07:29:59] finish downloading : dev-DEV-PC-[31-03-2017](07-29-59).jpg 228344 bytes received in 892 recv(s)
+[07:30:02] send : Send_Pict 5
+[07:30:02] start downloading : dev-DEV-PC-[31-03-2017](07-30-02).jpg
+[07:30:02] finish downloading : dev-DEV-PC-[31-03-2017](07-30-02).jpg 62343 bytes received in 244 recv(s)
+[07:30:05] send : Send_Pict 5
+[07:30:05] start downloading : dev-DEV-PC-[31-03-2017](07-30-05).jpg
+[07:30:05] finish downloading : dev-DEV-PC-[31-03-2017](07-30-05).jpg 61434 bytes received in 240 recv(s)
+[07:30:08] send : Send_Pict 100
+[07:30:08] start downloading : dev-DEV-PC-[31-03-2017](07-30-08).jpg
+[07:30:08] finish downloading : dev-DEV-PC-[31-03-2017](07-30-08).jpg 755648 bytes received in 2952 recv(s)
+[07:30:11] send : Send_Pict 100
+[07:30:11] start downloading : dev-DEV-PC-[31-03-2017](07-30-11).jpg
+[07:30:11] finish downloading : dev-DEV-PC-[31-03-2017](07-30-11).jpg 772708 bytes received in 3019 recv(s)
+[07:30:14] send : Send_Pict 100
+[07:30:14] start downloading : dev-DEV-PC-[31-03-2017](07-30-14).jpg
+[07:30:14] finish downloading : dev-DEV-PC-[31-03-2017](07-30-14).jpg 775940 bytes received in 3032 recv(s)
+[07:30:17] send : Send_Pict 70
+[07:30:17] start downloading : dev-DEV-PC-[31-03-2017](07-30-17).jpg
+[07:30:17] finish downloading : dev-DEV-PC-[31-03-2017](07-30-17).jpg 230273 bytes received in 900 recv(s)
+[07:30:20] send : Send_Pict 70
+[07:30:20] start downloading : dev-DEV-PC-[31-03-2017](07-30-20).jpg
+[07:30:20] finish downloading : dev-DEV-PC-[31-03-2017](07-30-20).jpg 229804 bytes received in 898 recv(s)
+[07:30:21] send : Send_Pict 70
+[07:30:21] start downloading : dev-DEV-PC-[31-03-2017](07-30-21).jpg
+[07:30:21] finish downloading : dev-DEV-PC-[31-03-2017](07-30-21).jpg 229770 bytes received in 898 recv(s)
+[07:30:22] send : Send_Pict 70
+[07:30:22] start downloading : dev-DEV-PC-[31-03-2017](07-30-22).jpg
+[07:30:22] finish downloading : dev-DEV-PC-[31-03-2017](07-30-22).jpg 237210 bytes received in 927 recv(s)
+[07:30:23] send : Send_Pict 70
+[07:30:23] start downloading : dev-DEV-PC-[31-03-2017](07-30-23).jpg
+[07:30:24] finish downloading : dev-DEV-PC-[31-03-2017](07-30-23).jpg 241176 bytes received in 943 recv(s)
+[07:30:24] send : Send_Pict 70
+[07:30:25] start downloading : dev-DEV-PC-[31-03-2017](07-30-24).jpg
+[07:30:25] finish downloading : dev-DEV-PC-[31-03-2017](07-30-24).jpg 247607 bytes received in 968 recv(s)
+[07:30:25] send : Send_Pict 70
+[07:30:26] start downloading : dev-DEV-PC-[31-03-2017](07-30-25).jpg
+[07:30:26] finish downloading : dev-DEV-PC-[31-03-2017](07-30-25).jpg 233160 bytes received in 911 recv(s)
+[07:30:26] send : Send_Pict 70
+[07:30:27] start downloading : dev-DEV-PC-[31-03-2017](07-30-26).jpg
+[07:30:27] finish downloading : dev-DEV-PC-[31-03-2017](07-30-26).jpg 229794 bytes received in 898 recv(s)
+[07:30:27] send : Send_Pict 70
+[07:30:28] start downloading : dev-DEV-PC-[31-03-2017](07-30-27).jpg
+[07:30:28] finish downloading : dev-DEV-PC-[31-03-2017](07-30-27).jpg 229540 bytes received in 897 recv(s)
+[07:30:30] send : Send_Pict 70
+[07:30:31] start downloading : dev-DEV-PC-[31-03-2017](07-30-30).jpg
+[07:30:31] finish downloading : dev-DEV-PC-[31-03-2017](07-30-30).jpg 227518 bytes received in 889 recv(s)
+[07:30:36] send : Send_Pict 70
+[07:30:37] start downloading : dev-DEV-PC-[31-03-2017](07-30-36).jpg
+[07:30:37] finish downloading : dev-DEV-PC-[31-03-2017](07-30-36).jpg 229434 bytes received in 897 recv(s)
+[07:30:39] send : Send_Pict 70
+[07:30:40] start downloading : dev-DEV-PC-[31-03-2017](07-30-39).jpg
+[07:30:40] finish downloading : dev-DEV-PC-[31-03-2017](07-30-39).jpg 227270 bytes received in 888 recv(s)
+[07:30:42] send : Send_Pict 70
+[07:30:43] start downloading : dev-DEV-PC-[31-03-2017](07-30-42).jpg
+[07:30:43] finish downloading : dev-DEV-PC-[31-03-2017](07-30-42).jpg 229283 bytes received in 896 recv(s)
+[07:30:45] send : Send_Pict 70
+[07:30:46] start downloading : dev-DEV-PC-[31-03-2017](07-30-45).jpg
+[07:30:46] finish downloading : dev-DEV-PC-[31-03-2017](07-30-45).jpg 227109 bytes received in 888 recv(s)
+[07:30:51] send : Send_File tasks
+[07:30:51] start downloading : tasks.wsk
+[07:30:51] finish downloading : tasks.wsk 431 bytes received in 2 recv(s)
+[07:31:01] send : Stop_Prg WinSk.exe
+[07:31:01] from : dev-DEV-PC
+[07:31:01] information : dev-DEV-PC s'est déconnecté !
+[07:31:20] recv : dev-DEV-PC
+[07:31:20] ip : 127.0.0.1

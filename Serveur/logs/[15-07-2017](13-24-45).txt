@@ -1,0 +1,10 @@
+[13:24:45] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[13:24:45] information : Listage du port 50999...
+[13:24:50] recv : dev-kl
+[13:24:50] ip : 192.168.1.16
+[13:24:53] send : Current_Version
+[13:24:53] from : dev-kl
+[13:24:53] recv : WinSkv7.1
+[13:24:55] send : Reset_Log 1
+[13:24:55] from : dev-kl
+[13:24:55] recv : Reset_Log Success

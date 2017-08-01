@@ -1,0 +1,46 @@
+[09:41:53] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[09:41:53] information : Listage du port 50999...
+[09:42:02] recv : dev-kl
+[09:42:02] ip : 127.0.0.1
+[09:42:06] send : List_ToDo
+[09:42:06] from : dev-kl
+[09:42:06] recv : [No ToDo]
+[09:42:15] send : Add_ToDo lol
+[09:42:15] from : dev-kl
+[09:42:15] recv : Add_ToDo Error
+[09:42:25] send : Add_ToDo 50|
+[09:42:26] from : dev-kl
+[09:42:26] recv : Add_ToDo Error
+[09:42:34] send : Add_ToDo 50|y
+[09:42:34] from : dev-kl
+[09:42:34] recv : Add_ToDo Success
+[09:42:36] send : List_ToDo
+[09:42:36] from : dev-kl
+[09:42:36] recv : [1]50|y
+[09:42:57] send : List_ToDo
+[09:42:57] from : dev-kl
+[09:42:57] recv : [1]50|y
+[09:43:17] send : List_ToDo
+[09:43:17] from : dev-kl
+[09:43:17] recv : [1]49|y
+[09:43:20] send : Free_ToDo
+[09:43:20] from : dev-kl
+[09:43:20] recv : Done !
+[09:43:23] send : List_ToDo
+[09:43:23] from : dev-kl
+[09:43:23] recv : [No ToDo]
+[09:43:24] send : List_ToDo
+[09:43:24] from : dev-kl
+[09:43:24] recv : [No ToDo]
+[09:43:26] send : List_ToDo
+[09:43:26] from : dev-kl
+[09:43:26] recv : [No ToDo]
+[09:43:40] send : List_ToDo
+[09:43:40] from : dev-kl
+[09:43:40] recv : [No ToDo]
+[09:43:49] send : List_ToDo
+[09:43:49] from : dev-kl
+[09:43:49] recv : [No ToDo]
+[09:43:55] send : List_ToDo
+[09:43:55] from : dev-kl
+[09:43:55] recv : [No ToDo]

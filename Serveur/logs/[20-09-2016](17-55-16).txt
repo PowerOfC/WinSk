@@ -1,0 +1,10 @@
+[17:55:16] information : La socket 104 est maintenant ouverte en mode TCP/IP
+[17:55:16] information : Listage du port 50999...
+[17:55:20] recv : Papa-PAPA-3CB0BE4627
+[17:55:20] ip : 192.168.1.30
+[17:55:27] send : Turn_Off
+[17:55:27] from : Papa-PAPA-3CB0BE4627
+[17:55:27] recv : Okay !
+[17:55:27] from : Papa-PAPA-3CB0BE4627
+[17:55:27] recv : 
+[17:55:27] information : Papa-PAPA-3CB0BE4627 s'est déconnecté !

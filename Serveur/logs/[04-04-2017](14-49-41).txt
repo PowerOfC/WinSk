@@ -1,0 +1,11 @@
+[14:49:46] from : dev-kl
+[14:49:46] recv : 
+[14:49:46] information : dev-kl s'est déconnecté !
+[14:49:48] recv : dev-kl
+[14:49:48] ip : 127.0.0.1
+[14:50:06] send : Explore_Drives
+[14:50:06] from : dev-kl
+[14:50:06] recv : C:\|Z:\|
+[14:50:15] send : Send_File explore->Z:\
+[14:50:15] start downloading : explore.wsk
+[14:50:15] finish downloading : explore.wsk 102 bytes received in 1 recv(s)

@@ -1,0 +1,72 @@
+[12:10:28] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[12:10:28] information : Listage du port 50999...
+[12:10:32] recv : dev-kl
+[12:10:32] ip : 127.0.0.1
+[12:10:35] send : List_ToDo
+[12:10:35] from : dev-kl
+[12:10:35] recv : [No ToDo]
+[12:10:43] send : Add_ToDo 10|Shell_Exec notepad
+[12:10:43] from : dev-kl
+[12:10:43] recv : Add_ToDo Success
+[12:10:44] send : List_ToDo
+[12:10:44] from : dev-kl
+[12:10:44] recv : [1]10|Shell_Exec notepad
+[12:10:57] send : Add_ToDo 240|Shell_Exec notepad
+[12:10:57] from : dev-kl
+[12:10:57] recv : Add_ToDo Success
+[12:10:58] send : List_ToDo
+[12:10:58] from : dev-kl
+[12:10:58] recv : [1]10|Shell_Exec notepad[2]240|Shell_Exec notepad
+[12:11:21] send : Add_ToDo 120|Block_Site www.example.com|OK
+[12:11:21] from : dev-kl
+[12:11:21] recv : Add_ToDo Success
+[12:11:22] send : List_ToDo
+[12:11:22] from : dev-kl
+[12:11:22] recv : [1]10|Shell_Exec notepad[2]240|Shell_Exec notepad[3]120|Block_Site www.example.com
+[12:11:56] send : Add_ToDo 15|Block_Site www.example.com|OK
+[12:11:56] from : dev-kl
+[12:11:56] recv : Add_ToDo Success
+[12:11:56] send : List_ToDo
+[12:11:56] from : dev-kl
+[12:11:57] recv : [1]9|Shell_Exec notepad[2]239|Shell_Exec notepad[3]119|Block_Site www.example.com[4]15|Block_Site www.example.com
+[12:12:04] send : List_ToDo
+[12:12:04] from : dev-kl
+[12:12:04] recv : [1]9|Shell_Exec notepad[2]239|Shell_Exec notepad[3]119|Block_Site www.example.com[4]15|Block_Site www.example.com
+[12:12:12] from : dev-kl
+[12:12:12] recv : 
+[12:12:12] information : dev-kl s'est déconnecté !
+[12:13:29] recv : dev-kl
+[12:13:29] ip : 127.0.0.1
+[12:13:38] send : List_ToDo
+[12:13:38] from : dev-kl
+[12:13:38] recv : [No ToDo]
+[12:13:43] send : Add_ToDo 5|Shell_Exec notepad
+[12:13:44] from : dev-kl
+[12:13:44] recv : Add_ToDo Success
+[12:13:45] send : List_ToDo
+[12:13:45] from : dev-kl
+[12:13:45] recv : [1]5|Shell_Exec notepad
+[12:13:58] send : Add_ToDo 240|Block_Site www.example.com|OK
+[12:13:58] from : dev-kl
+[12:13:58] recv : Add_ToDo Success
+[12:13:59] send : List_ToDo
+[12:13:59] from : dev-kl
+[12:13:59] recv : [1]5|Shell_Exec notepad[2]240|Block_Site www.example.com|OK
+[12:14:40] send : Add_ToDo 240|Stop_Prg program.exe|TRUE|C:\\....
+[12:14:40] from : dev-kl
+[12:14:40] recv : Add_ToDo Success
+[12:14:41] send : List_ToDo
+[12:14:41] from : dev-kl
+[12:14:41] recv : [1]4|Shell_Exec notepad[2]239|Block_Site www.example.com|OK[3]240|Stop_Prg program.exe|TRUE|C:\\....
+[12:14:56] send : List_ToDo
+[12:14:56] from : dev-kl
+[12:14:56] recv : [1]4|Shell_Exec notepad[2]239|Block_Site www.example.com|OK[3]240|Stop_Prg program.exe|TRUE|C:\\....
+[12:15:56] send : List_ToDo
+[12:15:56] from : dev-kl
+[12:15:56] recv : [1]3|Shell_Exec notepad[2]238|Block_Site www.example.com|OK[3]239|Stop_Prg program.exe|TRUE|C:\\....
+[12:17:35] send : List_ToDo
+[12:17:35] from : dev-kl
+[12:17:36] recv : [1]1|Shell_Exec notepad[2]236|Block_Site www.example.com|OK[3]237|Stop_Prg program.exe|TRUE|C:\\....
+[12:18:31] send : List_ToDo
+[12:18:32] from : dev-kl
+[12:18:32] recv : [2]235|Block_Site www.example.com|OK[3]236|Stop_Prg program.exe|TRUE|C:\\....

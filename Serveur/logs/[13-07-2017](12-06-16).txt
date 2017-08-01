@@ -1,0 +1,382 @@
+[12:06:16] information : La socket 120 est maintenant ouverte en mode TCP/IP
+[12:06:16] information : Listage du port 50999...
+[12:07:12] recv : dev-kl
+[12:07:12] ip : 192.168.1.3
+[12:07:26] send : list_ToDo
+[12:07:26] from : dev-kl
+[12:07:26] recv : I don't understand..
+[12:07:32] send : List_ToDo
+[12:07:40] send : so
+[12:07:40] from : dev-kl
+[12:07:40] recv : I don't understand..
+[12:08:26] send : Add_ToDo 10|List_ToDo
+[12:08:26] from : dev-kl
+[12:08:26] recv : Done !
+[12:08:33] send : List_ToDo
+[12:08:33] from : dev-kl
+[12:08:33] recv : 1|10|List_ToDo|
+[12:09:17] send : Add_ToDo 20|Shutdown
+[12:09:17] from : dev-kl
+[12:09:17] recv : Done !
+[12:09:20] send : List_ToDo
+[12:09:20] from : dev-kl
+[12:09:20] recv : 1|10|List_ToDo|2|20|Shutdown|
+[12:09:45] send : Delete_ToDo 3
+[12:09:45] from : dev-kl
+[12:09:45] recv : Done !
+[12:09:56] send : List_ToDo
+[12:09:56] from : dev-kl
+[12:09:56] recv : 1|10|List_ToDo|2|20|Shutdown|
+[12:10:02] send : Delete_ToDo 2
+[12:10:02] from : dev-kl
+[12:10:02] recv : Done !
+[12:10:04] send : List_ToDo
+[12:10:04] from : dev-kl
+[12:10:04] recv : 1|10|List_ToDo|
+[12:10:19] send : Add_ToDo 60|shutdown
+[12:10:19] from : dev-kl
+[12:10:19] recv : Done !
+[12:10:24] send : List_ToDo
+[12:10:24] from : dev-kl
+[12:10:24] recv : 1|10|List_ToDo|2|60|shutdown|
+[12:10:31] send : Delete_ToDO 1
+[12:10:31] from : dev-kl
+[12:10:31] recv : I don't understand..
+[12:10:41] send : Delete_ToDo 1
+[12:10:41] from : dev-kl
+[12:10:41] recv : Done !
+[12:10:44] send : List_ToDo
+[12:10:44] from : dev-kl
+[12:10:44] recv : 2|60|shutdown|
+[12:11:49] from : dev-kl
+[12:11:49] recv : 
+[12:11:49] information : dev-kl s'est déconnecté !
+[12:36:27] recv : dev-kl
+[12:36:27] ip : 192.168.1.3
+[12:36:44] send : Add_ToDo 10|lol
+[12:36:45] from : dev-kl
+[12:36:45] recv : Done !
+[12:37:38] from : dev-kl
+[12:37:38] recv : 
+[12:37:38] information : dev-kl s'est déconnecté !
+[12:48:03] recv : dev-kl
+[12:48:03] ip : 192.168.1.3
+[12:48:35] send : Add_ToDo 1|lool
+[12:48:35] from : dev-kl
+[12:48:35] recv : Done !
+[12:49:07] send : Add_ToDo 2|leel
+[12:49:07] from : dev-kl
+[12:49:07] recv : Done !
+[12:49:15] send : List_ToDo
+[12:49:15] from : dev-kl
+[12:49:15] recv : 1|2|leel|
+[12:49:59] send : List_ToDo
+[12:49:59] from : dev-kl
+[12:49:59] recv : 1|2|leel|
+[12:50:07] send : List_ToDo
+[12:50:07] from : dev-kl
+[12:50:07] recv : 1|1|leel|
+[12:51:20] send : Add_ToDo 1|Bip_Bip 2 5000
+[12:51:30] from : dev-kl
+[12:51:30] recv : Done !
+[12:51:51] send : List_ToDo
+[12:51:59] send : List_ToDo
+[12:52:16] from : dev-kl
+[12:52:16] recv : 
+[12:52:16] information : dev-kl s'est déconnecté !
+[12:54:30] recv : dev-kl
+[12:54:30] ip : 192.168.1.3
+[12:54:46] send : List_ToDo
+[12:54:46] from : dev-kl
+[12:54:46] recv : [No ToDo]
+[12:55:06] send : Add_ToDo 10|loool
+[12:55:06] from : dev-kl
+[12:55:06] recv : Done !
+[12:55:08] send : List_ToDo
+[12:55:08] from : dev-kl
+[12:55:08] recv : 1|10|loool|
+[12:55:14] send : Delete_ToDo 1
+[12:55:14] from : dev-kl
+[12:55:14] recv : Done !
+[12:55:16] send : List_ToDo
+[12:55:16] from : dev-kl
+[12:55:16] recv : [No ToDo]
+[12:56:25] send : Add_ToDo 1|Add_ToDo 60|Test
+[12:56:25] from : dev-kl
+[12:56:25] recv : Done !
+[12:56:49] send : lol
+[12:56:49] from : dev-kl
+[12:56:49] recv : I don't understand..
+[12:56:52] send : List_ToDo
+[12:56:52] from : dev-kl
+[12:56:52] recv : 2|59||
+[12:57:39] send : Delete_ToDo 2
+[12:57:39] from : dev-kl
+[12:57:39] recv : Done !
+[12:57:41] send : List_ToDo
+[12:57:41] from : dev-kl
+[12:57:41] recv : [No ToDo]
+[12:59:24] send : Shell_Exec notepad
+[12:59:24] from : dev-kl
+[12:59:24] recv : Done !
+[12:59:41] send : Add_ToDo 1|Shell_Exec notepad
+[12:59:41] from : dev-kl
+[12:59:41] recv : Done !
+[13:00:11] send : List_ToDo
+[13:00:11] from : dev-kl
+[13:00:11] recv : [No ToDo]
+[13:00:50] from : dev-kl
+[13:00:50] recv : 
+[13:00:50] information : dev-kl s'est déconnecté !
+[13:02:07] recv : dev-kl
+[13:02:07] ip : 192.168.1.3
+[13:02:27] send : // (44) Ajoute un ToDo à la liste, ex: Add_ToDo time|commande
+   else if ((ptCmd = strstr(cmd, "Add_ToDo")) != NULL)
+   {
+      recup1erPrametre("Add_ToDo", cmd, ptCmd, &lenCmd, &lenMax, parametre[0]);
+      
+      int i = 0, j, len = strlen(parametre[0]);
+
+      // on récupère les paramètres
+      
+      // 1 - Time
+      j = 0;
+      while (parametre[0][i] != '|' && i < len)
+      {
+         parametre[1][j] = parametre[0][i];
+         i++;
+         j++;
+      }
+      parametre[1][j] = 0; // fin de chaine
+      int time = strtol(parametre[1], NULL, 10); // sauvegarde
+      
+      // 2 - Commande
+      i++;
+      j = 0;
+      while (parametre[0][i] != '|' && i < len)
+      {
+         parametre[1][j] = parametre[0][i];
+         i++;
+         j++;
+      }
+      parametre[1][j] = 0; // fin de chaine
+      
+      ToDoList = push_ToDo(ToDoList, parametre[1], time);
+      
+      if (reply)
+         write_server(sock, SUCCESS_RESPONSE);
+   }
+   
+   // (45) Supprime un ToDo de la 
+[13:02:27] from : dev-kl
+[13:02:27] recv : Done !
+[13:02:27] from : dev-kl
+[13:02:27] recv : I don't understand..
+[13:02:31] send : lol
+[13:02:31] from : dev-kl
+[13:02:31] recv : I don't understand..
+[13:02:46] send : Add_ToDo 2|Shell_Exec notepad
+[13:02:46] from : dev-kl
+[13:02:46] recv : Done !
+[13:02:55] send : List_ToDo
+[13:02:55] from : dev-kl
+[13:02:55] recv : 1|0|commande
+   else if ((ptCmd = strstr(cmd, "Add_ToDo")) != NULL)
+   {
+      recup1erPrametre("Add_ToDo", cmd, ptCmd, &lenCmd, &lenMax, parametre[0]);
+      
+      int i = 0, j, len = strlen(parametre[0]);
+
+      // on récupère les paramètres
+      
+      // 1 - Time
+      j = 0;
+      while (parametre[0][i] != '|2|2|Shell_Exec notepad|
+[13:03:16] send : Delete_ToDo 1
+[13:03:16] from : dev-kl
+[13:03:16] recv : Done !
+[13:03:19] send : List_ToDo
+[13:03:19] from : dev-kl
+[13:03:19] recv : 2|1|Shell_Exec notepad|
+[13:03:25] send : List_ToDo
+[13:03:25] from : dev-kl
+[13:03:25] recv : 2|1|Shell_Exec notepad|
+[13:03:32] send : List_ToDo
+[13:03:32] from : dev-kl
+[13:03:32] recv : 2|1|Shell_Exec notepad|
+[13:03:40] send : List_ToDo
+[13:03:40] from : dev-kl
+[13:03:40] recv : 2|1|Shell_Exec notepad|
+[13:03:57] send : List_ToDo
+[13:03:58] from : dev-kl
+[13:03:58] recv : 2|1|Shell_Exec notepad|
+[13:04:44] send : List_ToDo
+[13:04:44] from : dev-kl
+[13:04:44] recv : [No ToDo]
+[13:05:58] send : Add_ToDo 3|Test
+[13:05:58] from : dev-kl
+[13:05:58] recv : Done !
+[13:06:03] send : Add_ToDo 4|Test2
+[13:06:03] from : dev-kl
+[13:06:03] recv : Done !
+[13:06:17] send : Add_ToDo 5|Shell_Exec notepad
+[13:06:17] from : dev-kl
+[13:06:17] recv : Done !
+[13:06:25] send : List_ToDo
+[13:06:25] from : dev-kl
+[13:06:25] recv : 1|2|Test|2|3|Test2|3|5|Shell_Exec notepad|
+[13:06:39] send : List_ToDo
+[13:06:39] from : dev-kl
+[13:06:39] recv : 1|2|Test|2|3|Test2|3|5|Shell_Exec notepad|
+[13:07:22] send : List_ToDo
+[13:07:22] from : dev-kl
+[13:07:22] recv : 1|1|Test|2|2|Test2|3|4|Shell_Exec notepad|
+[13:08:10] send : List_ToDo
+[13:08:11] from : dev-kl
+[13:08:11] recv : 2|1|Test2|3|3|Shell_Exec notepad|
+[13:09:10] send : List_ToDo
+[13:09:10] from : dev-kl
+[13:09:10] recv : 3|2|Shell_Exec notepad|
+[13:09:51] send : List_ToDo
+[13:09:51] from : dev-kl
+[13:09:51] recv : 3|2|Shell_Exec notepad|
+[13:09:56] send : List_ToDo
+[13:09:56] from : dev-kl
+[13:09:56] recv : 3|2|Shell_Exec notepad|
+[13:10:02] send : List_ToDo
+[13:10:02] from : dev-kl
+[13:10:02] recv : 3|2|Shell_Exec notepad|
+[13:10:12] send : List_ToDo
+[13:10:12] from : dev-kl
+[13:10:12] recv : 3|1|Shell_Exec notepad|
+[13:11:12] send : List_ToDo
+[13:11:12] from : dev-kl
+[13:11:12] recv : [No ToDo]
+[13:11:16] from : dev-kl
+[13:11:16] recv : 
+[13:11:16] information : dev-kl s'est déconnecté !
+[13:11:38] recv : dev-kl
+[13:11:38] ip : 192.168.1.3
+[13:11:50] send : Add_ToDo 100|test
+[13:11:50] from : dev-kl
+[13:11:50] recv : Done !
+[13:11:53] send : List_ToDo
+[13:11:53] from : dev-kl
+[13:11:53] recv : [1]100|test
+[13:12:05] send : Add_ToDo 60|test2
+[13:12:05] from : dev-kl
+[13:12:05] recv : Done !
+[13:12:07] send : List_ToDo
+[13:12:07] from : dev-kl
+[13:12:07] recv : [1]100|test[2]60|test2
+[13:14:46] from : dev-kl
+[13:14:46] recv : 
+[13:14:46] information : dev-kl s'est déconnecté !
+[13:21:40] recv : dev-kl
+[13:21:40] ip : 192.168.1.3
+[13:21:49] from : dev-kl
+[13:21:49] recv : 
+[13:21:49] information : dev-kl s'est déconnecté !
+[13:22:39] recv : dev-kl
+[13:22:39] ip : 192.168.1.3
+[13:23:52] from : dev-kl
+[13:23:52] recv : 
+[13:23:52] information : dev-kl s'est déconnecté !
+[13:24:34] recv : dev-kl
+[13:24:34] ip : 192.168.1.3
+[13:24:54] from : dev-kl
+[13:24:54] recv : 
+[13:24:54] information : dev-kl s'est déconnecté !
+[13:25:02] recv : dev-kl
+[13:25:02] ip : 192.168.1.3
+[13:25:10] from : dev-kl
+[13:25:10] recv : 
+[13:25:10] information : dev-kl s'est déconnecté !
+[13:26:34] recv : dev-kl
+[13:26:34] ip : 192.168.1.3
+[13:26:48] from : dev-kl
+[13:26:48] recv : 
+[13:26:49] information : dev-kl s'est déconnecté !
+[13:26:50] recv : dev-kl
+[13:26:50] ip : 192.168.1.3
+[13:27:00] from : dev-kl
+[13:27:00] recv : 
+[13:27:00] information : dev-kl s'est déconnecté !
+[13:27:42] recv : dev-kl
+[13:27:42] ip : 192.168.1.3
+[13:27:56] from : dev-kl
+[13:27:56] recv : 
+[13:27:56] information : dev-kl s'est déconnecté !
+[13:27:58] recv : dev-kl
+[13:27:58] ip : 192.168.1.3
+[13:28:03] from : dev-kl
+[13:28:03] recv : 
+[13:28:03] information : dev-kl s'est déconnecté !
+[13:28:10] recv : dev-kl
+[13:28:10] ip : 192.168.1.3
+[13:28:40] send : Add_ToDo 10|LOL
+[13:28:40] from : dev-kl
+[13:28:40] recv : Done !
+[13:28:49] send : Add_ToDo 50|LOL
+[13:28:49] from : dev-kl
+[13:28:49] recv : Done !
+[13:29:04] send : Add_ToDo 5|Shell_Exec notepad
+[13:29:04] from : dev-kl
+[13:29:04] recv : Done !
+[13:30:06] from : dev-kl
+[13:30:06] recv : 
+[13:30:07] information : dev-kl s'est déconnecté !
+[13:30:21] recv : dev-kl
+[13:30:21] ip : 192.168.1.3
+[13:30:29] from : dev-kl
+[13:30:29] recv : 
+[13:30:29] information : dev-kl s'est déconnecté !
+[13:30:30] recv : dev-kl
+[13:30:30] ip : 192.168.1.3
+[13:30:31] from : dev-kl
+[13:30:31] recv : 
+[13:30:32] information : dev-kl s'est déconnecté !
+[13:31:01] recv : dev-kl
+[13:31:01] ip : 192.168.1.3
+[13:31:04] from : dev-kl
+[13:31:04] recv : 
+[13:31:04] information : dev-kl s'est déconnecté !
+[13:31:05] recv : dev-kl
+[13:31:05] ip : 192.168.1.3
+[13:31:09] from : dev-kl
+[13:31:09] recv : 
+[13:31:09] information : dev-kl s'est déconnecté !
+[13:32:40] recv : dev-kl
+[13:32:40] ip : 192.168.1.3
+[13:32:54] send : Add_ToDo 10|Test
+[13:32:54] from : dev-kl
+[13:32:54] recv : Done !
+[13:33:03] send : Add_ToDo 20|OKK
+[13:33:03] from : dev-kl
+[13:33:03] recv : Done !
+[13:33:19] send : Add_ToDo 5|Shell_Exec notepad
+[13:33:19] from : dev-kl
+[13:33:20] recv : Done !
+[13:36:16] send : Delete_ToDo 2
+[13:36:16] from : dev-kl
+[13:36:16] recv : Done !
+[13:37:58] send : List_ToDo
+[13:37:58] from : dev-kl
+[13:37:58] recv : [1]5|Test
+[13:38:10] send : Delete_ToDo 1
+[13:38:10] from : dev-kl
+[13:38:10] recv : Done !
+[13:39:04] send : List_ToDo
+[13:39:04] from : dev-kl
+[13:39:04] recv : [No ToDo]
+[13:39:11] from : dev-kl
+[13:39:11] recv : 
+[13:39:11] information : dev-kl s'est déconnecté !
+[13:48:04] recv : dev-kl
+[13:48:05] ip : 192.168.1.3
+[13:48:20] send : List_ToDo
+[13:48:20] from : dev-kl
+[13:48:20] recv : [No ToDo]
+[13:49:24] from : dev-kl
+[13:49:24] recv : 
+[13:49:24] information : dev-kl s'est déconnecté !

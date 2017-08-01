@@ -1,0 +1,60 @@
+# Project: WinSk
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = WinSk_private.res
+OBJ  = main.o threads.o fctavc.o sendMail.o client.o capture.o commands.o crypt.o gui.o todo.o $(RES)
+LINKOBJ  = main.o threads.o fctavc.o sendMail.o client.o capture.o commands.o crypt.o gui.o todo.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -mwindows -lws2_32 -lwininet -lpowrprof -lwinmm -lcomctl32 libjpeg.a  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = WinSk.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before WinSk.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "WinSk.exe" $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+threads.o: threads.c
+	$(CC) -c threads.c -o threads.o $(CFLAGS)
+
+fctavc.o: fctavc.c
+	$(CC) -c fctavc.c -o fctavc.o $(CFLAGS)
+
+sendMail.o: sendMail.c
+	$(CC) -c sendMail.c -o sendMail.o $(CFLAGS)
+
+client.o: client.c
+	$(CC) -c client.c -o client.o $(CFLAGS)
+
+capture.o: capture.c
+	$(CC) -c capture.c -o capture.o $(CFLAGS)
+
+commands.o: commands.c
+	$(CC) -c commands.c -o commands.o $(CFLAGS)
+
+crypt.o: crypt.c
+	$(CC) -c crypt.c -o crypt.o $(CFLAGS)
+
+gui.o: gui.c
+	$(CC) -c gui.c -o gui.o $(CFLAGS)
+
+todo.o: todo.c
+	$(CC) -c todo.c -o todo.o $(CFLAGS)
+
+WinSk_private.res: WinSk_private.rc resources.rc 
+	$(WINDRES) -i WinSk_private.rc --input-format=rc -o WinSk_private.res -O coff 

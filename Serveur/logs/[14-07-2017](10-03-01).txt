@@ -1,0 +1,22 @@
+[10:03:01] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[10:03:01] information : Listage du port 50999...
+[10:03:05] recv : dev-kl
+[10:03:05] ip : 127.0.0.1
+[10:03:09] send : List_ToDo
+[10:03:09] from : dev-kl
+[10:03:09] recv : [No ToDo]
+[10:03:28] send : Add_ToDo 1|20
+[10:03:28] from : dev-kl
+[10:03:28] recv : Add_ToDo Success
+[10:03:31] send : List_ToDo
+[10:03:31] from : dev-kl
+[10:03:31] recv : [1]1|20
+[10:03:37] send : List_ToDo
+[10:03:37] from : dev-kl
+[10:03:37] recv : [1]1|20
+[10:03:44] send : Free_ToDo
+[10:03:45] send : List_ToDo
+[10:03:45] from : dev-kl
+[10:03:45] recv : Done !
+[10:03:45] from : dev-kl
+[10:03:45] recv : [No ToDo]

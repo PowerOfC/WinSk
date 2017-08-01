@@ -1,0 +1,24 @@
+[17:56:51] send : Explore_Drives
+[17:56:51] from : PAPA-WORKGROU-7DC171
+[17:56:51] recv : A:\|C:\|D:\|
+[17:56:55] send : Send_File explore->D:\
+[17:56:55] from : PAPA-WORKGROU-7DC171
+[17:56:55] start downloading : explore.wsk
+[17:56:55] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:57:10] send : Send_File D:\lecteur.wsk
+[17:57:10] from : PAPA-WORKGROU-7DC171
+[17:57:10] start downloading : lecteur.wsk
+[17:57:10] finish downloading : lecteur.wsk 63512 bytes (0.06 mo) received in 249 recv(s)
+[17:57:13] send : Explore_Drives
+[17:57:13] from : PAPA-WORKGROU-7DC171
+[17:57:13] recv : A:\|C:\|D:\|
+[17:57:14] send : Send_File explore->D:\
+[17:57:14] from : PAPA-WORKGROU-7DC171
+[17:57:14] start downloading : explore.wsk
+[17:57:14] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:57:26] send : tt
+[17:57:26] from : PAPA-WORKGROU-7DC171
+[17:57:26] recv : I don't understand..
+[18:01:30] from : PAPA-WORKGROU-7DC171
+[18:01:30] recv : 
+[18:01:30] information : PAPA-WORKGROU-7DC171 s'est déconnecté !

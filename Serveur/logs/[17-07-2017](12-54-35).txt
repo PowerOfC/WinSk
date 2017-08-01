@@ -1,0 +1,87 @@
+[12:54:35] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[12:54:35] information : Listage du port 50999...
+[12:54:40] recv : dev-kl
+[12:54:40] ip : 127.0.0.1
+[12:54:41] send : Explore_Drives
+[12:54:41] from : dev-kl
+[12:54:41] recv : C:\|Z:\|
+[12:54:43] send : Send_File explore->Z:\
+[12:54:43] start downloading : (1)explore.wsk
+[12:54:43] finish downloading : (1)explore.wsk 134 bytes received in 1 recv(s)
+[12:54:48] send : Send_File explore->Z:\home
+[12:54:48] start downloading : (1)explore.wsk
+[12:54:48] finish downloading : (1)explore.wsk 6 bytes received in 1 recv(s)
+[12:54:51] send : Send_File explore->Z:\home\dev
+[12:54:51] start downloading : (1)explore.wsk
+[12:54:51] finish downloading : (1)explore.wsk 110 bytes received in 1 recv(s)
+[12:55:13] send : Send_File explore->Z:\home
+[12:55:13] start downloading : (1)explore.wsk
+[12:55:13] finish downloading : (1)explore.wsk 6 bytes received in 1 recv(s)
+[12:55:14] send : Send_File explore->Z:\home\dev
+[12:55:14] start downloading : (1)explore.wsk
+[12:55:14] finish downloading : (1)explore.wsk 122 bytes received in 1 recv(s)
+[12:55:41] from : dev-kl
+[12:55:41] recv : 
+[12:55:41] information : dev-kl s'est déconnecté !
+[12:57:38] recv : dev-kl
+[12:57:38] ip : 127.0.0.1
+[12:57:42] send : Explore_Drives
+[12:57:42] from : dev-kl
+[12:57:42] recv : C:\|Z:\|
+[12:57:44] send : Send_File explore->Z:\
+[12:57:44] start downloading : (1)explore.wsk
+[12:57:44] finish downloading : (1)explore.wsk 134 bytes received in 1 recv(s)
+[12:57:56] send : Explore_Drives
+[12:57:56] from : dev-kl
+[12:57:56] recv : C:\|Z:\|
+[12:57:59] send : Send_File explore->C:\
+[12:58:00] start downloading : (1)explore.wsk
+[12:58:00] finish downloading : (1)explore.wsk 119 bytes received in 1 recv(s)
+[12:58:23] send : Explore_Drives
+[12:58:23] from : dev-kl
+[12:58:23] recv : C:\|Z:\|
+[12:58:24] send : Send_File explore->C:\
+[12:58:24] start downloading : (1)explore.wsk
+[12:58:24] finish downloading : (1)explore.wsk 131 bytes received in 1 recv(s)
+[12:58:39] send : Get_F_Info C:\test.test
+[12:58:39] from : dev-kl
+[12:58:39] recv : F_Info>-1|0|0
+[12:58:45] send : Get_F_Info C:\tasks.wsk
+[12:58:45] from : dev-kl
+[12:58:45] recv : F_Info>93|0|0
+[12:58:49] send : Get_F_Info C:\test.test
+[12:58:49] from : dev-kl
+[12:58:49] recv : F_Info>-1|0|0
+[12:58:55] send : Explore_Drives
+[12:58:55] from : dev-kl
+[12:58:55] recv : C:\|Z:\|
+[12:58:56] send : Send_File explore->Z:\
+[12:58:56] start downloading : (1)explore.wsk
+[12:58:57] finish downloading : (1)explore.wsk 134 bytes received in 1 recv(s)
+[12:58:58] send : Send_File explore->Z:\home
+[12:58:58] start downloading : (1)explore.wsk
+[12:58:58] finish downloading : (1)explore.wsk 6 bytes received in 1 recv(s)
+[12:58:59] send : Send_File explore->Z:\home\dev
+[12:58:59] start downloading : (1)explore.wsk
+[12:58:59] finish downloading : (1)explore.wsk 122 bytes received in 1 recv(s)
+[12:59:21] send : Explore_Drives
+[12:59:21] from : dev-kl
+[12:59:21] recv : C:\|Z:\|
+[12:59:22] send : Send_File explore->C:\
+[12:59:22] start downloading : (1)explore.wsk
+[12:59:22] finish downloading : (1)explore.wsk 131 bytes received in 1 recv(s)
+[12:59:33] send : Explore_Drives
+[12:59:33] from : dev-kl
+[12:59:33] recv : C:\|Z:\|
+[12:59:34] send : Send_File explore->Z:\
+[12:59:34] start downloading : (1)explore.wsk
+[12:59:34] finish downloading : (1)explore.wsk 134 bytes received in 1 recv(s)
+[12:59:36] send : Send_File explore->Z:\home
+[12:59:36] start downloading : (1)explore.wsk
+[12:59:36] finish downloading : (1)explore.wsk 6 bytes received in 1 recv(s)
+[12:59:37] send : Send_File explore->Z:\home\dev
+[12:59:37] start downloading : (1)explore.wsk
+[12:59:37] finish downloading : (1)explore.wsk 122 bytes received in 1 recv(s)
+[13:00:11] from : dev-kl
+[13:00:11] recv : 
+[13:00:11] information : dev-kl s'est déconnecté !

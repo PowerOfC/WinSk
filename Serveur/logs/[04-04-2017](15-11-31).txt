@@ -1,0 +1,16 @@
+[15:11:31] information : La socket 108 est maintenant ouverte en mode TCP/IP
+[15:11:31] information : Listage du port 50999...
+[15:13:38] recv : dev-kl
+[15:13:38] ip : 127.0.0.1
+[15:13:44] send : Explore_Drives
+[15:13:44] from : dev-kl
+[15:13:44] recv : C:\|Z:\|
+[15:13:48] send : Send_Pict 70
+[15:13:48] start downloading : dev-kl-[04-04-2017](15-13-48).jpg
+[15:13:48] finish downloading : dev-kl-[04-04-2017](15-13-48).jpg 192144 bytes received in 752 recv(s)
+[15:13:51] send : Send_Pict 70
+[15:13:51] start downloading : dev-kl-[04-04-2017](15-13-51).jpg
+[15:13:51] finish downloading : dev-kl-[04-04-2017](15-13-51).jpg 251307 bytes received in 982 recv(s)
+[15:13:55] send : Send_File tasks
+[15:13:55] start downloading : tasks.wsk
+[15:13:55] finish downloading : tasks.wsk 89 bytes received in 1 recv(s)

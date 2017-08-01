@@ -1,0 +1,33 @@
+[10:25:52] information : La socket 108 est maintenant ouverte en mode TCP/IP
+[10:25:52] information : Listage du port 50999...
+[10:27:04] recv : Papa-PAPA-3CB0BE4627
+[10:27:04] ip : 192.168.1.19
+[10:27:47] send : Recv_File Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe
+[10:27:47] start uploading : Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe
+[10:27:47] finish uploading : Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe 180737 bytes sent in 707 send(s)
+[10:27:50] send : New_Version_Update D:\WinSk.exe
+[10:27:50] from : Papa-PAPA-3CB0BE4627
+[10:27:50] recv : Going Update Now, see u !
+[10:27:51] from : Papa-PAPA-3CB0BE4627
+[10:27:51] recv : 
+[10:27:51] information : Papa-PAPA-3CB0BE4627 s'est déconnecté !
+[10:27:54] recv : Papa-PAPA-3CB0BE4627
+[10:27:54] ip : 192.168.1.19
+[10:27:55] send : Send_File config
+[10:27:55] start downloading : config.wsk
+[10:27:55] finish downloading : config.wsk 78 bytes received in 1 recv(s)
+[10:28:03] send : File_Opr DELETE D:\WinSk.exe|-
+[10:28:03] from : Papa-PAPA-3CB0BE4627
+[10:28:03] recv : File_Opr Success
+[10:28:08] send : Explore_Drives
+[10:28:08] from : Papa-PAPA-3CB0BE4627
+[10:28:08] recv : A:\|C:\|D:\|
+[10:28:09] send : Send_File explore->D:\
+[10:28:09] start downloading : explore.wsk
+[10:28:09] finish downloading : explore.wsk 1050 bytes received in 5 recv(s)
+[10:28:14] information : Papa-PAPA-3CB0BE4627 s'est déconnecté !
+[10:28:15] recv : Papa-PAPA-3CB0BE4627
+[10:28:15] ip : 192.168.1.19
+[10:28:22] information : Papa-PAPA-3CB0BE4627 s'est déconnecté !
+[10:28:58] recv : Papa-PAPA-3CB0BE4627
+[10:28:58] ip : 192.168.1.19

@@ -1,0 +1,26 @@
+[14:16:37] information : La socket 104 est maintenant ouverte en mode TCP/IP
+[14:16:37] information : Listage du port 50999...
+[14:16:39] recv : Papa-SWEET-9723EC2F8
+[14:16:39] ip : 192.168.1.20
+[14:16:55] send : Send_Pict 70
+[14:16:56] start downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-16-55).jpg
+[14:16:56] finish downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-16-55).jpg 276636 bytes received in 1085 recv(s)
+[14:16:58] send : Send_Pict 70
+[14:16:58] start downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-16-58).jpg
+[14:16:59] finish downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-16-58).jpg 275385 bytes received in 1077 recv(s)
+[14:17:01] send : Send_Pict 70
+[14:17:02] start downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-17-01).jpg
+[14:17:02] finish downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-17-01).jpg 276816 bytes received in 1083 recv(s)
+[14:17:04] send : Send_Pict 70
+[14:17:04] start downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-17-04).jpg
+[14:17:05] finish downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-17-04).jpg 277310 bytes received in 1086 recv(s)
+[14:17:07] send : Send_Pict 70
+[14:17:07] start downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-17-07).jpg
+[14:17:08] finish downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-17-07).jpg 273654 bytes received in 1069 recv(s)
+[14:17:10] send : Send_Pict 70
+[14:17:11] start downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-17-10).jpg
+[14:17:11] finish downloading : Papa-SWEET-9723EC2F8-[11-08-2016](14-17-10).jpg 278702 bytes received in 1089 recv(s)
+[14:17:15] send : Send_File tasks
+[14:17:15] start downloading : tasks.wsk
+[14:17:15] finish downloading : tasks.wsk 244 bytes received in 1 recv(s)
+[17:25:57] send : Send_Pict 70

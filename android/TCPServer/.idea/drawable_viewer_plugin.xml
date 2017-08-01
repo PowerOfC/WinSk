@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidDrawableViewer">
+    <option name="hdpi" value="true" />
+    <option name="mdpi" value="true" />
+    <option name="resDir" value="/mnt/0ba7ef7a-3ffc-402d-86c0-98d8b2414c0a/home/dev/Android/Sdk/platforms/android-26/data/res/" />
+    <option name="xhdpi" value="true" />
+    <option name="xxhdpi" value="true" />
+    <option name="xxxhdpi" value="true" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+[16:21:20] information : La socket 104 est maintenant ouverte en mode TCP/IP
+[16:21:20] information : Listage du port 50999...
+[16:22:12] recv : Papa-SWEET-9723EC2F8
+[16:22:12] ip : 192.168.1.20
+[16:22:26] send : Black_Screen
+[16:22:36] from : Papa-SWEET-9723EC2F8
+[16:22:36] recv : Done !
+[16:22:54] send : Black_Screen
+[16:23:04] from : Papa-SWEET-9723EC2F8
+[16:23:04] recv : Done !
+[16:23:10] from : Papa-SWEET-9723EC2F8
+[16:23:10] recv : 
+[16:23:10] information : Papa-SWEET-9723EC2F8 s'est déconnecté !

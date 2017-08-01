@@ -1,0 +1,42 @@
+[21:34:11] information : La socket 104 est maintenant ouverte en mode TCP/IP
+[21:34:11] information : Listage du port 50999...
+[21:34:25] recv : Papa-PAPA-3CB0BE4627
+[21:34:25] ip : 192.168.1.19
+[21:34:30] send : Send_Pict 70
+[21:34:31] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-30).jpg
+[21:34:31] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-30).jpg 73989 bytes received in 290 recv(s)
+[21:34:33] send : Send_Pict 70
+[21:34:34] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-33).jpg
+[21:34:34] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-33).jpg 73989 bytes received in 290 recv(s)
+[21:34:36] send : Send_Pict 70
+[21:34:37] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-36).jpg
+[21:34:37] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-36).jpg 73989 bytes received in 291 recv(s)
+[21:34:39] send : D_L_Mouse_Clic 59 29 1280 952
+[21:34:40] send : Send_Pict 70
+[21:34:40] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-40).jpg
+[21:34:40] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-40).jpg 73948 bytes received in 289 recv(s)
+[21:34:45] send : R_Mouse_Clic 52 53 1280 952
+[21:34:46] send : Send_Pict 70
+[21:34:46] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-46).jpg
+[21:34:46] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-46).jpg 79436 bytes received in 311 recv(s)
+[21:34:47] send : L_Mouse_Clic 85 66 1280 952
+[21:34:48] send : Send_Pict 70
+[21:34:48] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-48).jpg
+[21:34:48] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-48).jpg 90517 bytes received in 354 recv(s)
+[21:34:51] send : R_Mouse_Clic 147 163 1280 952
+[21:34:51] send : Send_Pict 70
+[21:34:51] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-51).jpg
+[21:34:52] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-51).jpg 89445 bytes received in 350 recv(s)
+[21:34:53] send : L_Mouse_Clic 208 173 1280 952
+[21:34:54] send : Send_Pict 70
+[21:34:54] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-54).jpg
+[21:34:54] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-34-54).jpg 73948 bytes received in 289 recv(s)
+[21:35:00] send : Send_Pict 70
+[21:35:01] start downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-35-01).jpg
+[21:35:01] finish downloading : Papa-PAPA-3CB0BE4627-[19-09-2016](21-35-01).jpg 73948 bytes received in 289 recv(s)
+[21:35:08] send : Turn_Off
+[21:35:08] from : Papa-PAPA-3CB0BE4627
+[21:35:08] recv : Okay !
+[21:35:08] from : Papa-PAPA-3CB0BE4627
+[21:35:08] recv : 
+[21:35:08] information : Papa-PAPA-3CB0BE4627 s'est déconnecté !

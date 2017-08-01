@@ -1,0 +1,50 @@
+[10:10:12] information : La socket 108 est maintenant ouverte en mode TCP/IP
+[10:10:12] information : Listage du port 50999...
+[10:11:37] recv : dev-kl
+[10:11:37] ip : 192.168.1.16
+[10:11:42] information : dev-kl s'est déconnecté !
+[10:11:43] recv : dev-kl
+[10:11:43] ip : 192.168.1.16
+[10:11:46] information : dev-kl s'est déconnecté !
+[10:12:05] recv : dev-kl
+[10:12:05] ip : 192.168.1.16
+[10:12:08] information : dev-kl s'est déconnecté !
+[10:12:10] recv : dev-kl
+[10:12:10] ip : 192.168.1.16
+[10:12:12] recv : Papa-PAPA-3CB0BE4627
+[10:12:12] ip : 192.168.1.19
+[10:12:12] information : dev-kl s'est déconnecté !
+[10:12:31] recv : dev-kl
+[10:12:31] ip : 192.168.1.16
+[10:12:35] from : dev-kl
+[10:12:35] recv : 
+[10:12:35] information : dev-kl s'est déconnecté !
+[10:12:38] send : Send_File config
+[10:12:38] start downloading : config.wsk
+[10:12:38] finish downloading : config.wsk 78 bytes received in 1 recv(s)
+[10:12:47] send : Recv_File Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe
+[10:12:47] start uploading : Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe
+[10:12:47] finish uploading : Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe 180737 bytes sent in 707 send(s)
+[10:13:00] send : New_Version_Update D:\WinSk.exe
+[10:13:00] from : Papa-PAPA-3CB0BE4627
+[10:13:00] recv : Going Update Now, see u !
+[10:13:00] from : Papa-PAPA-3CB0BE4627
+[10:13:00] recv : 
+[10:13:00] information : Papa-PAPA-3CB0BE4627 s'est déconnecté !
+[10:13:03] recv : Papa-PAPA-3CB0BE4627
+[10:13:03] ip : 192.168.1.19
+[10:13:08] send : Send_File config
+[10:13:08] start downloading : config.wsk
+[10:13:08] finish downloading : config.wsk 78 bytes received in 1 recv(s)
+[10:13:15] send : Send_File config
+[10:13:15] start downloading : config.wsk
+[10:13:15] finish downloading : config.wsk 78 bytes received in 1 recv(s)
+[10:13:23] send : File_Opr DELETE D:\WinSk.exe|-
+[10:13:23] from : Papa-PAPA-3CB0BE4627
+[10:13:23] recv : File_Opr Success
+[10:13:28] send : Send_File config
+[10:13:28] start downloading : config.wsk
+[10:13:28] finish downloading : config.wsk 78 bytes received in 1 recv(s)
+[10:13:40] send : Set_Task_Manager ON
+[10:13:40] from : Papa-PAPA-3CB0BE4627
+[10:13:41] recv : Set_Task_Manager Success

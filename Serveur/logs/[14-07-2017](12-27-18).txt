@@ -1,0 +1,25 @@
+[12:27:18] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[12:27:18] information : Listage du port 50999...
+[12:27:26] recv : dev-kl
+[12:27:26] ip : 127.0.0.1
+[12:27:40] send : List_ToDo
+[12:27:40] from : dev-kl
+[12:27:40] recv : [2]226|Block_Site www.example.com|OK[3]227|Stop_Prg program.exe|TRUE|C:\\....
+[12:28:23] send : List_ToDo
+[12:28:23] from : dev-kl
+[12:28:24] recv : [2]226|Block_Site www.example.com|OK[3]227|Stop_Prg program.exe|TRUE|C:\\....
+[12:28:24] send : List_ToDo
+[12:28:25] from : dev-kl
+[12:28:25] recv : [2]226|Block_Site www.example.com|OK[3]227|Stop_Prg program.exe|TRUE|C:\\....
+[12:28:25] send : List_ToDo
+[12:28:26] from : dev-kl
+[12:28:26] recv : [2]226|Block_Site www.example.com|OK[3]227|Stop_Prg program.exe|TRUE|C:\\....
+[12:28:27] send : List_ToDo
+[12:28:27] from : dev-kl
+[12:28:27] recv : [2]226|Block_Site www.example.com|OK[3]227|Stop_Prg program.exe|TRUE|C:\\....
+[12:28:31] send : Free_ToDo
+[12:28:31] from : dev-kl
+[12:28:31] recv : Done !
+[12:28:32] send : List_ToDo
+[12:28:32] from : dev-kl
+[12:28:32] recv : [No ToDo]

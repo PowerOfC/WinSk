@@ -1,0 +1,31 @@
+[14:51:30] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[14:51:30] information : Listage du port 50999...
+[14:51:32] recv : dev-kl
+[14:51:32] ip : 127.0.0.1
+[14:51:39] send : Add_ToDo 15|Turn_Off
+[14:51:39] from : dev-kl
+[14:51:39] recv : Done !
+[14:51:40] send : Add_ToDo 15|Menveille
+[14:51:41] from : dev-kl
+[14:51:41] recv : Done !
+[14:51:43] send : Add_ToDo 60|Reset
+[14:51:43] from : dev-kl
+[14:51:43] recv : Done !
+[14:51:47] send : List_ToDo
+[14:51:47] from : dev-kl
+[14:51:47] recv : [1]15|Turn_Off[2]15|Menveille[3]60|Reset
+[14:51:53] send : Free_ToDo
+[14:51:53] from : dev-kl
+[14:51:53] recv : Done !
+[14:51:57] send : List_ToDo
+[14:51:57] from : dev-kl
+[14:51:57] recv : [No ToDo]
+[14:52:18] send : Add_ToDo 60|Reset
+[14:52:18] from : dev-kl
+[14:52:18] recv : Done !
+[14:52:22] send : List_ToDo
+[14:52:22] from : dev-kl
+[14:52:22] recv : [1]60|Reset
+[14:53:18] from : dev-kl
+[14:53:18] recv : 
+[14:53:19] information : dev-kl s'est déconnecté !

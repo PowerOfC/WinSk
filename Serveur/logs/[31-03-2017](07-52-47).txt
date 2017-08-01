@@ -1,0 +1,13 @@
+[07:52:47] information : La socket 248 est maintenant ouverte en mode TCP/IP
+[07:52:47] information : Listage du port 50999...
+[07:53:05] recv : dev-DEV-PC
+[07:53:05] ip : 127.0.0.1
+[07:53:07] send : Send_File tasks
+[07:53:07] start downloading : tasks.wsk
+[07:53:07] finish downloading : tasks.wsk 442 bytes received in 2 recv(s)
+[07:53:11] send : Send_File tasks
+[07:53:11] start downloading : tasks.wsk
+[07:53:12] finish downloading : tasks.wsk 442 bytes received in 2 recv(s)
+[07:53:16] send : Stop_Prg WinSk.exe
+[07:53:16] from : dev-DEV-PC
+[07:53:16] information : dev-DEV-PC s'est déconnecté !

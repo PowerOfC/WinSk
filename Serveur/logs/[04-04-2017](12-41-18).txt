@@ -1,0 +1,43 @@
+[12:41:18] information : La socket 252 est maintenant ouverte en mode TCP/IP
+[12:41:18] information : Listage du port 50999...
+[12:42:06] recv : dev-DEV-PC
+[12:42:06] ip : 127.0.0.1
+[12:42:18] send : Explore_Drives
+[12:42:18] from : dev-DEV-PC
+[12:42:18] recv : C:\|D:\|
+[12:42:20] send : Send_Pict 70
+[12:42:20] start downloading : dev-DEV-PC-[04-04-2017](12-42-20).jpg
+[12:42:20] finish downloading : dev-DEV-PC-[04-04-2017](12-42-20).jpg 227961 bytes received in 891 recv(s)
+[12:42:23] send : Send_Pict 70
+[12:42:23] start downloading : dev-DEV-PC-[04-04-2017](12-42-23).jpg
+[12:42:23] finish downloading : dev-DEV-PC-[04-04-2017](12-42-23).jpg 230512 bytes received in 901 recv(s)
+[12:42:27] send : Send_Pict 70
+[12:42:27] start downloading : dev-DEV-PC-[04-04-2017](12-42-27).jpg
+[12:42:27] finish downloading : dev-DEV-PC-[04-04-2017](12-42-27).jpg 242739 bytes received in 949 recv(s)
+[12:42:33] send : Send_Pict 70
+[12:42:33] start downloading : dev-DEV-PC-[04-04-2017](12-42-33).jpg
+[12:42:33] finish downloading : dev-DEV-PC-[04-04-2017](12-42-33).jpg 244502 bytes received in 956 recv(s)
+[12:42:36] send : Send_Pict 70
+[12:42:36] start downloading : dev-DEV-PC-[04-04-2017](12-42-36).jpg
+[12:42:36] finish downloading : dev-DEV-PC-[04-04-2017](12-42-36).jpg 249655 bytes received in 976 recv(s)
+[12:42:51] send : Send_File tasks
+[12:42:51] start downloading : tasks.wsk
+[12:42:51] finish downloading : tasks.wsk 451 bytes received in 2 recv(s)
+[12:43:07] send : Explore_Drives
+[12:43:07] from : dev-DEV-PC
+[12:43:07] recv : C:\|D:\|
+[12:43:13] send : Send_Pict 70
+[12:43:13] start downloading : dev-DEV-PC-[04-04-2017](12-43-13).jpg
+[12:43:13] finish downloading : dev-DEV-PC-[04-04-2017](12-43-13).jpg 201610 bytes received in 788 recv(s)
+[12:43:19] send : Send_Pict 70
+[12:43:19] start downloading : dev-DEV-PC-[04-04-2017](12-43-19).jpg
+[12:43:19] finish downloading : dev-DEV-PC-[04-04-2017](12-43-19).jpg 206259 bytes received in 806 recv(s)
+[12:43:22] send : Send_Pict 70
+[12:43:22] start downloading : dev-DEV-PC-[04-04-2017](12-43-22).jpg
+[12:43:22] finish downloading : dev-DEV-PC-[04-04-2017](12-43-22).jpg 228589 bytes received in 893 recv(s)
+[12:43:26] send : Send_File tasks
+[12:43:26] start downloading : tasks.wsk
+[12:43:26] finish downloading : tasks.wsk 439 bytes received in 2 recv(s)
+[12:43:32] send : Send_File config
+[12:43:32] start downloading : config.wsk
+[12:43:32] finish downloading : config.wsk 84 bytes received in 1 recv(s)

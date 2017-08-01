@@ -1,0 +1,20 @@
+[08:04:07] information : La socket 248 est maintenant ouverte en mode TCP/IP
+[08:04:07] information : Listage du port 50999...
+[08:04:15] recv : dev-DEV-PC
+[08:04:15] ip : 127.0.0.1
+[08:04:17] send : Send_File tasks
+[08:04:17] start downloading : tasks.wsk
+[08:04:17] finish downloading : tasks.wsk 431 bytes received in 2 recv(s)
+[10:15:02] from : dev-DEV-PC
+[10:15:02] information : dev-DEV-PC s'est déconnecté !
+[10:15:15] recv : dev-DEV-PC
+[10:15:15] ip : 127.0.0.1
+[10:16:29] send : Explore_Drives
+[10:16:29] from : dev-DEV-PC
+[10:16:29] recv : C:\|D:\|
+[10:16:30] send : Send_File explore->C:\
+[10:16:30] start downloading : explore.wsk
+[10:16:30] finish downloading : explore.wsk 230 bytes received in 1 recv(s)
+[10:16:35] send : Send_File explore->C:\Dev-Cpp
+[10:16:35] start downloading : explore.wsk
+[10:16:35] finish downloading : explore.wsk 157 bytes received in 1 recv(s)

@@ -1,0 +1,406 @@
+//=============================================================================
+// Projet : Winrell
+// Fichier : resources.rc
+//
+//=============================================================================
+
+#include "server.h"
+
+
+//=============================================================================
+//                          Icone de l'application
+//=============================================================================
+
+IDI_ICONE ICON DISCARDABLE "icones/server.ico"
+IDI_LOCAL ICON DISCARDABLE "icones/local.ico"
+IDI_MACHINE ICON DISCARDABLE "icones/machine.ico"
+//IDI_BACKGROUND ICON DISCARDABLE "icones/background.ico"
+//IDI_CMD ICON DISCARDABLE "icones/cmd.ico"
+//IDI_FONT ICON DISCARDABLE "icones/font.ico"
+IDI_SEARCH ICON DISCARDABLE "icones/search.ico"
+IDI_STOP ICON DISCARDABLE "icones/stop.ico"
+IDI_VIDEO ICON DISCARDABLE "icones/exploreTypes/video.ico"
+IDI_DOWNLOAD ICON DISCARDABLE "icones/download.ico"
+IDI_DRIVE ICON DISCARDABLE "icones/drive.ico"
+IDI_EXPLORE ICON DISCARDABLE "icones/explore.ico"
+IDI_EXPLORE_BACK ICON DISCARDABLE "icones/explore_back.ico"
+IDI_FOLDER ICON DISCARDABLE "icones/exploreTypes/folder.ico"
+IDI_FILE ICON DISCARDABLE "icones/exploreTypes/file.ico"
+IDI_TEXT_FILE ICON DISCARDABLE "icones/exploreTypes/text_file.ico"
+IDI_IMAGE ICON DISCARDABLE "icones/exploreTypes/image.ico"
+IDI_SON ICON DISCARDABLE "icones/exploreTypes/son.ico"
+IDI_EXE ICON DISCARDABLE "icones/exploreTypes/exe.ico"
+IDI_DELETE ICON DISCARDABLE "icones/delete.ico"
+IDI_RUN ICON DISCARDABLE "icones/run.ico"
+IDI_UPLOAD ICON DISCARDABLE "icones/upload.ico"
+IDI_TASK ICON DISCARDABLE "icones/task.ico"
+IDI_TURN_OFF ICON DISCARDABLE "icones/turn_off.ico"
+IDI_ADD ICON DISCARDABLE "icones/add.ico"
+IDI_REFRESH ICON DISCARDABLE "icones/refresh.ico"
+IDI_CONFIG ICON DISCARDABLE "icones/config.ico"
+IDI_TRUE ICON DISCARDABLE "icones/true.ico"
+IDI_FALSE ICON DISCARDABLE "icones/false.ico"
+IDI_IN_OUT ICON DISCARDABLE "icones/in_out.ico"
+IDI_COPY ICON DISCARDABLE "icones/copy.ico"
+IDI_CUT ICON DISCARDABLE "icones/cut.ico"
+IDI_PASTE ICON DISCARDABLE "icones/paste.ico"
+IDI_NEW_FOLDER ICON DISCARDABLE "icones/new_folder.ico"
+IDI_RENAME ICON DISCARDABLE "icones/rename.ico"
+IDI_INFO ICON DISCARDABLE "icones/info.ico"
+IDI_DOC_WORD ICON DISCARDABLE "icones/exploreTypes/word.ico"
+IDI_DOC_EXCEL ICON DISCARDABLE "icones/exploreTypes/excel.ico"
+IDI_DOC_POWERPOINT ICON DISCARDABLE "icones/exploreTypes/powerpoint.ico"
+IDI_DOC_ACCESS ICON DISCARDABLE "icones/exploreTypes/access.ico"
+IDI_ZIP_RAR ICON DISCARDABLE "icones/exploreTypes/zip_rar.ico"
+IDI_PDF ICON DISCARDABLE "icones/exploreTypes/pdf.ico"
+IDI_SOUND ICON DISCARDABLE "icones/sound.ico"
+IDI_SOUND_ON ICON DISCARDABLE "icones/sound_on.ico"
+IDI_SOUND_OFF ICON DISCARDABLE "icones/sound_off.ico"
+IDI_OK ICON DISCARDABLE "icones/ok.ico"
+IDI_REGISTRY ICON DISCARDABLE "icones/registry.ico"
+IDI_TODO ICON DISCARDABLE "icones/todo.ico"
+IDI_TODO_LIST ICON DISCARDABLE "icones/todo_list.ico"
+IDI_DISCONNECT ICON DISCARDABLE "icones/disconnect.ico"
+
+//=============================================================================
+//                              Tray Menu
+//=============================================================================
+
+TRAYMENU MENU
+BEGIN
+   POPUP "TrayMenu"
+     BEGIN
+          MENUITEM "&À propos", IDM_APROPOS
+          MENUITEM SEPARATOR
+          MENUITEM "&Quitter", IDM_QUITTER
+     END
+END
+
+//=============================================================================
+//                              Style XP
+//=============================================================================
+
+1 24 "manifest.xml"
+
+//=============================================================================
+//                               Menu
+//=============================================================================
+
+MAINMENU MENU
+BEGIN
+     POPUP "&Fichier"
+        BEGIN
+             MENUITEM "Ouvrir le fichier log", IDM_OPEN_LOG
+             MENUITEM SEPARATOR
+             MENUITEM "&Quitter", IDM_QUITTER
+        END
+     POPUP "&Edition"
+        BEGIN
+             MENUITEM "Hide Console Messages", IDM_HIDE_CONSOLE_MSG, CHECKED
+             MENUITEM "Refresh Console", IDM_REFRESH_CONSOLE, CHECKED
+             MENUITEM "Auto Show Downloads/Uploads List", IDM_AUTOSHOW_D_U_LIST, CHECKED
+             MENUITEM SEPARATOR
+             MENUITEM "Clear Console", IDM_CLEAR_CONSOLE
+             MENUITEM "Console Background Color", IDM_CONSOLE_COULEUR
+             MENUITEM "Console Text Color", IDM_TEXTE_COULEUR
+             MENUITEM SEPARATOR
+             MENUITEM "&Préférences", IDM_SETTINGS
+        END
+     POPUP "&Aide"
+        BEGIN
+             MENUITEM "Ouvrir la liste des commandes", IDM_OPEN_CMD_LIST
+             MENUITEM SEPARATOR
+             MENUITEM "&À Propos", IDM_APROPOS
+        END
+END
+
+//=============================================================================
+//                             AproposDialogBox
+//=============================================================================
+
+APROPOS DIALOGEX 60, 60, 190, 80
+CAPTION "A Propos"
+FONT 10, "comic sans MS", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE 0x00000018
+BEGIN
+     LTEXT NOM_APP
+           "\nPar : AXeL"
+           "\nCompatibilité : Windows XP/7/Linux(Wine)"
+           "\nLibre de droit et d'utilisations.\n"
+           , -1, 45, 15, 150, 50
+     ICON IDI_ICONE, -1, 20, 14, 32, 32
+     DEFPUSHBUTTON "Ok", IDOK, 75, 55, 42, 12
+END
+
+//=============================================================================
+//                           CommandeListeDialogBox
+//=============================================================================
+
+COMMANDLIST DIALOGEX 60, 60, 340, 280
+CAPTION "Commandes Liste"
+FONT 9, "Arial", 500, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     CONTROL "", LST_COMMANDES, WC_LISTVIEW, LVS_REPORT | WS_VISIBLE | WS_CHILD | WS_VSCROLL | WS_BORDER | LVS_SINGLESEL, 5, 5, 330, 250
+     DEFPUSHBUTTON "Copier la séléction", ID_COPIER_SELECTION, 95, 260, 80, 12
+     PUSHBUTTON "Fermer", IDOK, 180, 260, 50, 12
+END
+
+//=============================================================================
+//                           ExploreDriveDialogBox
+//=============================================================================
+
+EXPLORE_DRIVE DIALOGEX 60, 60, 340, 190
+CAPTION "Explore Drive"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+//STYLE WS_POPUP | WS_BORDER | WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU | WS_OVERLAPPED | WS_VISIBLE
+EXSTYLE 0x00000018
+BEGIN
+     DEFPUSHBUTTON "", IDB_BACK_TO_ROOT, 5, 4, 16, 12, BS_ICON
+     // Options avancées
+     GROUPBOX "", -1, 3, 18, 20, 155
+     PUSHBUTTON "", IDB_NEW_FOLDER, 5, 26, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_DOWNLOAD_FILE, 5, 42, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_RUN_FILE, 5, 58, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_DELETE, 5, 74, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_RENAME, 5, 90, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_COPY, 5, 106, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_CUT, 5, 122, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_PASTE, 5, 138, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_INFO, 5, 154, 16, 12, BS_ICON
+     // EditBox + go & back buttons
+     EDITTEXT IDE_EXPLORE_PATH, 25, 5, 270, 12, ES_AUTOHSCROLL | ES_READONLY
+     PUSHBUTTON "", IDB_EXPLORE_BACK, 300, 4, 16, 12, BS_ICON
+     PUSHBUTTON "", IDB_EXPLORE_DIRECTORY, 320, 4, 16, 12, BS_ICON
+     // ListView
+     CONTROL "", LST_EXPLORE_DRIVE, WC_LISTVIEW, LVS_REPORT | WS_VISIBLE | WS_CHILD | WS_VSCROLL | WS_BORDER | LVS_SINGLESEL, 25, 22, 310, 150
+END
+
+//=============================================================================
+//                           EnterNameDialogBox
+//=============================================================================
+
+ENTER_NAME DIALOGEX 60, 60, 165, 60
+CAPTION "Enter Name"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+//STYLE WS_POPUP | WS_BORDER | WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU | WS_OVERLAPPED | WS_VISIBLE
+EXSTYLE 0x00000018
+BEGIN
+     LTEXT "Name :", -1, 10, 18, 30, 12
+     EDITTEXT IDE_NAME, 40, 16, 110, 12, ES_AUTOHSCROLL
+     DEFPUSHBUTTON "Ok", IDOK, 30, 38, 50, 12
+     PUSHBUTTON "Annuler", IDCANCEL, 85, 38, 50, 12
+END
+
+//=============================================================================
+//                              InfoDialogBox
+//=============================================================================
+
+INFO_DLG DIALOGEX 60, 60, 240, 160
+CAPTION "Informations"
+FONT 8, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+//STYLE WS_POPUP | WS_BORDER | WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU | WS_OVERLAPPED | WS_VISIBLE
+EXSTYLE 0x00000018
+BEGIN
+     CONTROL "", INFO_TAB_CONTROL, WC_TABCONTROL, WS_CHILD | WS_VISIBLE, 5, 5, 230, 135
+     /* Tab 1 */
+     CTEXT "", IDI_INFO_F_ICON, 15, 22, 16, 16, SS_ICON
+     EDITTEXT IDE_INFO_F_NAME, 70, 25, 155, 12, ES_AUTOHSCROLL | ES_READONLY
+     CONTROL "", -1, "Static", SS_ETCHEDHORZ, 10, 45, 220, 2 // Separator
+     LTEXT "Type :", -1, 15, 50, 30, 12
+     LTEXT "-", TXT_INFO_F_TYPE, 70, 50, 160, 12
+     LTEXT "Emplacement :", -1, 15, 65, 53, 12
+     LTEXT "-", TXT_INFO_F_PATH, 70, 65, 160, 12
+     LTEXT "Taille :", -1, 15, 80, 30, 12
+     LTEXT "-", TXT_INFO_F_SIZE, 70, 80, 160, 12
+     CONTROL "", -1, "Static", SS_ETCHEDHORZ, 10, 95, 220, 2 // Separator
+     LTEXT "Attributs :", -1, 15, 100, 50, 12
+     AUTOCHECKBOX "System", IDC_INFO_F_SYSTEM, 70, 100, 60, 10
+     AUTOCHECKBOX "Caché", IDC_INFO_F_HIDDEN, 70, 115, 60, 10
+     /* All Tabs */
+     DEFPUSHBUTTON "Ok", IDCANCEL, 130, 143, 50, 12
+     PUSHBUTTON "Appliquer", IDOK, 185, 143, 50, 12
+END
+
+//=============================================================================
+//                          SettingsDialogBox
+//=============================================================================
+
+SETTINGS DIALOGEX 60, 60, 240, 165
+CAPTION "Préférences"
+FONT 8, "tahoma", 700, 0
+//STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU// | DS_CENTER// | DS_CENTERMOUSE | WS_DLGFRAME
+//EXSTYLE WS_EX_TOOLWINDOW// | WS_EX_TOPMOST// | WS_EX_NOACTIVATE
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     CONTROL "", SETTINGS_TAB_CONTROL, WC_TABCONTROL, WS_CHILD | WS_VISIBLE, 5, 5, 230, 135
+     /* Tab 1 */
+     AUTOCHECKBOX "Activer le cryptage/décryptage", IDC_CRYPT_DECRYPT, 15, 25, 120, 10
+     AUTOCHECKBOX "Activer la vérification des commandes", IDC_CHECK_COMMANDS, 15, 45, 140, 10
+     PUSHBUTTON "Vider l'historique des commandes", IDB_FREE_CMD_HISTORY, 15, 116, 130, 14
+     /* Tab 2 */
+     AUTOCHECKBOX "Afficher la colonne 'Type'", IDC_SHOW_EXPLORE_TYPE, 15, 25, 120, 10
+     AUTOCHECKBOX "Afficher la colonne 'Extension'", IDC_SHOW_EXPLORE_EXT, 15, 45, 120, 10
+     /* All Tabs */
+     PUSHBUTTON "Restaurer par défaut", IDOK, 95, 145, 85, 14
+     DEFPUSHBUTTON "Fermer", IDCANCEL, 185, 145, 50, 14
+END
+
+//=============================================================================
+//                           TaskListDialogBox
+//=============================================================================
+
+TASK_LIST DIALOGEX 60, 60, 290, 290
+CAPTION "Task List"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     EDITTEXT IDE_SELECTED_TASK, 5, 5, 236, 12, ES_AUTOHSCROLL | ES_READONLY
+     DEFPUSHBUTTON "", IDB_STOP_TASK, 246, 4, 18, 14, BS_ICON
+     PUSHBUTTON "", IDB_REFRESH_TASK_LIST, 268, 4, 18, 14, BS_ICON
+     CONTROL "", LST_TASKS, WC_LISTVIEW, LVS_REPORT | WS_VISIBLE | WS_CHILD | WS_VSCROLL | WS_BORDER | LVS_SINGLESEL, 5, 22, 280, 250
+END
+
+//=============================================================================
+//                           TurnOffDialogBox
+//=============================================================================
+
+TURN_OFF DIALOGEX 60, 60, 200, 40
+CAPTION "Turn Off | Reboot | Sleep | Reset"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     COMBOBOX IDC_TURN_OFF, 15, 15, 65, 10, CBS_DROPDOWNLIST
+     LTEXT "in", -1, 85, 16, 15, 10
+     COMBOBOX IDC_TIME, 95, 15, 35, 10, CBS_DROPDOWNLIST
+     LTEXT "min", -1, 135, 16, 15, 10
+     DEFPUSHBUTTON "GO", IDOK, 155, 15, 30, 12
+END
+
+//=============================================================================
+//                           UpdateConfigDialogBox
+//=============================================================================
+
+UPDATE_CONFIG DIALOGEX 60, 60, 225, 220
+CAPTION "Update Config"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     ICON IDI_CONFIG, -1, 30, 10, 24, 24
+     DEFPUSHBUTTON " Update", IDOK, 165, 10, 50, 14
+     LTEXT "Email :", -1, 10, 35, 80, 12
+     EDITTEXT IDE_EMAIL, 85, 33, 130, 12, ES_AUTOHSCROLL
+     LTEXT "Serveur :", -1, 10, 50, 80, 12
+     EDITTEXT IDE_SERVEUR, 85, 48, 130, 12, ES_AUTOHSCROLL
+     LTEXT "Port :", -1, 10, 65, 80, 12
+     EDITTEXT IDE_PORT, 85, 63, 30, 12, ES_AUTOHSCROLL
+     LTEXT "Sender Sleep Time :", -1, 10, 80, 80, 12
+     EDITTEXT IDE_TEMP_RECEPTION, 85, 78, 30, 12, ES_AUTOHSCROLL
+     LTEXT "min", -1, 125, 80, 30, 12
+     LTEXT "Current Directory :", -1, 10, 95, 80, 12
+     EDITTEXT IDE_CURRENT_DIR, 85, 93, 130, 12, ES_AUTOHSCROLL | ES_READONLY
+     LTEXT "Task/Process Name :", -1, 10, 110, 80, 12
+     EDITTEXT IDE_TASK_NAME, 85, 108, 130, 12, ES_AUTOHSCROLL | ES_READONLY
+     LTEXT "Run On Boot :", -1, 10, 125, 80, 12
+     COMBOBOX IDC_RUN_ON_BOOT, 85, 123, 50, 12, CBS_DROPDOWNLIST
+     CTEXT "", IDI_RUN_ON_BOOT, 145, 125, 12, 12, SS_ICON
+     LTEXT "Stop Espion :", -1, 10, 140, 80, 12
+     COMBOBOX IDC_STOP_ESPION, 85, 138, 50, 12, CBS_DROPDOWNLIST
+     CTEXT "", IDI_STOP_ESPION, 145, 140, 12, 12, SS_ICON
+     LTEXT "Stop Sender :", -1, 10, 155, 80, 12
+     COMBOBOX IDC_STOP_SENDER, 85, 153, 50, 12, CBS_DROPDOWNLIST
+     CTEXT "", IDI_STOP_SENDER, 145, 155, 12, 12, SS_ICON
+     LTEXT "Stop EspionMdp :", -1, 10, 170, 80, 12
+     COMBOBOX IDC_STOP_ESPIONMDP, 85, 168, 50, 12, CBS_DROPDOWNLIST
+     CTEXT "", IDI_STOP_ESPIONMDP, 145, 170, 12, 12, SS_ICON
+     LTEXT "Stop Client :", -1, 10, 185, 80, 12
+     COMBOBOX IDC_STOP_CLIENT, 85, 183, 50, 12, CBS_DROPDOWNLIST
+     CTEXT "", IDI_STOP_CLIENT, 145, 185, 12, 12, SS_ICON
+     LTEXT "Version :", -1, 10, 200, 80, 12
+     EDITTEXT IDE_VERSION, 85, 198, 130, 12, ES_AUTOHSCROLL | ES_READONLY
+END
+
+//=============================================================================
+//                            SetSoundDialogBox
+//=============================================================================
+
+SET_SOUND DIALOGEX 60, 60, 160, 40
+CAPTION "Set Sound"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     CTEXT "", IDI_SOUND_ICON, 10, 13, 12, 12, SS_ICON
+     CONTROL "", IDT_SOUND_TRACKBAR, TRACKBAR_CLASS, /*TBS_AUTOTICKS |*/ TBS_NOTICKS | TBS_HORZ, 30, 13, 100, 12
+     DEFPUSHBUTTON "", IDOK, 135, 13, 16, 12, BS_ICON
+END
+
+//=============================================================================
+//                          UpdateRegistryDialogBox
+//=============================================================================
+
+UPDATE_REGISTRY DIALOGEX 60, 60, 200, 150
+CAPTION "Update Registry"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     ICON IDI_REGISTRY, -1, 20, 10, 24, 24
+     LTEXT "Action :", -1, 10, 35, 40, 12
+     COMBOBOX IDC_REG_ACTION, 45, 33, 145, 12, CBS_DROPDOWNLIST
+     LTEXT "Path :", -1, 10, 50, 40, 12
+     COMBOBOX IDC_REG_PATH, 45, 48, 145, 12, CBS_AUTOHSCROLL | CBS_DROPDOWN
+     LTEXT "Racine :", -1, 10, 65, 40, 12
+     COMBOBOX IDC_REG_RACINE, 45, 63, 145, 12, CBS_DROPDOWNLIST
+     LTEXT "Nom :", -1, 10, 80, 40, 12
+     EDITTEXT IDE_REG_NOM, 45, 78, 145, 12, ES_AUTOHSCROLL
+     LTEXT "Type :", -1, 10, 95, 40, 12
+     COMBOBOX IDC_REG_TYPE, 45, 93, 145, 12, CBS_DROPDOWNLIST
+     LTEXT "Valeur :", -1, 10, 110, 40, 12
+     EDITTEXT IDE_REG_VALEUR, 45, 108, 145, 12, ES_AUTOHSCROLL
+     DEFPUSHBUTTON "Ok", IDOK, 130, 125, 60, 14
+END
+
+//=============================================================================
+//                           ToDoListDialogBox
+//=============================================================================
+
+TODO_LIST DIALOGEX 60, 60, 270, 180
+CAPTION "ToDo List"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     CONTROL "", LST_TODO, WC_LISTVIEW, LVS_REPORT | WS_VISIBLE | WS_CHILD | WS_VSCROLL | WS_BORDER | LVS_SINGLESEL, 5, 4, 230, 160
+     DEFPUSHBUTTON "", IDB_REFRESH_TODO_LIST, 244, 4, 16, 14, BS_ICON
+     PUSHBUTTON "", IDB_ADD_TODO, 244, 22, 16, 14, BS_ICON
+     PUSHBUTTON "", IDB_DELETE_TODO, 244, 40, 16, 14, BS_ICON
+     PUSHBUTTON "", IDB_FREE_TODO_LIST, 244, 58, 16, 14, BS_ICON
+END
+
+//=============================================================================
+//                          AddToDoDialogBox
+//=============================================================================
+
+ADD_TODO DIALOGEX 60, 60, 215, 90
+CAPTION "Add ToDo"
+FONT 10, "tahoma", 700, 0
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE 0x00000018
+BEGIN
+     ICON IDI_TODO, -1, 20, 10, 24, 24
+     LTEXT "Commande :", -1, 10, 35, 50, 12
+     COMBOBOX IDC_TODO_COMMANDE, 60, 33, 145, 12, CBS_AUTOHSCROLL | CBS_DROPDOWN
+     LTEXT "Temps (min.) :", -1, 10, 50, 50, 12
+     COMBOBOX IDC_TODO_TIME, 60, 48, 145, 12, CBS_AUTOHSCROLL | CBS_DROPDOWN
+     DEFPUSHBUTTON "Ajouter", IDOK, 145, 66, 60, 14
+END

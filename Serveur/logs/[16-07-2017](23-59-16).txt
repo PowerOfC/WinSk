@@ -1,0 +1,10 @@
+[23:59:16] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[23:59:16] information : Listage du port 50999...
+[23:59:19] recv : dev-kl
+[23:59:19] ip : 192.168.1.16
+[23:59:21] send : Explore_Drives
+[23:59:21] from : dev-kl
+[23:59:21] recv : C:\|Z:\|
+[23:59:23] send : Send_File explore->C:\
+[23:59:23] start downloading : (1)explore.wsk
+[23:59:23] finish downloading : (1)explore.wsk 119 bytes received in 1 recv(s)

@@ -1,0 +1,4 @@
+[17:54:01] information : La socket 108 est maintenant ouverte en mode TCP/IP
+[17:54:01] information : Listage du port 50999...
+[17:54:11] recv : Papa-PAPA-3CB0BE4627
+[17:54:11] ip : 192.168.1.13

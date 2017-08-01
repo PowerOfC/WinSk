@@ -1,0 +1,114 @@
+[10:43:38] information : La socket 104 est maintenant ouverte en mode TCP/IP
+[10:43:38] information : Listage du port 50999...
+[10:43:42] recv : dev-kl
+[10:43:42] ip : 192.168.1.3
+[10:43:51] send : Explore_Drives
+[10:43:51] from : dev-kl
+[10:43:51] recv : C:\|Z:\|
+[10:43:56] send : Explore_Drives
+[10:43:56] from : dev-kl
+[10:43:56] recv : C:\|Z:\|
+[10:44:10] send : Send_File tasks
+[10:44:10] start downloading : tasks.wsk
+[10:44:10] finish downloading : tasks.wsk 104 bytes received in 1 recv(s)
+[10:44:40] send : Explore_Drives
+[10:44:41] from : dev-kl
+[10:44:41] recv : C:\|Z:\|
+[10:44:41] send : Send_File explore->Z:\
+[10:44:42] start downloading : explore.wsk
+[10:44:42] finish downloading : explore.wsk 98 bytes received in 1 recv(s)
+[10:44:44] send : Explore_Drives
+[10:44:44] from : dev-kl
+[10:44:44] recv : C:\|Z:\|
+[10:44:44] send : Send_File explore->C:\
+[10:44:44] start downloading : explore.wsk
+[10:44:45] finish downloading : explore.wsk 101 bytes received in 1 recv(s)
+[10:44:49] send : Send_File explore->C:\Dev-Cpp
+[10:44:49] start downloading : explore.wsk
+[10:44:49] finish downloading : explore.wsk 157 bytes received in 1 recv(s)
+[10:44:55] send : Explore_Drives
+[10:44:56] from : dev-kl
+[10:44:56] recv : C:\|Z:\|
+[10:44:59] send : Send_File explore->Z:\
+[10:45:00] start downloading : explore.wsk
+[10:45:00] finish downloading : explore.wsk 98 bytes received in 1 recv(s)
+[10:45:01] send : Send_File explore->Z:\home
+[10:45:01] start downloading : explore.wsk
+[10:45:01] finish downloading : explore.wsk 4 bytes received in 1 recv(s)
+[10:45:02] send : Send_File explore->Z:\home\dev
+[10:45:02] start downloading : explore.wsk
+[10:45:02] finish downloading : explore.wsk 100 bytes received in 1 recv(s)
+[10:45:05] send : Send_File explore->Z:\home\dev\Téléchargements
+[10:45:05] file_size : 0
+[10:45:08] send : Send_File explore->Z:\home\dev
+[10:45:08] start downloading : explore.wsk
+[10:45:08] finish downloading : explore.wsk 100 bytes received in 1 recv(s)
+[10:45:16] send : Send_File explore->Z:\home
+[10:45:16] start downloading : explore.wsk
+[10:45:17] finish downloading : explore.wsk 4 bytes received in 1 recv(s)
+[10:45:18] send : Send_File explore->Z:\
+[10:45:18] start downloading : explore.wsk
+[10:45:18] finish downloading : explore.wsk 98 bytes received in 1 recv(s)
+[10:45:22] send : Send_File explore->Z:\mnt
+[10:45:22] start downloading : explore.wsk
+[10:45:22] finish downloading : explore.wsk 54 bytes received in 1 recv(s)
+[10:45:24] send : Send_File explore->Z:\mnt\5090EE4690EE3260
+[10:45:24] start downloading : explore.wsk
+[10:45:24] finish downloading : explore.wsk 92 bytes received in 1 recv(s)
+[10:45:27] send : Send_File explore->Z:\mnt
+[10:45:27] start downloading : explore.wsk
+[10:45:27] finish downloading : explore.wsk 54 bytes received in 1 recv(s)
+[10:45:28] send : Send_File explore->Z:\mnt\0ba7ef7a-3ffc-402d-86c0-98d8b2414c0a
+[10:45:28] start downloading : explore.wsk
+[10:45:28] finish downloading : explore.wsk 115 bytes received in 1 recv(s)
+[10:45:31] send : Send_File explore->Z:\mnt\0ba7ef7a-3ffc-402d-86c0-98d8b2414c0a\dev
+[10:45:31] start downloading : explore.wsk
+[10:45:31] finish downloading : explore.wsk 537 bytes received in 3 recv(s)
+[10:45:37] send : Send_File explore->Z:\mnt\0ba7ef7a-3ffc-402d-86c0-98d8b2414c0a
+[10:45:37] start downloading : explore.wsk
+[10:45:37] finish downloading : explore.wsk 115 bytes received in 1 recv(s)
+[10:45:38] send : Send_File explore->Z:\mnt
+[10:45:38] start downloading : explore.wsk
+[10:45:38] finish downloading : explore.wsk 54 bytes received in 1 recv(s)
+[10:45:39] send : Send_File explore->Z:\mnt\5090EE4690EE3260
+[10:45:39] start downloading : explore.wsk
+[10:45:40] finish downloading : explore.wsk 92 bytes received in 1 recv(s)
+[10:45:42] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv
+[10:45:42] start downloading : explore.wsk
+[10:45:42] finish downloading : explore.wsk 6 bytes received in 1 recv(s)
+[10:45:43] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime
+[10:45:43] start downloading : explore.wsk
+[10:45:43] finish downloading : explore.wsk 39 bytes received in 1 recv(s)
+[10:45:45] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime\[New]
+[10:45:45] start downloading : explore.wsk
+[10:45:46] finish downloading : explore.wsk 778 bytes received in 4 recv(s)
+[10:45:51] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime
+[10:45:51] start downloading : explore.wsk
+[10:45:51] finish downloading : explore.wsk 39 bytes received in 1 recv(s)
+[10:45:55] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime\[Fav]
+[10:45:55] start downloading : explore.wsk
+[10:45:56] finish downloading : explore.wsk 300 bytes received in 2 recv(s)
+[10:45:57] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime
+[10:45:57] start downloading : explore.wsk
+[10:45:58] finish downloading : explore.wsk 39 bytes received in 1 recv(s)
+[10:45:59] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime\[New]
+[10:45:59] start downloading : explore.wsk
+[10:45:59] finish downloading : explore.wsk 778 bytes received in 4 recv(s)
+[10:46:01] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime\[New]\Acca 13-Ku Kansatsu-Ka VOSTFR
+[10:46:01] start downloading : explore.wsk
+[10:46:01] finish downloading : explore.wsk 1366 bytes received in 6 recv(s)
+[10:46:04] send : Send_File Z:\mnt\5090EE4690EE3260\prv\anime\[New]\Acca 13-Ku Kansatsu-Ka VOSTFR\Mangas_Acca_saison_1_episode_001_vostfr_Acca_001_vostfr_en_streaming_illimit_manga_anime_Acca_01_HD.mp4
+[10:46:04] start downloading : Mangas_Acca_saison_1_episode_001_vostfr_Acca_001_vostfr_en_streaming_illimit_manga_anime_Acca_01_HD.mp4
+[10:46:58] finish downloading : Mangas_Acca_saison_1_episode_001_vostfr_Acca_001_vostfr_en_streaming_illimit_manga_anime_Acca_01_HD.mp4 239949929 bytes received in 937305 recv(s)
+[10:47:19] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime\[New]
+[10:47:19] start downloading : explore.wsk
+[10:47:19] finish downloading : explore.wsk 778 bytes received in 4 recv(s)
+[10:47:24] send : Send_File explore->Z:\mnt\5090EE4690EE3260\prv\anime\[New]\Boruto (...) VOSTFR
+[10:47:25] start downloading : explore.wsk
+[10:47:25] finish downloading : explore.wsk 1131 bytes received in 5 recv(s)
+[10:47:27] send : Send_File Z:\mnt\5090EE4690EE3260\prv\anime\[New]\Boruto (...) VOSTFR\Boruto_01_Vostfr_La_Référence.mp4
+[10:47:27] start downloading : Boruto_01_Vostfr_La_Référence.mp4
+[10:48:14] finish downloading : Boruto_01_Vostfr_La_Référence.mp4 203026945 bytes received in 793075 recv(s)
+[10:49:31] from : dev-kl
+[10:49:31] recv : 
+[10:49:31] information : dev-kl s'est déconnecté !

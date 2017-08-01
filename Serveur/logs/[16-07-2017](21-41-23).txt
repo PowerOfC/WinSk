@@ -1,0 +1,33 @@
+[21:41:23] information : La socket 104 est maintenant ouverte en mode TCP/IP
+[21:41:23] information : Listage du port 50999...
+[21:41:25] recv : dev-kl
+[21:41:25] ip : 192.168.1.16
+[21:41:29] send : Explore_Drives
+[21:41:29] from : dev-kl
+[21:41:29] recv : C:\|Z:\|
+[21:41:30] send : Send_File explore->Z:\
+[21:41:30] start downloading : explore.wsk
+[21:41:30] finish downloading : explore.wsk 98 bytes received in 1 recv(s)
+[21:41:31] send : Send_File explore->Z:\bin
+[21:41:31] start downloading : explore.wsk
+[21:41:31] finish downloading : explore.wsk 517 bytes received in 3 recv(s)
+[21:41:44] send : Send_File explore->Z:\bin\attr
+[21:41:44] file_size : 0
+[21:41:47] send : Send_File explore->Z:\bin
+[21:41:47] start downloading : explore.wsk
+[21:41:47] finish downloading : explore.wsk 517 bytes received in 3 recv(s)
+[21:41:49] send : Send_File explore->Z:\
+[21:41:49] start downloading : explore.wsk
+[21:41:49] finish downloading : explore.wsk 98 bytes received in 1 recv(s)
+[21:41:52] send : Send_File explore->Z:\home
+[21:41:52] start downloading : explore.wsk
+[21:41:52] finish downloading : explore.wsk 4 bytes received in 1 recv(s)
+[21:41:54] send : Send_File explore->Z:\home\dev
+[21:41:54] start downloading : explore.wsk
+[21:41:54] finish downloading : explore.wsk 92 bytes received in 1 recv(s)
+[21:42:29] send : Send_File explore->Z:\home
+[21:42:29] start downloading : explore.wsk
+[21:42:29] finish downloading : explore.wsk 4 bytes received in 1 recv(s)
+[21:42:30] send : Send_File explore->Z:\
+[21:42:30] start downloading : explore.wsk
+[21:42:30] finish downloading : explore.wsk 98 bytes received in 1 recv(s)

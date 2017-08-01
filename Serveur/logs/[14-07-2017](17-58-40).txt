@@ -1,0 +1,40 @@
+[17:58:40] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[17:58:40] information : Listage du port 50999...
+[18:00:08] recv : dev-kl
+[18:00:08] ip : 192.168.1.16
+[18:00:13] send : Send_File config
+[18:00:13] start downloading : (1)config.wsk
+[18:00:13] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[18:00:19] send : Send_File tasks
+[18:00:19] start downloading : tasks.wsk
+[18:00:19] finish downloading : tasks.wsk 93 bytes received in 1 recv(s)
+[18:00:21] send : Send_File config
+[18:00:21] start downloading : (1)config.wsk
+[18:00:21] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[18:00:26] send : List_ToDo
+[18:00:26] from : dev-kl
+[18:00:26] recv : [No ToDo]
+[18:00:27] send : List_ToDo
+[18:00:27] from : dev-kl
+[18:00:27] recv : [No ToDo]
+[18:00:36] send : Add_ToDo 15|Shell_Exec notepad
+[18:00:36] from : dev-kl
+[18:00:36] recv : Add_ToDo Success
+[18:00:36] send : List_ToDo
+[18:00:37] from : dev-kl
+[18:00:37] recv : [1]15|Shell_Exec notepad
+[18:00:38] send : List_ToDo
+[18:00:38] from : dev-kl
+[18:00:38] recv : [1]15|Shell_Exec notepad
+[18:00:42] send : List_ToDo
+[18:00:42] from : dev-kl
+[18:00:42] recv : [1]15|Shell_Exec notepad
+[18:00:44] send : List_ToDo
+[18:00:44] from : dev-kl
+[18:00:44] recv : [1]15|Shell_Exec notepad
+[18:00:49] send : List_ToDo
+[18:00:49] from : dev-kl
+[18:00:49] recv : [1]15|Shell_Exec notepad
+[18:00:51] send : Explore_Drives
+[18:00:51] from : dev-kl
+[18:00:51] recv : C:\|Z:\|

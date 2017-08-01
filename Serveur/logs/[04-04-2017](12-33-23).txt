@@ -1,0 +1,4 @@
+[12:33:23] information : La socket 248 est maintenant ouverte en mode TCP/IP
+[12:33:23] information : Listage du port 50999...
+[12:33:48] recv : dev-DEV-PC
+[12:33:48] ip : 127.0.0.1

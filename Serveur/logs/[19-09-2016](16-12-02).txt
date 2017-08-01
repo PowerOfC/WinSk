@@ -1,0 +1,17 @@
+[16:12:02] information : La socket 104 est maintenant ouverte en mode TCP/IP
+[16:12:02] information : Listage du port 50999...
+[16:12:21] recv : Papa-PAPA-3CB0BE4627
+[16:12:21] ip : 192.168.1.19
+[16:13:56] send : Explore_Drives
+[16:13:56] from : Papa-PAPA-3CB0BE4627
+[16:13:56] recv : A:\|C:\|D:\|
+[16:13:58] send : Send_File explore->D:\
+[16:13:58] start downloading : explore.wsk
+[16:14:00] finish downloading : explore.wsk 752 bytes received in 3 recv(s)
+[16:15:41] send : Send_File tasks
+[16:15:41] start downloading : tasks.wsk
+[16:15:41] finish downloading : tasks.wsk 238 bytes received in 1 recv(s)
+[17:02:06] recv : Papa-PAPA-3CB0BE4627
+[17:02:06] ip : 192.168.1.19
+[17:06:18] recv : Papa-PAPA-3CB0BE4627
+[17:06:18] ip : 192.168.1.19

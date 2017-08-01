@@ -1,0 +1,20 @@
+[13:13:51] information : La socket 248 est maintenant ouverte en mode TCP/IP
+[13:13:51] information : Listage du port 50999...
+[13:13:52] recv : dev-DEV-PC
+[13:13:52] ip : 127.0.0.1
+[13:14:00] send : Reset
+[13:14:00] from : dev-DEV-PC
+[13:14:00] recv : Creating_Reset_File Success, Going_Reset_Now !
+[13:14:00] from : dev-DEV-PC
+[13:14:00] recv : 
+[13:14:00] information : dev-DEV-PC s'est déconnecté !
+[13:14:05] recv : dev-DEV-PC
+[13:14:05] ip : 127.0.0.1
+[13:14:31] send : Reset
+[13:14:31] from : dev-DEV-PC
+[13:14:31] recv : Creating_Reset_File Success, Going_Reset_Now !
+[13:14:31] from : dev-DEV-PC
+[13:14:31] recv : 
+[13:14:31] information : dev-DEV-PC s'est déconnecté !
+[13:14:36] recv : dev-DEV-PC
+[13:14:36] ip : 127.0.0.1

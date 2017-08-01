@@ -1,0 +1,8 @@
+Native client/server allowing you to control computer(s) remotely (don't think it is an RDP, i don't use any protocols here except socket)
+
+- the current version of project contains:
+
++ client & server written in C.
++ an android server written in Java.
+
+feel free to use/modify it.

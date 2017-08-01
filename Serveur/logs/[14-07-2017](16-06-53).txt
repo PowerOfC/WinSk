@@ -1,0 +1,69 @@
+[16:06:53] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[16:06:53] information : Listage du port 50999...
+[16:07:01] recv : dev-kl
+[16:07:01] ip : 192.168.1.16
+[16:07:04] send : List_ToDo
+[16:07:04] from : dev-kl
+[16:07:04] recv : [No ToDo]
+[16:07:07] send : List_ToDo
+[16:07:07] from : dev-kl
+[16:07:07] recv : [No ToDo]
+[16:07:10] send : Send_File tasks
+[16:07:10] start downloading : tasks.wsk
+[16:07:11] finish downloading : tasks.wsk 93 bytes received in 1 recv(s)
+[16:07:50] send : Add_ToDo 10|Shell_Exec notepad
+[16:07:50] from : dev-kl
+[16:07:50] recv : Add_ToDo Success
+[16:07:51] send : List_ToDo
+[16:07:51] from : dev-kl
+[16:07:51] recv : [1]10|Shell_Exec notepad
+[16:08:12] send : Add_ToDo 30|Shell_Exec notepad
+[16:08:13] from : dev-kl
+[16:08:13] recv : Add_ToDo Success
+[16:08:14] send : List_ToDo
+[16:08:14] from : dev-kl
+[16:08:14] recv : [1]9|Shell_Exec notepad[2]30|Shell_Exec notepad
+[16:08:16] send : List_ToDo
+[16:08:16] from : dev-kl
+[16:08:16] recv : [1]9|Shell_Exec notepad[2]30|Shell_Exec notepad
+[16:08:18] send : Free_ToDo
+[16:08:18] from : dev-kl
+[16:08:18] recv : Done !
+[16:08:19] send : List_ToDo
+[16:08:19] from : dev-kl
+[16:08:19] recv : [No ToDo]
+[16:08:22] send : List_ToDo
+[16:08:22] from : dev-kl
+[16:08:22] recv : [No ToDo]
+[16:08:26] send : Explore_Drives
+[16:08:26] from : dev-kl
+[16:08:26] recv : C:\|Z:\|
+[16:08:30] send : Explore_Drives
+[16:08:30] from : dev-kl
+[16:08:31] recv : C:\|Z:\|
+[16:08:34] send : List_ToDo
+[16:08:34] from : dev-kl
+[16:08:34] recv : [No ToDo]
+[16:08:40] send : Send_File config
+[16:08:40] start downloading : (1)config.wsk
+[16:08:40] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[16:08:47] send : Send_File config
+[16:08:48] start downloading : (1)config.wsk
+[16:08:48] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[16:08:51] from : dev-kl
+[16:08:51] recv : 
+[16:08:51] information : dev-kl s'est déconnecté !
+[16:09:00] recv : dev-kl
+[16:09:00] ip : 192.168.1.16
+[16:09:02] send : Send_File config
+[16:09:02] start downloading : (1)config.wsk
+[16:09:02] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[16:09:08] send : Send_File config
+[16:09:08] start downloading : (1)config.wsk
+[16:09:09] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[16:09:14] send : Send_File tasks
+[16:09:14] start downloading : tasks.wsk
+[16:09:14] finish downloading : tasks.wsk 93 bytes received in 1 recv(s)
+[16:09:37] send : Send_File config
+[16:09:37] start downloading : (1)config.wsk
+[16:09:37] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)

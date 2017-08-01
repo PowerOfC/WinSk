@@ -1,0 +1,363 @@
+[17:04:11] information : La socket 104 est maintenant ouverte en mode TCP/IP
+[17:04:11] information : Listage du port 50999...
+[17:05:10] recv : PAPA-WORKGROU-7DC171
+[17:05:10] ip : 192.168.1.20
+[17:05:15] send : hey
+[17:05:15] from : PAPA-WORKGROU-7DC171
+[17:05:15] recv : I don't understand..
+[17:05:18] send : Explore_Drives
+[17:05:18] from : PAPA-WORKGROU-7DC171
+[17:05:18] recv : A:\|C:\|D:\|
+[17:05:22] send : Send_File explore->D:\
+[17:05:22] from : PAPA-WORKGROU-7DC171
+[17:05:22] start downloading : explore.wsk
+[17:05:23] finish downloading : explore.wsk 596 bytes (0.00 mo) received in 3 recv(s)
+[17:05:28] send : File_Opr DELETE D:\autorun.inf|-
+[17:05:28] from : PAPA-WORKGROU-7DC171
+[17:05:28] recv : File_Opr Success
+[17:05:30] send : Send_File explore->D:\
+[17:05:30] from : PAPA-WORKGROU-7DC171
+[17:05:30] start downloading : explore.wsk
+[17:05:30] finish downloading : explore.wsk 584 bytes (0.00 mo) received in 3 recv(s)
+[17:05:46] send : File_Opr DELETE D:\WinSk.exe|-
+[17:05:47] from : PAPA-WORKGROU-7DC171
+[17:05:47] recv : File_Opr Success
+[17:05:47] send : Send_File explore->D:\
+[17:05:47] from : PAPA-WORKGROU-7DC171
+[17:05:47] start downloading : explore.wsk
+[17:05:47] finish downloading : explore.wsk 574 bytes (0.00 mo) received in 3 recv(s)
+[17:06:03] send : Send_File explore->D:\?????? ????
+[17:06:03] from : PAPA-WORKGROU-7DC171
+[17:06:03] file_size : 0
+[17:06:05] send : Send_File explore->D:\
+[17:06:05] from : PAPA-WORKGROU-7DC171
+[17:06:05] start downloading : explore.wsk
+[17:06:05] finish downloading : explore.wsk 574 bytes (0.00 mo) received in 3 recv(s)
+[17:06:22] send : Send_File D:\spbrob.exe
+[17:06:22] from : PAPA-WORKGROU-7DC171
+[17:06:22] start downloading : spbrob.exe
+[17:06:22] finish downloading : spbrob.exe 103140 bytes (0.10 mo) received in 403 recv(s)
+[17:07:55] send : File_Opr DELETE D:\spbrob.exe|-
+[17:07:55] from : PAPA-WORKGROU-7DC171
+[17:07:56] recv : File_Opr Success
+[17:07:57] send : Send_File explore->D:\
+[17:07:57] from : PAPA-WORKGROU-7DC171
+[17:07:57] start downloading : explore.wsk
+[17:07:57] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:08:03] send : Send_File explore->D:\Nouveau Dossier
+[17:08:04] from : PAPA-WORKGROU-7DC171
+[17:08:04] start downloading : explore.wsk
+[17:08:04] finish downloading : explore.wsk 319 bytes (0.00 mo) received in 2 recv(s)
+[17:08:07] send : Send_File explore->D:\
+[17:08:07] from : PAPA-WORKGROU-7DC171
+[17:08:07] start downloading : explore.wsk
+[17:08:07] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:08:11] send : Send_File explore->D:\Base de Données
+[17:08:11] from : PAPA-WORKGROU-7DC171
+[17:08:11] start downloading : explore.wsk
+[17:08:11] finish downloading : explore.wsk 725 bytes (0.00 mo) received in 3 recv(s)
+[17:08:14] send : Send_File explore->D:\
+[17:08:14] from : PAPA-WORKGROU-7DC171
+[17:08:14] start downloading : explore.wsk
+[17:08:14] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:08:19] send : Send_File explore->D:\lamlouma
+[17:08:19] from : PAPA-WORKGROU-7DC171
+[17:08:19] start downloading : explore.wsk
+[17:08:19] finish downloading : explore.wsk 141 bytes (0.00 mo) received in 1 recv(s)
+[17:08:21] send : Send_File explore->D:\lamlouma\1.0b beta
+[17:08:21] from : PAPA-WORKGROU-7DC171
+[17:08:21] start downloading : explore.wsk
+[17:08:21] finish downloading : explore.wsk 213 bytes (0.00 mo) received in 1 recv(s)
+[17:08:46] send : Send_File explore->D:\lamlouma
+[17:08:46] from : PAPA-WORKGROU-7DC171
+[17:08:46] start downloading : explore.wsk
+[17:08:46] finish downloading : explore.wsk 141 bytes (0.00 mo) received in 1 recv(s)
+[17:08:49] send : Send_File explore->D:\
+[17:08:49] from : PAPA-WORKGROU-7DC171
+[17:08:49] start downloading : explore.wsk
+[17:08:50] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:08:55] send : Send_File explore->D:\BDD DEGROUPAGE
+[17:08:55] from : PAPA-WORKGROU-7DC171
+[17:08:55] start downloading : explore.wsk
+[17:08:55] finish downloading : explore.wsk 150 bytes (0.00 mo) received in 1 recv(s)
+[17:08:56] send : Send_File explore->D:\
+[17:08:57] from : PAPA-WORKGROU-7DC171
+[17:08:57] start downloading : explore.wsk
+[17:08:57] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:08:58] send : Send_File explore->D:\Base de Données
+[17:08:58] from : PAPA-WORKGROU-7DC171
+[17:08:58] start downloading : explore.wsk
+[17:08:58] finish downloading : explore.wsk 725 bytes (0.00 mo) received in 3 recv(s)
+[17:08:59] send : Send_File explore->D:\
+[17:08:59] from : PAPA-WORKGROU-7DC171
+[17:08:59] start downloading : explore.wsk
+[17:08:59] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:09:00] send : Send_File explore->D:\Audit  du 06-10-2015
+[17:09:00] from : PAPA-WORKGROU-7DC171
+[17:09:00] start downloading : explore.wsk
+[17:09:00] finish downloading : explore.wsk 194 bytes (0.00 mo) received in 1 recv(s)
+[17:09:02] send : Send_File explore->D:\
+[17:09:02] from : PAPA-WORKGROU-7DC171
+[17:09:02] start downloading : explore.wsk
+[17:09:02] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:09:03] send : Send_File explore->D:\AAANALYSE
+[17:09:03] from : PAPA-WORKGROU-7DC171
+[17:09:03] start downloading : explore.wsk
+[17:09:03] finish downloading : explore.wsk 344 bytes (0.00 mo) received in 2 recv(s)
+[17:09:05] send : Send_File explore->D:\AAANALYSE\Nouveau Dossier
+[17:09:05] from : PAPA-WORKGROU-7DC171
+[17:09:05] start downloading : explore.wsk
+[17:09:05] finish downloading : explore.wsk 33 bytes (0.00 mo) received in 1 recv(s)
+[17:09:07] send : Send_File explore->D:\AAANALYSE
+[17:09:07] from : PAPA-WORKGROU-7DC171
+[17:09:07] start downloading : explore.wsk
+[17:09:08] finish downloading : explore.wsk 344 bytes (0.00 mo) received in 2 recv(s)
+[17:09:09] send : Send_File explore->D:\
+[17:09:09] from : PAPA-WORKGROU-7DC171
+[17:09:09] start downloading : explore.wsk
+[17:09:09] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:09:10] send : Send_File explore->D:\7-09-2015
+[17:09:10] from : PAPA-WORKGROU-7DC171
+[17:09:11] start downloading : explore.wsk
+[17:09:11] finish downloading : explore.wsk 33 bytes (0.00 mo) received in 1 recv(s)
+[17:09:12] send : Send_File explore->D:\
+[17:09:12] from : PAPA-WORKGROU-7DC171
+[17:09:12] start downloading : explore.wsk
+[17:09:12] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:09:18] send : Send_File explore->D:\RECYCLER
+[17:09:18] from : PAPA-WORKGROU-7DC171
+[17:09:18] start downloading : explore.wsk
+[17:09:18] finish downloading : explore.wsk 45 bytes (0.00 mo) received in 1 recv(s)
+[17:09:20] send : Send_File explore->D:\
+[17:09:20] from : PAPA-WORKGROU-7DC171
+[17:09:20] start downloading : explore.wsk
+[17:09:20] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:09:23] send : Send_File explore->D:\papa
+[17:09:23] from : PAPA-WORKGROU-7DC171
+[17:09:23] start downloading : explore.wsk
+[17:09:23] finish downloading : explore.wsk 51 bytes (0.00 mo) received in 1 recv(s)
+[17:09:25] send : Send_File explore->D:\
+[17:09:25] from : PAPA-WORKGROU-7DC171
+[17:09:25] start downloading : explore.wsk
+[17:09:25] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:09:29] send : Send_File explore->D:\projets
+[17:09:29] from : PAPA-WORKGROU-7DC171
+[17:09:29] start downloading : explore.wsk
+[17:09:30] finish downloading : explore.wsk 260 bytes (0.00 mo) received in 2 recv(s)
+[17:09:34] send : Send_File explore->D:\projets\usb-d
+[17:09:34] from : PAPA-WORKGROU-7DC171
+[17:09:34] start downloading : explore.wsk
+[17:09:34] finish downloading : explore.wsk 81 bytes (0.00 mo) received in 1 recv(s)
+[17:09:36] send : Send_File explore->D:\projets
+[17:09:36] from : PAPA-WORKGROU-7DC171
+[17:09:36] start downloading : explore.wsk
+[17:09:36] finish downloading : explore.wsk 260 bytes (0.00 mo) received in 2 recv(s)
+[17:09:48] send : Send_File explore->D:\
+[17:09:48] from : PAPA-WORKGROU-7DC171
+[17:09:48] start downloading : explore.wsk
+[17:09:48] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:09:56] send : Explore_Drives
+[17:09:56] from : PAPA-WORKGROU-7DC171
+[17:09:56] recv : A:\|C:\|D:\|
+[17:09:59] send : Send_File explore->C:\
+[17:09:59] from : PAPA-WORKGROU-7DC171
+[17:09:59] start downloading : explore.wsk
+[17:09:59] finish downloading : explore.wsk 210 bytes (0.00 mo) received in 1 recv(s)
+[17:10:05] send : Explore_Drives
+[17:10:05] from : PAPA-WORKGROU-7DC171
+[17:10:05] recv : A:\|C:\|D:\|
+[17:10:06] send : Send_File explore->A:\
+[17:10:07] from : PAPA-WORKGROU-7DC171
+[17:10:07] file_size : 0
+[17:10:12] send : Explore_Drives
+[17:10:12] from : PAPA-WORKGROU-7DC171
+[17:10:12] recv : A:\|C:\|D:\|
+[17:10:13] send : Send_File explore->C:\
+[17:10:13] from : PAPA-WORKGROU-7DC171
+[17:10:13] start downloading : explore.wsk
+[17:10:13] finish downloading : explore.wsk 210 bytes (0.00 mo) received in 1 recv(s)
+[17:10:30] send : thx
+[17:10:30] from : PAPA-WORKGROU-7DC171
+[17:10:31] recv : I don't understand..
+[17:10:54] send : Explore_Drives
+[17:10:54] from : PAPA-WORKGROU-7DC171
+[17:10:55] recv : A:\|C:\|D:\|
+[17:10:56] send : Send_File explore->C:\
+[17:10:56] from : PAPA-WORKGROU-7DC171
+[17:10:56] start downloading : explore.wsk
+[17:10:56] finish downloading : explore.wsk 210 bytes (0.00 mo) received in 1 recv(s)
+[17:11:02] send : Send_File explore->C:\Dev-Cpp
+[17:11:02] from : PAPA-WORKGROU-7DC171
+[17:11:02] start downloading : explore.wsk
+[17:11:02] finish downloading : explore.wsk 157 bytes (0.00 mo) received in 1 recv(s)
+[17:11:09] send : Send_File explore->C:\Dev-Cpp\bin
+[17:11:09] from : PAPA-WORKGROU-7DC171
+[17:11:09] start downloading : explore.wsk
+[17:11:09] finish downloading : explore.wsk 346 bytes (0.00 mo) received in 2 recv(s)
+[17:12:22] send : Explore_Drives
+[17:12:23] from : PAPA-WORKGROU-7DC171
+[17:12:23] recv : A:\|C:\|D:\|
+[17:12:24] send : Send_File explore->D:\
+[17:12:24] from : PAPA-WORKGROU-7DC171
+[17:12:24] start downloading : explore.wsk
+[17:12:24] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:12:25] send : Send_File explore->D:\Episodes
+[17:12:26] from : PAPA-WORKGROU-7DC171
+[17:12:26] start downloading : explore.wsk
+[17:12:26] finish downloading : explore.wsk 1323 bytes (0.00 mo) received in 6 recv(s)
+[17:12:37] send : Send_File D:\Episodes\107.mp4
+[17:12:37] from : PAPA-WORKGROU-7DC171
+[17:12:37] start downloading : 107.mp4
+[17:13:06] finish downloading : 107.mp4 101804291 bytes (97.09 mo) received in 397675 recv(s)
+[17:13:09] send : Send_File explore->D:\
+[17:13:09] from : PAPA-WORKGROU-7DC171
+[17:13:09] start downloading : explore.wsk
+[17:13:10] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:14:34] send : Send_File explore->D:\Réunion du 20-02-2015
+[17:14:34] from : PAPA-WORKGROU-7DC171
+[17:14:34] start downloading : explore.wsk
+[17:14:34] finish downloading : explore.wsk 792 bytes (0.00 mo) received in 4 recv(s)
+[17:14:39] send : Send_File explore->D:\
+[17:14:39] from : PAPA-WORKGROU-7DC171
+[17:14:39] start downloading : explore.wsk
+[17:14:39] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:14:49] send : Send_File explore->D:\Réunion du 20-02-2015
+[17:14:49] from : PAPA-WORKGROU-7DC171
+[17:14:49] start downloading : explore.wsk
+[17:14:49] finish downloading : explore.wsk 792 bytes (0.00 mo) received in 4 recv(s)
+[17:14:52] send : Send_File explore->D:\
+[17:14:52] from : PAPA-WORKGROU-7DC171
+[17:14:53] start downloading : explore.wsk
+[17:14:53] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:15:12] send : Explore_Drives
+[17:15:12] from : PAPA-WORKGROU-7DC171
+[17:15:12] recv : A:\|C:\|D:\|
+[17:15:14] send : Send_File explore->C:\
+[17:15:14] from : PAPA-WORKGROU-7DC171
+[17:15:14] start downloading : explore.wsk
+[17:15:14] finish downloading : explore.wsk 210 bytes (0.00 mo) received in 1 recv(s)
+[17:15:21] Vis_Ecran : PAPA-WORKGROU-7DC171
+[17:15:33] send : Explore_Drives
+[17:15:33] from : PAPA-WORKGROU-7DC171
+[17:15:33] recv : A:\|C:\|D:\|
+[17:15:34] send : Send_File explore->D:\
+[17:15:34] from : PAPA-WORKGROU-7DC171
+[17:15:34] start downloading : explore.wsk
+[17:15:34] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:15:58] send : Explore_Drives
+[17:15:58] from : PAPA-WORKGROU-7DC171
+[17:15:58] recv : A:\|C:\|D:\|
+[17:16:02] send : Send_File explore->D:\
+[17:16:02] from : PAPA-WORKGROU-7DC171
+[17:16:03] start downloading : explore.wsk
+[17:16:03] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:16:04] send : Explore_Drives
+[17:16:04] from : PAPA-WORKGROU-7DC171
+[17:16:04] recv : A:\|C:\|D:\|
+[17:16:08] send : Send_File explore->C:\
+[17:16:08] from : PAPA-WORKGROU-7DC171
+[17:16:08] start downloading : explore.wsk
+[17:16:08] finish downloading : explore.wsk 210 bytes (0.00 mo) received in 1 recv(s)
+[17:16:13] send : Send_File explore->C:\Documents and Settings
+[17:16:13] from : PAPA-WORKGROU-7DC171
+[17:16:13] start downloading : explore.wsk
+[17:16:13] finish downloading : explore.wsk 56 bytes (0.00 mo) received in 1 recv(s)
+[17:17:37] send : Liste_Processus
+[17:17:38] from : PAPA-WORKGROU-7DC171
+[17:17:38] recv : System|smss.exe|csrss.exe|winlogon.exe|services.exe|lsass.exe|svchost.exe|svchost.exe|svchost.exe|svchost.e
+[17:17:56] send : Send_File explore
+[17:17:56] from : PAPA-WORKGROU-7DC171
+[17:17:56] start downloading : explore.wsk
+[17:17:57] finish downloading : explore.wsk 56 bytes (0.00 mo) received in 1 recv(s)
+[17:18:18] send : Explore_Drives
+[17:18:18] from : PAPA-WORKGROU-7DC171
+[17:18:18] recv : A:\|C:\|D:\|
+[17:18:20] send : Send_File explore->D:\
+[17:18:20] from : PAPA-WORKGROU-7DC171
+[17:18:20] start downloading : explore.wsk
+[17:18:20] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:18:22] send : Send_File explore->D:\7-09-2015
+[17:18:22] from : PAPA-WORKGROU-7DC171
+[17:18:22] start downloading : explore.wsk
+[17:18:22] finish downloading : explore.wsk 33 bytes (0.00 mo) received in 1 recv(s)
+[17:18:24] send : Send_File explore->D:\
+[17:18:25] from : PAPA-WORKGROU-7DC171
+[17:18:25] start downloading : explore.wsk
+[17:18:25] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:18:26] send : Send_File explore->D:\BDD DEGROUPAGE
+[17:18:27] from : PAPA-WORKGROU-7DC171
+[17:18:27] start downloading : explore.wsk
+[17:18:27] finish downloading : explore.wsk 150 bytes (0.00 mo) received in 1 recv(s)
+[17:18:29] send : Send_File explore->D:\
+[17:18:29] from : PAPA-WORKGROU-7DC171
+[17:18:29] start downloading : explore.wsk
+[17:18:29] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:18:36] send : Send_File explore->D:\projets
+[17:18:36] from : PAPA-WORKGROU-7DC171
+[17:18:36] start downloading : explore.wsk
+[17:18:36] finish downloading : explore.wsk 260 bytes (0.00 mo) received in 2 recv(s)
+[17:18:39] send : Send_File explore->D:\projets\Open The box
+[17:18:39] from : PAPA-WORKGROU-7DC171
+[17:18:39] start downloading : explore.wsk
+[17:18:39] finish downloading : explore.wsk 118 bytes (0.00 mo) received in 1 recv(s)
+[17:18:42] send : Send_File explore->D:\projets
+[17:18:42] from : PAPA-WORKGROU-7DC171
+[17:18:42] start downloading : explore.wsk
+[17:18:42] finish downloading : explore.wsk 260 bytes (0.00 mo) received in 2 recv(s)
+[17:18:43] send : Send_File explore->D:\projets\jeu de tir
+[17:18:44] from : PAPA-WORKGROU-7DC171
+[17:18:44] start downloading : explore.wsk
+[17:18:44] finish downloading : explore.wsk 189 bytes (0.00 mo) received in 1 recv(s)
+[17:18:46] send : Send_File explore->D:\projets
+[17:18:46] from : PAPA-WORKGROU-7DC171
+[17:18:46] start downloading : explore.wsk
+[17:18:47] finish downloading : explore.wsk 260 bytes (0.00 mo) received in 2 recv(s)
+[17:18:48] send : Send_File explore->D:\projets\Calc_SDL
+[17:18:48] from : PAPA-WORKGROU-7DC171
+[17:18:48] start downloading : explore.wsk
+[17:18:48] finish downloading : explore.wsk 119 bytes (0.00 mo) received in 1 recv(s)
+[17:18:50] send : Send_File explore->D:\projets
+[17:18:50] from : PAPA-WORKGROU-7DC171
+[17:18:50] start downloading : explore.wsk
+[17:18:50] finish downloading : explore.wsk 260 bytes (0.00 mo) received in 2 recv(s)
+[17:18:52] send : Explore_Drives
+[17:18:52] from : PAPA-WORKGROU-7DC171
+[17:18:52] recv : A:\|C:\|D:\|
+[17:18:54] send : Send_File explore->D:\
+[17:18:54] from : PAPA-WORKGROU-7DC171
+[17:18:54] start downloading : explore.wsk
+[17:18:54] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:18:58] send : Send_File explore->D:\Audit  du 06-10-2015
+[17:18:58] from : PAPA-WORKGROU-7DC171
+[17:18:59] start downloading : explore.wsk
+[17:18:59] finish downloading : explore.wsk 194 bytes (0.00 mo) received in 1 recv(s)
+[17:19:10] send : Send_File explore->D:\
+[17:19:11] from : PAPA-WORKGROU-7DC171
+[17:19:11] start downloading : explore.wsk
+[17:19:11] finish downloading : explore.wsk 563 bytes (0.00 mo) received in 3 recv(s)
+[17:19:15] send : Send_File explore->D:\Nouveau Dossier
+[17:19:15] from : PAPA-WORKGROU-7DC171
+[17:19:15] start downloading : explore.wsk
+[17:19:16] finish downloading : explore.wsk 319 bytes (0.00 mo) received in 2 recv(s)
+[17:19:18] send : Send_File explore->D:\Nouveau Dossier\GameforgeLive
+[17:19:18] from : PAPA-WORKGROU-7DC171
+[17:19:18] start downloading : explore.wsk
+[17:19:18] finish downloading : explore.wsk 442 bytes (0.00 mo) received in 2 recv(s)
+[17:19:20] send : Send_File explore->D:\Nouveau Dossier
+[17:19:20] from : PAPA-WORKGROU-7DC171
+[17:19:20] start downloading : explore.wsk
+[17:19:21] finish downloading : explore.wsk 319 bytes (0.00 mo) received in 2 recv(s)
+[17:19:22] send : Send_File explore->D:\Nouveau Dossier
+[17:19:22] from : PAPA-WORKGROU-7DC171
+[17:19:22] start downloading : explore.wsk
+[17:19:22] finish downloading : explore.wsk 319 bytes (0.00 mo) received in 2 recv(s)
+[17:19:25] send : Send_File explore->D:\Nouveau Dossier\GameforgeLive
+[17:19:25] from : PAPA-WORKGROU-7DC171
+[17:19:25] start downloading : explore.wsk
+[17:19:26] finish downloading : explore.wsk 442 bytes (0.00 mo) received in 2 recv(s)
+[17:19:50] send : tt
+[17:19:50] from : PAPA-WORKGROU-7DC171
+[17:19:50] recv : I don't understand..
+[17:19:52] send : ok
+[17:19:52] from : PAPA-WORKGROU-7DC171
+[17:19:53] recv : I don't understand..

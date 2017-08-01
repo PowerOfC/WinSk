@@ -1,0 +1,4 @@
+[10:52:10] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[10:52:10] information : Listage du port 50999...
+[10:52:16] recv : dev-kl
+[10:52:16] ip : 192.168.1.16

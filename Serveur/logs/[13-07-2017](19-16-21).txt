@@ -1,0 +1,34 @@
+[19:16:21] information : La socket 112 est maintenant ouverte en mode TCP/IP
+[19:16:21] information : Listage du port 50999...
+[19:16:53] recv : Papa-PAPA-3CB0BE4627
+[19:16:53] ip : 192.168.1.7
+[19:16:56] send : Explore_Drives
+[19:16:56] from : Papa-PAPA-3CB0BE4627
+[19:16:56] recv : A:\|C:\|D:\|
+[19:16:58] send : Explore_Drives
+[19:16:59] from : Papa-PAPA-3CB0BE4627
+[19:16:59] recv : A:\|C:\|D:\|
+[19:17:13] send : Explore_Drives
+[19:17:13] from : Papa-PAPA-3CB0BE4627
+[19:17:13] recv : A:\|C:\|D:\|
+[19:17:15] send : Explore_Drives
+[19:17:15] from : Papa-PAPA-3CB0BE4627
+[19:17:15] recv : A:\|C:\|D:\|
+[19:17:16] send : Send_File explore->D:\
+[19:17:16] start downloading : explore.wsk
+[19:17:16] finish downloading : explore.wsk 964 bytes received in 4 recv(s)
+[19:17:22] send : Get_F_Info D:\explore.wsk
+[19:17:22] from : Papa-PAPA-3CB0BE4627
+[19:17:22] recv : F_Info>964|0|1
+[19:17:25] send : Get_F_Info D:\lecteur.wsk
+[19:17:25] from : Papa-PAPA-3CB0BE4627
+[19:17:25] recv : F_Info>48|0|1
+[19:17:28] send : Get_F_Info D:\tasks.wsk
+[19:17:28] from : Papa-PAPA-3CB0BE4627
+[19:17:28] recv : F_Info>301|0|1
+[19:17:32] send : Get_F_Info D:\ctfsys.exe
+[19:17:32] from : Papa-PAPA-3CB0BE4627
+[19:17:32] recv : F_Info>178334|0|1
+[19:17:41] send : Send_File config
+[19:17:41] start downloading : (1)config.wsk
+[19:17:41] finish downloading : (1)config.wsk 78 bytes received in 1 recv(s)

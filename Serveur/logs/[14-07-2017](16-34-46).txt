@@ -1,0 +1,40 @@
+[16:34:46] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[16:34:46] information : Listage du port 50999...
+[16:34:50] recv : dev-kl
+[16:34:50] ip : 192.168.1.16
+[16:34:52] send : Send_File config
+[16:34:52] start downloading : (1)config.wsk
+[16:34:52] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[16:34:55] from : dev-kl
+[16:34:55] recv : 
+[16:34:55] information : dev-kl s'est déconnecté !
+[16:35:02] recv : dev-kl
+[16:35:02] ip : 192.168.1.16
+[16:35:03] send : Send_File config
+[16:35:03] start downloading : (1)config.wsk
+[16:35:03] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[16:35:10] from : dev-kl
+[16:35:10] recv : 
+[16:35:10] information : dev-kl s'est déconnecté !
+[16:35:16] recv : dev-kl
+[16:35:16] ip : 192.168.1.16
+[16:35:18] send : Explore_Drives
+[16:35:18] from : dev-kl
+[16:35:18] recv : C:\|Z:\|
+[16:35:22] send : Explore_Drives
+[16:35:22] from : dev-kl
+[16:35:22] recv : C:\|Z:\|
+[16:35:26] send : Explore_Drives
+[16:35:26] from : dev-kl
+[16:35:26] recv : C:\|Z:\|
+[16:35:28] from : dev-kl
+[16:35:28] recv : 
+[16:35:28] information : dev-kl s'est déconnecté !
+[16:35:35] recv : dev-kl
+[16:35:35] ip : 192.168.1.16
+[16:35:44] send : Send_Pict 70
+[16:35:44] start downloading : dev-kl-[14-07-2017](16-35-44).jpg
+[16:35:44] finish downloading : dev-kl-[14-07-2017](16-35-44).jpg 184478 bytes received in 721 recv(s)
+[16:35:46] from : dev-kl
+[16:35:46] recv : 
+[16:35:46] information : dev-kl s'est déconnecté !

@@ -1,0 +1,47 @@
+[16:27:32] information : La socket 108 est maintenant ouverte en mode TCP/IP
+[16:27:32] information : Listage du port 50999...
+[16:28:52] recv : Papa-PAPA-3CB0BE4627
+[16:28:52] ip : 192.168.1.7
+[16:29:07] send : File_Opr DELETE D:\WinSk.exe|-
+[16:29:07] from : Papa-PAPA-3CB0BE4627
+[16:29:07] recv : File_Opr Success
+[16:29:13] send : Recv_File Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe
+[16:29:13] start uploading : Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe
+[16:29:13] finish uploading : Z:\mnt\5090EE4690EE3260\2.prg\[API]\WinSk\v 7.0\Serveur\recv\WinSk.exe 180737 bytes sent in 707 send(s)
+[16:29:17] send : New_Version_Update D:\WinSk.exe
+[16:29:17] from : Papa-PAPA-3CB0BE4627
+[16:29:17] recv : Going Update Now, see u !
+[16:29:21] from : Papa-PAPA-3CB0BE4627
+[16:29:21] recv : 
+[16:29:21] information : Papa-PAPA-3CB0BE4627 s'est déconnecté !
+[16:29:26] recv : Papa-PAPA-3CB0BE4627
+[16:29:26] ip : 192.168.1.7
+[16:29:38] send : File_Opr DELETE D:\WinSk.exe|-
+[16:29:38] from : Papa-PAPA-3CB0BE4627
+[16:29:38] recv : File_Opr Success
+[16:29:45] send : Current_Version
+[16:29:45] from : Papa-PAPA-3CB0BE4627
+[16:29:45] recv : WinSkv7.2
+[16:29:47] send : Explore_Drives
+[16:29:47] from : Papa-PAPA-3CB0BE4627
+[16:29:47] recv : A:\|C:\|D:\|
+[16:29:49] send : Send_File explore->D:\
+[16:29:49] start downloading : explore.wsk
+[16:29:50] finish downloading : explore.wsk 1050 bytes received in 5 recv(s)
+[16:29:55] send : Explore_Drives
+[16:29:55] from : Papa-PAPA-3CB0BE4627
+[16:29:55] recv : A:\|C:\|D:\|
+[16:29:56] send : Send_File explore->A:\
+[16:29:59] file_size : 0
+[16:30:03] send : Explore_Drives
+[16:30:03] from : Papa-PAPA-3CB0BE4627
+[16:30:03] recv : A:\|C:\|D:\|
+[16:30:05] send : Send_File explore->D:\
+[16:30:05] start downloading : explore.wsk
+[16:30:05] finish downloading : explore.wsk 1050 bytes received in 5 recv(s)
+[16:30:11] send : Explore_Drives
+[16:30:11] from : Papa-PAPA-3CB0BE4627
+[16:30:11] recv : A:\|C:\|D:\|
+[16:30:12] send : Send_File explore->D:\
+[16:30:12] start downloading : explore.wsk
+[16:30:13] finish downloading : explore.wsk 1050 bytes received in 5 recv(s)

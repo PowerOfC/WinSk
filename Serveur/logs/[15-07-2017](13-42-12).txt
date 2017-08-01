@@ -1,0 +1,26 @@
+[13:42:12] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[13:42:12] information : Listage du port 50999...
+[13:42:17] recv : dev-kl
+[13:42:17] ip : 192.168.1.16
+[13:42:31] send : Current_Version
+[13:42:31] from : dev-kl
+[13:42:31] recv : WinSkv7.1
+[13:42:33] erreur : Cette commande n'existe pas !
+[13:42:35] erreur : Cette commande n'existe pas !
+[13:42:36] erreur : Cette commande n'existe pas !
+[13:42:37] erreur : Cette commande n'existe pas !
+[13:42:38] erreur : Cette commande n'existe pas !
+[13:42:47] erreur : Le nombre de paramètre de cette commande est incorrect !
+[13:43:03] erreur : Le nombre de paramètre de cette commande est incorrect !
+[13:43:14] erreur : Cette commande n'existe pas !
+[13:43:21] erreur : Cette commande n'existe pas !
+[13:43:24] erreur : Cette commande n'existe pas !
+[13:43:25] erreur : Cette commande n'existe pas !
+[13:43:26] erreur : Cette commande n'existe pas !
+[13:43:27] erreur : Cette commande n'existe pas !
+[13:43:32] send : dfd
+[13:43:32] from : dev-kl
+[13:43:32] recv : I don't understand..
+[13:43:35] send : fds
+[13:43:35] from : dev-kl
+[13:43:35] recv : I don't understand..

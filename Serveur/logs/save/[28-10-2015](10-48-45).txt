@@ -1,0 +1,128 @@
+[10:48:45] information : La socket 132 est maintenant ouverte en mode TCP/IP
+[10:48:45] information : Listage du port 50999...
+[10:49:42] recv : Administrateur-SWEET-99EDC6A40
+[10:49:43] ip : 192.168.1.20
+[10:49:45] send : Send_Pict 70
+[10:49:45] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-45).jpg
+[10:49:45] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-45).jpg 84881 bytes received in 332 recv(s)
+[10:49:48] send : Send_Pict 70
+[10:49:48] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-48).jpg
+[10:49:48] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-48).jpg 84881 bytes received in 332 recv(s)
+[10:49:51] send : Send_Pict 70
+[10:49:51] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-51).jpg
+[10:49:51] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-51).jpg 84881 bytes received in 332 recv(s)
+[10:49:55] send : D_L_Mouse_Clic 19 48 600 381
+[10:49:55] send : Send_Pict 70
+[10:49:56] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-55).jpg
+[10:49:56] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-55).jpg 84778 bytes received in 332 recv(s)
+[10:49:58] send : R_Mouse_Clic 19 48 600 381
+[10:49:59] send : Send_Pict 70
+[10:50:00] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-59).jpg
+[10:50:00] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-49-59).jpg 94119 bytes received in 368 recv(s)
+[10:50:01] send : L_Mouse_Clic 37 52 600 381
+[10:50:02] send : Send_Pict 70
+[10:50:02] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-02).jpg
+[10:50:03] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-02).jpg 109528 bytes received in 428 recv(s)
+[10:50:06] send : L_Mouse_Clic 423 72 600 381
+[10:50:06] send : Send_Pict 70
+[10:50:07] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-06).jpg
+[10:50:07] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-06).jpg 84770 bytes received in 332 recv(s)
+[10:50:08] send : R_Mouse_Clic 17 52 600 381
+[10:50:09] send : Send_Pict 70
+[10:50:09] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-09).jpg
+[10:50:09] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-09).jpg 93865 bytes received in 367 recv(s)
+[10:50:11] send : L_Mouse_Clic 50 57 600 381
+[10:50:11] send : Send_Pict 70
+[10:50:12] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-11).jpg
+[10:50:12] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-11).jpg 109528 bytes received in 428 recv(s)
+[10:50:13] send : R_Mouse_Clic 320 182 600 381
+[10:50:14] send : Send_Pict 70
+[10:50:15] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-14).jpg
+[10:50:15] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-14).jpg 120419 bytes received in 471 recv(s)
+[10:50:17] send : L_Mouse_Clic 334 188 600 381
+[10:50:17] send : Send_Pict 70
+[10:50:18] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-17).jpg
+[10:50:18] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-17).jpg 152077 bytes received in 596 recv(s)
+[10:50:20] send : R_Mouse_Clic 211 228 600 381
+[10:50:21] send : Send_Pict 70
+[10:50:22] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-21).jpg
+[10:50:22] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-21).jpg 153575 bytes received in 600 recv(s)
+[10:50:27] send : R_Mouse_Clic 195 235 600 381
+[10:50:27] send : Send_Pict 70
+[10:50:29] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-27).jpg
+[10:50:29] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-27).jpg 150255 bytes received in 587 recv(s)
+[10:50:32] send : L_Mouse_Clic 221 240 600 381
+[10:50:33] send : Send_Pict 70
+[10:50:34] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-33).jpg
+[10:50:34] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-33).jpg 154096 bytes received in 603 recv(s)
+[10:50:44] send : L_Mouse_Clic 524 102 600 381
+[10:50:44] send : Send_Pict 70
+[10:50:45] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-44).jpg
+[10:50:45] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-44).jpg 424499 bytes received in 1660 recv(s)
+[10:50:51] send : L_Mouse_Clic 592 5 600 381
+[10:50:52] send : Send_Pict 70
+[10:50:52] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-52).jpg
+[10:50:53] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-52).jpg 154044 bytes received in 602 recv(s)
+[10:50:57] send : L_Mouse_Clic 422 72 600 381
+[10:50:57] send : Send_Pict 70
+[10:50:58] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-57).jpg
+[10:50:58] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-50-57).jpg 84770 bytes received in 332 recv(s)
+[10:51:01] send : R_Mouse_Clic 17 43 600 381
+[10:51:01] send : Send_Pict 70
+[10:51:02] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-02).jpg
+[10:51:02] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-02).jpg 93735 bytes received in 367 recv(s)
+[10:51:05] send : L_Mouse_Clic 48 53 600 381
+[10:51:05] send : Send_Pict 70
+[10:51:06] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-05).jpg
+[10:51:06] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-05).jpg 111108 bytes received in 435 recv(s)
+[10:51:09] send : D_L_Mouse_Clic 252 143 600 381
+[10:51:09] send : Send_Pict 70
+[10:51:10] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-09).jpg
+[10:51:10] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-09).jpg 116363 bytes received in 455 recv(s)
+[10:51:16] send : R_Mouse_Clic 249 141 600 381
+[10:51:16] send : Send_Pict 70
+[10:51:17] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-16).jpg
+[10:51:17] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-16).jpg 123335 bytes received in 482 recv(s)
+[10:51:19] send : L_Mouse_Clic 279 153 600 381
+[10:51:20] send : Send_Pict 70
+[10:51:20] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-20).jpg
+[10:51:20] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-20).jpg 110464 bytes received in 432 recv(s)
+[10:51:24] send : L_Mouse_Clic 420 73 600 381
+[10:51:25] send : Send_Pict 70
+[10:51:26] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-25).jpg
+[10:51:26] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-25).jpg 84765 bytes received in 332 recv(s)
+[10:51:28] send : R_Mouse_Clic 19 152 600 381
+[10:51:28] send : Send_Pict 70
+[10:51:29] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-28).jpg
+[10:51:29] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-28).jpg 91162 bytes received in 357 recv(s)
+[10:51:30] send : L_Mouse_Clic 36 158 600 381
+[10:51:31] send : Send_Pict 70
+[10:51:32] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-31).jpg
+[10:51:32] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-31).jpg 84814 bytes received in 332 recv(s)
+[10:51:43] send : L_Mouse_Clic 319 375 600 381
+[10:51:44] send : Send_Pict 70
+[10:51:45] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-44).jpg
+[10:51:45] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-44).jpg 148191 bytes received in 579 recv(s)
+[10:51:54] send : L_Mouse_Clic 534 5 600 381
+[10:51:55] send : Send_Pict 70
+[10:51:56] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-55).jpg
+[10:51:56] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-51-55).jpg 51313 bytes received in 202 recv(s)
+[10:52:00] send : L_Mouse_Clic 307 374 600 381
+[10:52:00] send : Send_Pict 70
+[10:52:01] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-52-00).jpg
+[10:52:01] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-52-00).jpg 113705 bytes received in 445 recv(s)
+[10:52:04] send : L_Mouse_Clic 88 142 600 381
+[10:52:04] send : Send_Pict 70
+[10:52:05] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-52-04).jpg
+[10:52:05] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-52-04).jpg 114346 bytes received in 447 recv(s)
+[10:52:09] send : L_Mouse_Clic 307 375 600 381
+[10:52:09] send : Send_Pict 70
+[10:52:11] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-52-10).jpg
+[10:52:11] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-52-10).jpg 121817 bytes received in 476 recv(s)
+[10:52:16] send : L_Mouse_Clic 592 3 600 381
+[10:52:17] send : Send_Pict 70
+[10:52:18] start downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-52-17).jpg
+[10:52:18] finish downloading : Administrateur-SWEET-99EDC6A40-[28-10-2015](10-52-17).jpg 84856 bytes received in 332 recv(s)
+[10:53:47] send : Set_Volume 54394
+[10:53:47] from : Administrateur-SWEET-99EDC6A40
+[10:53:47] recv : Set_Volume [65535 => 54394] Success

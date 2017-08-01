@@ -1,0 +1,23 @@
+[13:57:07] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[13:57:07] information : Listage du port 50999...
+[13:57:23] recv : dev-kl
+[13:57:23] ip : 192.168.1.16
+[13:57:30] send : Send_File log
+[13:57:30] start downloading : lecteur.wsk
+[13:57:31] finish downloading : lecteur.wsk 34 bytes received in 1 recv(s)
+[13:57:34] send : Current_Version
+[13:57:35] from : dev-kl
+[13:57:35] recv : WinSkv7.1
+[13:57:37] erreur : Cette commande n'existe pas !
+[13:57:39] erreur : Cette commande n'existe pas !
+[13:57:40] erreur : Cette commande n'existe pas !
+[13:57:48] erreur : Cette commande n'existe pas !
+[13:58:01] send : Explore_Drives
+[13:58:02] from : dev-kl
+[13:58:02] recv : C:\|Z:\|
+[13:58:05] send : Send_File explore->Z:\
+[13:58:06] start downloading : explore.wsk
+[13:58:06] finish downloading : explore.wsk 98 bytes received in 1 recv(s)
+[13:59:05] send : xcxc
+[13:59:06] from : dev-kl
+[13:59:06] recv : I don't understand..

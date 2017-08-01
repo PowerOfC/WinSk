@@ -1,0 +1,34 @@
+[18:52:49] information : La socket 108 est maintenant ouverte en mode TCP/IP
+[18:52:49] information : Listage du port 50999...
+[18:52:54] recv : Papa-PAPA-3CB0BE4627
+[18:52:54] ip : 192.168.1.7
+[18:53:09] send : Send_File config
+[18:53:09] start downloading : config.wsk
+[18:53:09] finish downloading : config.wsk 78 bytes received in 1 recv(s)
+[18:53:23] send : Send_File tasks
+[18:53:24] start downloading : tasks.wsk
+[18:53:24] finish downloading : tasks.wsk 301 bytes received in 2 recv(s)
+[18:53:27] send : Explore_Drives
+[18:53:27] from : Papa-PAPA-3CB0BE4627
+[18:53:27] recv : A:\|C:\|D:\|
+[18:53:28] send : Send_File explore->C:\
+[18:53:28] start downloading : explore.wsk
+[18:53:28] finish downloading : explore.wsk 202 bytes received in 1 recv(s)
+[18:53:29] send : Explore_Drives
+[18:53:29] from : Papa-PAPA-3CB0BE4627
+[18:53:29] recv : A:\|C:\|D:\|
+[18:53:30] send : Send_File explore->D:\
+[18:53:30] start downloading : explore.wsk
+[18:53:30] finish downloading : explore.wsk 974 bytes received in 4 recv(s)
+[18:53:38] send : File_Opr DELETE D:\WinSk.exe|-
+[18:53:38] from : Papa-PAPA-3CB0BE4627
+[18:53:38] recv : File_Opr Success
+[18:53:40] send : Send_File explore->D:\
+[18:53:40] start downloading : explore.wsk
+[18:53:40] finish downloading : explore.wsk 964 bytes received in 4 recv(s)
+[18:53:46] send : Get_F_Info D:\ctfsys.exe
+[18:53:46] from : Papa-PAPA-3CB0BE4627
+[18:53:46] recv : F_Info>178334|0|1
+[18:54:00] send : Explore_Drives
+[18:54:00] from : Papa-PAPA-3CB0BE4627
+[18:54:00] recv : A:\|C:\|D:\|

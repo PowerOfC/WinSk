@@ -1,0 +1,10 @@
+[18:05:04] information : La socket 116 est maintenant ouverte en mode TCP/IP
+[18:05:04] information : Listage du port 50999...
+[18:05:12] recv : dev-kl
+[18:05:12] ip : 192.168.1.16
+[18:05:13] send : Send_File config
+[18:05:13] start downloading : (1)config.wsk
+[18:05:13] finish downloading : (1)config.wsk 77 bytes received in 1 recv(s)
+[18:05:26] from : dev-kl
+[18:05:26] recv : 
+[18:05:26] information : dev-kl s'est déconnecté !

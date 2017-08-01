@@ -1,0 +1,43 @@
+[18:54:06] information : La socket 108 est maintenant ouverte en mode TCP/IP
+[18:54:06] information : Listage du port 50999...
+[18:54:37] recv : Papa-PAPA-3CB0BE4627
+[18:54:37] ip : 192.168.1.7
+[18:54:52] send : Explore_Drives
+[18:54:52] from : Papa-PAPA-3CB0BE4627
+[18:54:52] recv : A:\|C:\|D:\|
+[18:55:33] send : Send_File tasks
+[18:55:33] start downloading : tasks.wsk
+[18:55:33] finish downloading : tasks.wsk 301 bytes received in 2 recv(s)
+[18:55:35] send : Send_Pict 70
+[18:55:37] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-35).jpg
+[18:55:39] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-35).jpg 266523 bytes received in 1052 recv(s)
+[18:55:41] send : Send_Pict 70
+[18:55:43] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-41).jpg
+[18:55:43] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-41).jpg 263821 bytes received in 1032 recv(s)
+[18:55:44] send : Send_Pict 70
+[18:55:46] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-44).jpg
+[18:55:46] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-44).jpg 255272 bytes received in 1001 recv(s)
+[18:55:47] send : Send_Pict 70
+[18:55:49] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-47).jpg
+[18:55:50] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-47).jpg 253120 bytes received in 1004 recv(s)
+[18:55:53] send : Send_Pict 70
+[18:55:54] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-53).jpg
+[18:55:55] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-53).jpg 261389 bytes received in 1034 recv(s)
+[18:55:56] send : Send_Pict 70
+[18:55:57] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-56).jpg
+[18:55:58] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-56).jpg 261698 bytes received in 1035 recv(s)
+[18:55:59] send : Send_Pict 70
+[18:56:00] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-59).jpg
+[18:56:01] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-55-59).jpg 254635 bytes received in 1005 recv(s)
+[18:56:02] send : Send_Pict 70
+[18:56:03] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-56-02).jpg
+[18:56:04] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-56-02).jpg 256858 bytes received in 1017 recv(s)
+[18:56:05] send : Send_Pict 70
+[18:56:06] start downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-56-05).jpg
+[18:56:07] finish downloading : Papa-PAPA-3CB0BE4627-[13-07-2017](18-56-05).jpg 255798 bytes received in 1004 recv(s)
+[18:56:41] send : Explore_Drives
+[18:56:41] from : Papa-PAPA-3CB0BE4627
+[18:56:41] recv : A:\|C:\|D:\|
+[18:56:45] send : Send_File config
+[18:56:45] start downloading : config.wsk
+[18:56:45] finish downloading : config.wsk 78 bytes received in 1 recv(s)

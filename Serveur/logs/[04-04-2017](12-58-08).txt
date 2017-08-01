@@ -1,0 +1,16 @@
+[12:58:08] information : La socket 252 est maintenant ouverte en mode TCP/IP
+[12:58:08] information : Listage du port 50999...
+[12:58:10] recv : dev-DEV-PC
+[12:58:10] ip : 127.0.0.1
+[12:58:18] send : Explore_Drives
+[12:58:18] from : dev-DEV-PC
+[12:58:18] recv : C:\|D:\|
+[12:58:21] send : Send_Pict 70
+[12:58:21] start downloading : dev-DEV-PC-[04-04-2017](12-58-21).jpg
+[12:58:21] finish downloading : dev-DEV-PC-[04-04-2017](12-58-21).jpg 207157 bytes received in 810 recv(s)
+[12:58:25] send : Send_Pict 70
+[12:58:26] start downloading : dev-DEV-PC-[04-04-2017](12-58-25).jpg
+[12:58:26] finish downloading : dev-DEV-PC-[04-04-2017](12-58-25).jpg 203281 bytes received in 795 recv(s)
+[12:58:30] send : Send_File tasks
+[12:58:30] start downloading : tasks.wsk
+[12:58:30] finish downloading : tasks.wsk 439 bytes received in 2 recv(s)
