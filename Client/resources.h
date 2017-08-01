@@ -50,7 +50,7 @@
 #define IDC_COMMANDELINE      202
 
 /* Paramètres */
-#define PARAMETRE_EMAIL                      "albatrosx95@gmail.com"
+#define PARAMETRE_EMAIL                      "your_email@gmail.com" // not used anymore
 #define PARAMETRE_SERVER                     "kl"//"192.168.1.30"
 //#define PARAMETRE_SERVER                     "localhost"//"127.0.0.1"
 #define PARAMETRE_SERVER_PORT                50999

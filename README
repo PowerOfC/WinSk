@@ -3,6 +3,6 @@ Native client/server allowing you to control computer(s) remotely (don't think i
 - the current version of project contains:
 
 + client & server written in C.
-+ an android server written in Java.
++ an android server written in Java (using Android Studio 2.3).
 
 feel free to use/modify it.

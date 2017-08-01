@@ -257,8 +257,8 @@ BOOL sendMail(char *emailTo, char *sujet, char *contenu)
     ssl_info sslinfo = {0};
     sock_info sockinfo = {0, "smtp.gmail.com", 465};
 
-    const char* username = "axel.lord.9@gmail.com"; // default account for authentication
-    const char* password = "LeLouche_95"; // need password too of course
+    const char* username = "your_email@gmail.com"; // default account for authentication
+    const char* password = "your_pwd"; // need password too of course
     const char* recipient = emailTo;
     const char* message = contenu;
     const char* subject = sujet;
