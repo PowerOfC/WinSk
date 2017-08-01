@@ -1,0 +1,4 @@
+*.o
+Serveur/logs
+Serveur/recv
+Serveur/to_update
