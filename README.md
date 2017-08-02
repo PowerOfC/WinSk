@@ -1,11 +1,9 @@
-Native client/server allowing you to control computer(s) remotely (this program don't use RDP [Remote Destop Protocol], i don't use any protocols here except socket)
+Native client/server allowing you to control computer(s) remotely (this program don't use RDP [Remote Desktop Protocol], i don't use any protocols here except socket)
 
 - the current version of project contains:
 
 + client & server written in C & exploiting Windows API library (using DevC++).
 + an android server written in Java (using Android Studio 2.3).
-
-feel free to use/modify it or to contact me if you need any further information.
 
 #----------------------------------------------------------------
 #     French description / Petite description en français
@@ -19,5 +17,7 @@ WinSk est un client/serveur inclus une interface graphique, permettant divers tr
 
 check file(s) 'main.c' for changelog(s).
 
+
+feel free to use/modify it or to contact me if you need any further information.
 
 PS: sorry for the comment language < French />, this is one of my oldest project and i wasn't so familiar with english (i think it still the same case..)

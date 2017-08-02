@@ -27,7 +27,7 @@
 #define CRYPT_KEY                   956636 // @@ entier
 //#define CRYPT_KEY                   "" // si chaine vide, le mdp par défaut de la fonction crypt sera utilisé
 
-#define NOM_MUTEX                   "WinSkv7.3" // Le numéro de version doit changer pour chaque nouvelle version/nv changement
+#define NOM_MUTEX                   "WinSkv7.2" // Le numéro de version doit changer pour chaque nouvelle version/nv changement
 
 #define TAILLE_MAX_PATH             131
 #define TAILLE_TMP                  2048
