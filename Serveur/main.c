@@ -478,7 +478,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             for (c = 0; c < (sizeof cmdHistory / sizeof *cmdHistory); c++)
                 SendMessage(hwCommandeLine, CB_ADDSTRING, 0, (LONG)cmdHistory[c]);
             /* Police des controls */
-            policeButton = CreateFont(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "Courier New");
+            policeButton = CreateFont(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "tahoma");
             SendMessage(hwButtonSend, WM_SETFONT, (long)policeButton, 0);
             SendMessage(hwBtListeCommandes, WM_SETFONT, (long)policeButton, 0);
             SendMessage(hwGroup, WM_SETFONT, (long)policeButton, 0);

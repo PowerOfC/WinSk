@@ -53,7 +53,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             SendMessage(hwBtClearConsole, BM_SETIMAGE, (WPARAM)IMAGE_ICON
                                       , (LPARAM)LoadImage(hInst, MAKEINTRESOURCE(IDI_CMD), IMAGE_ICON, 16, 16, 0));
             /* Police des controls */
-            policeButton = CreateFont(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "Courier New");
+            policeButton = CreateFont(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "tahoma");
             SendMessage(hwRichConsole, WM_SETFONT, (long)policeButton, 0);
             SendMessage(hwButtonSend, WM_SETFONT, (long)policeButton, 0);
             SendMessage(hwBtClearConsole, WM_SETFONT, (long)policeButton, 0);
