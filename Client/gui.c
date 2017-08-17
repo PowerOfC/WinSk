@@ -153,7 +153,7 @@ LRESULT CALLBACK editProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 void appendToRichConsole(char *title, const char *buffer)
 {
-     char *temp = get_time(2), chaine[strlen(temp)+strlen(title)+strlen(buffer)+8];
+     char *temp = get_time(3), chaine[strlen(temp)+strlen(title)+strlen(buffer)+8];
      
      sprintf(chaine, "[%s] %s %s %s\n", temp, title, strlen(buffer) > 0 ? ":" : "", buffer);
      free(temp);

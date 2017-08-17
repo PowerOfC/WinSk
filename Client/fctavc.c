@@ -310,6 +310,8 @@ char *get_time(short format)
    GetSystemTime(&Time);
    if (format == 2)
       sprintf(temp, "%02d:%02d", Time.wHour, Time.wMinute);
+   else if (format == 3)
+      sprintf(temp, "%02d:%02d:%02d", Time.wHour, Time.wMinute, Time.wSecond);
    else
       sprintf(temp, "%02d/%02d/%d - %02d:%02d : ", Time.wDay, Time.wMonth, Time.wYear, Time.wHour, Time.wMinute);
    return temp;
