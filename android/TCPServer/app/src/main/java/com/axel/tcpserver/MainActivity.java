@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.NumberPicker;
 import android.widget.ProgressBar;
@@ -35,7 +36,7 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
     // attr. / const.
     private final static Boolean TEST_VERSION = false;
     private final static String TURN_OFF_CMD = TEST_VERSION ? "Shell_Exec notepad" : "Turn_Off";
-    public static int SERVER_PORT = 50999;
+    public static int SERVER_PORT = TEST_VERSION ? 50995 : 50999;
     public static boolean settingsChanged = false;
     private Boolean POPULATE_TODO_LIST = false, REFRESH_TODO_LIST = false;
 
@@ -48,10 +49,14 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
     private NumberPicker turnOffNumberPicker;
     //private String numberPickerValues[] = new String[] { "0", "5", "10", "15", "30", "45", "60", "90", "120", "150", "180", "210", "240", "300", "360" };
     private ListView todoListView;
-    private ListViewAdapter todoListAdapter = new ListViewAdapter();
+    private ListViewAdapter todoListAdapter = new ListViewAdapter(R.layout.listview_row);
+    private ListView clientListView;
+    private ListViewAdapter clientListAdapter;// = new ListViewAdapter(R.layout.clientlistview_row);
+    private ArrayList<HashMap<String, String>> clientList = new ArrayList<HashMap<String, String>>();
     private ProgressBar loadingProgressbar;
     private TextView loadingTextView;
     private Button refreshToDoBtn;
+    private CheckBox sendToAllCheckBox;
 
     // onCreate()
     @Override
@@ -69,9 +74,11 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
         //turnOffNumberPicker.setMaxValue(numberPickerValues.length - 1);
         //turnOffNumberPicker.setDisplayedValues(numberPickerValues);
         todoListView = (ListView) findViewById(R.id.ToDoListView);
+        clientListView = (ListView) findViewById(R.id.ClientListView);
         loadingProgressbar = (ProgressBar) findViewById(R.id.loadingProgressBar);
         loadingTextView = (TextView) findViewById(R.id.loadingTextView);
         refreshToDoBtn = (Button) findViewById(R.id.refreshToDoBtn);
+        sendToAllCheckBox = (CheckBox) findViewById(R.id.sendToAllCheckBox);
         TabHost host = (TabHost) findViewById(R.id.tabHost);
         host.setup();
 
@@ -88,8 +95,14 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
         host.addTab(spec);
 
         //Tab 3
-        spec = host.newTabSpec("ToDoTab");
+        spec = host.newTabSpec("ClientTab");
         spec.setContent(R.id.tab3);
+        spec.setIndicator("", getResources().getDrawable(R.drawable.ic_client));
+        host.addTab(spec);
+
+        //Tab 4
+        spec = host.newTabSpec("ToDoTab");
+        spec.setContent(R.id.tab4);
         spec.setIndicator("", getResources().getDrawable(R.drawable.ic_todo));
         host.addTab(spec);
 
@@ -106,13 +119,17 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
                 }
                 else if(tabId.equals("ToDoTab")) {
                     // if a client is connected
-                    if (TCPCommunicator.isConnected) {
+                    if (clientListAdapter.selectedItemPosition != -1) {
                         // get ToDoList
                         refreshToDoBtn.performClick();
                     }
                 }
             }
         });
+
+        // setup clientList
+        clientListAdapter = new ListViewAdapter(this, R.layout.clientlistview_row, clientList);
+        clientListView.setAdapter(clientListAdapter);
 
         // Start Server
         appendToLogView("Starting Server...\n" +
@@ -253,8 +270,122 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
             }
         }
 
-        todoListAdapter = new ListViewAdapter(this, list);
+        todoListAdapter = new ListViewAdapter(this, R.layout.listview_row, list);
         todoListView.setAdapter(todoListAdapter);
+    }
+
+    // addToClientList()
+    private void addToClientList(int clientID, String clientName, String clientIP) {
+
+        // if not empty => proceed
+        //if (clientName.length() > 0) {
+
+            /*
+            String userName, machineName;
+
+            String[] splitedName = clientName.split("-");
+            userName = splitedName[0];
+            machineName = splitedName[1];
+            */
+
+            HashMap<String, String> hashmap = new HashMap<String, String>();
+            hashmap.put("CLIENT_ID", Integer.toString(clientID));
+            hashmap.put(ListViewAdapter.FIRST_COLUMN, clientName);
+            hashmap.put(ListViewAdapter.SECOND_COLUMN, clientIP);
+            hashmap.put(ListViewAdapter.THIRD_COLUMN, getCurrentTime());
+            clientList.add(hashmap);
+
+            //Log.e("selected", String.valueOf(clientListAdapter.selectedItemPosition));
+            if (clientListAdapter.selectedItemPosition == -1) {
+                clientListAdapter.selectedItemPosition = clientList.size() - 1;
+                clientListAdapter.forceSelect = true;
+            }
+
+            clientListAdapter.notifyDataSetChanged();
+        //}
+    }
+
+    // removeFromClientList()
+    private void removeFromClientList(int clientID) {
+        for (HashMap<String, String> client : clientList) {
+            if (Integer.valueOf(client.get("CLIENT_ID")) == clientID) {
+                clientList.remove(client);
+
+                clientListAdapter.setSelected(null);
+                if (clientList.size() > 0) {
+                    clientListAdapter.selectedItemPosition = clientList.size() - 1;
+                    clientListAdapter.forceSelect = true;
+                }
+                else {
+                    clientListAdapter.selectedItemPosition = -1;
+                }
+
+                clientListAdapter.notifyDataSetChanged();
+                break;
+            }
+        }
+    }
+
+    // disconnectButtonClicked()
+    public void disconnectButtonClicked(View view) {
+        try {
+
+            if (clientListAdapter.selectedItemPosition != -1) {
+                final View finalView = view;
+                DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which) {
+                            case DialogInterface.BUTTON_POSITIVE:
+                                //Yes button clicked
+                                Thread thread = new Thread(new Runnable() {
+
+                                    @Override
+                                    public void run() {
+                                        String id = clientListAdapter.getSubItem(clientListAdapter.selectedItemPosition, "CLIENT_ID").toString();
+                                        TCPCommunicator.disconnectClient(Integer.valueOf(id));
+                                    }
+                                });
+                                thread.start();
+                                break;
+
+                            case DialogInterface.BUTTON_NEGATIVE:
+                                //No button clicked
+                                break;
+                        }
+                    }
+                };
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(finalView.getContext());
+                builder.setMessage("Disconnect Client: " + clientListAdapter.getSubItem(clientListAdapter.selectedItemPosition, "ID") + " ?");
+                builder.setPositiveButton("Yes", dialogClickListener);
+                builder.setNegativeButton("No", dialogClickListener);
+                builder.show();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    // sendCommand()
+    private void sendCommand(String cmd, boolean sendToAll) {
+        try {
+            if (TCPCommunicator.isSomeoneConnected()) {
+                if (cmd.length() > 0) {
+                    int clientID = clientListAdapter.selectedItemPosition != -1 ? Integer.valueOf(clientListAdapter.getSubItem(clientListAdapter.selectedItemPosition, "CLIENT_ID").toString()) : 0;
+                    //Log.e("clientID", String.valueOf(clientID));
+                    TCPCommunicator.writeToSocket(cmd, clientID, sendToAll);
+                }
+                //else {
+                    //TCPCommunicator.appendToLog(TCPCommunicator.InformationTitle, "Empty command!");
+                //}
+            }
+            //else {
+                //TCPCommunicator.appendToLog(TCPCommunicator.InformationTitle, "No client connected!");
+            //}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     // sendButtonClicked()
@@ -264,7 +395,8 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
 
                 @Override
                 public void run() {
-                    TCPCommunicator.writeToSocket(cmdLine.getText().toString());
+                    boolean sendToAll = sendToAllCheckBox.isChecked();
+                    sendCommand(cmdLine.getText().toString(), sendToAll);
                 }
             });
             thread.start();
@@ -325,7 +457,7 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
                     else
                         cmd = "Add_ToDo " + time + "|" + TURN_OFF_CMD;
 
-                    TCPCommunicator.writeToSocket(cmd);
+                    sendCommand(cmd, false);
                 }
             });
             thread.start();
@@ -342,7 +474,7 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
 
                 @Override
                 public void run() {
-                    TCPCommunicator.writeToSocket("List_ToDo");
+                    sendCommand("List_ToDo", false);
                     POPULATE_TODO_LIST = true;
                 }
             });
@@ -370,7 +502,7 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
                                     @Override
                                     public void run() {
                                         String id = todoListAdapter.getSubItem(todoListAdapter.selectedItemPosition, "ID").toString();
-                                        TCPCommunicator.writeToSocket("Delete_ToDo " + id);
+                                        sendCommand("Delete_ToDo " + id, false);
                                         //askToRefreshToDoList(finalView);
                                         REFRESH_TODO_LIST = true;
                                     }
@@ -416,7 +548,7 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
 
                         @Override
                         public void run() {
-                            TCPCommunicator.writeToSocket("Add_ToDo " + time.getText() + "|" + cmd.getText());
+                            sendCommand("Add_ToDo " + time.getText() + "|" + cmd.getText(), false);
                             //askToRefreshToDoList(finalView);
                             REFRESH_TODO_LIST = true;
                         }
@@ -451,7 +583,7 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
 
                                 @Override
                                 public void run() {
-                                    TCPCommunicator.writeToSocket("Free_ToDo");
+                                    sendCommand("Free_ToDo", false);
                                     //askToRefreshToDoList(finalView);
                                     REFRESH_TODO_LIST = true;
                                 }
@@ -526,7 +658,7 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
                     appendToLogView(msg, finalTitle);
 
                     // if it's a recv message
-                    if (finalTitle.equals(TCPCommunicator.RecvTitle)) {
+                    if (finalTitle.contains(TCPCommunicator.RecvTitle)) {
                         // if asked to populate ToDoList + we have receive the data
                         if (POPULATE_TODO_LIST) {
                             populateToDoList(msg);
@@ -556,17 +688,26 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
 
     // onClientConnection()
     @Override
-    public void onClientConnection() {
+    public void onClientConnection(int id, String name, String ip, int count) {
+        final String clientFullName = name;
+        final String clientIP = ip;
+        final int clientsCount = count;
+        final int clientID = id;
+
         handler.post(new Runnable() {
 
             @Override
             public void run() {
                 try {
-                    // hide loading Progress Bar
-                    loadingProgressbar.setVisibility(View.INVISIBLE);
-                    // change loading text & set icon
-                    loadingTextView.setText("Client Connected!");
-                    loadingTextView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_ok, 0, 0, 0);
+                    if (clientsCount > 0) {
+                        // hide loading Progress Bar
+                        loadingProgressbar.setVisibility(View.INVISIBLE);
+                        // change loading text & set icon
+                        loadingTextView.setText(clientsCount + " Client(s) Connected!");
+                        loadingTextView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_ok, 0, 0, 0);
+                        // add to clientList
+                        addToClientList(clientID, clientFullName, clientIP);
+                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                     //Log.e("exception", e.getMessage());
@@ -577,17 +718,26 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
 
     // onClientDeconnection()
     @Override
-    public void onClientDeconnection() {
+    public void onClientDeconnection(int id, int count) {
+        final int clientsCount = count;
+        final int clientID = id;
         handler.post(new Runnable() {
 
             @Override
             public void run() {
                 try {
-                    // show loading Progress Bar
-                    loadingProgressbar.setVisibility(View.VISIBLE);
-                    // change loading text & remove icon
-                    loadingTextView.setText("Waiting for a client...");
-                    loadingTextView.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+                    if (clientsCount == 0) {
+                        // show loading Progress Bar
+                        loadingProgressbar.setVisibility(View.VISIBLE);
+                        // change loading text & remove icon
+                        loadingTextView.setText("Waiting for a client...");
+                        loadingTextView.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+                    }
+                    else {
+                        loadingTextView.setText(clientsCount + " Client(s) Connected!");
+                    }
+                    // remove from clientList
+                    removeFromClientList(clientID);
                 } catch (Exception e) {
                     e.printStackTrace();
                     //Log.e("exception", e.getMessage());

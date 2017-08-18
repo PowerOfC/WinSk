@@ -6,9 +6,11 @@ package com.axel.tcpserver;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.StringTokenizer;
 
 
 import android.app.Activity;
+import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,22 +23,30 @@ public class ListViewAdapter extends BaseAdapter {
 
     public ArrayList<HashMap<String, String>> list;
     private Activity activity;
-    public static final String FIRST_COLUMN = "ID";
-    public static final String SECOND_COLUMN = "Cmd";
-    public static final String THIRD_COLUMN = "Time";
+    public static final String FIRST_COLUMN = "ID"; // or "client name"
+    public static final String SECOND_COLUMN = "Cmd"; // or "client IP"
+    public static final String THIRD_COLUMN = "Time"; // or "client connection time"
     private RadioButton selected = null;
     public int selectedItemPosition = -1;
+    private int layout;
+    public boolean forceSelect = false;
 
-    public ListViewAdapter() {
+    public ListViewAdapter(int layout) {
         super();
+        this.selectedItemPosition = -1;
+        this.layout = layout;
+    }
+
+    public ListViewAdapter(Activity activity, int layout, ArrayList<HashMap<String, String>> list) {
+        super();
+        this.activity = activity;
+        this.layout = layout;
+        this.list = list;
         this.selectedItemPosition = -1;
     }
 
-    public ListViewAdapter(Activity activity, ArrayList<HashMap<String, String>> list) {
-        super();
-        this.activity = activity;
-        this.list = list;
-        this.selectedItemPosition = -1;
+    public void setSelected(RadioButton sel) {
+        this.selected = sel;
     }
 
     @Override
@@ -80,7 +90,7 @@ public class ListViewAdapter extends BaseAdapter {
 
         if (convertView == null) {
 
-            convertView = inflater.inflate(R.layout.listview_row, null);
+            convertView = inflater.inflate(layout, null);
             holder = new ViewHolder();
 
             holder.radioButton = (RadioButton) convertView.findViewById(R.id.radioButton);
@@ -123,6 +133,16 @@ public class ListViewAdapter extends BaseAdapter {
                 selected = (RadioButton) view;
             }
         });
+        //holder.radioButton.setChecked(false);
+
+        if (forceSelect && selected == null) {
+            //Log.e("forceSelect", String.valueOf(pos));
+
+            selected = holder.radioButton;
+            selected.setChecked(true);
+
+            forceSelect = false; // reset value to false
+        }
 
         return convertView;
     }

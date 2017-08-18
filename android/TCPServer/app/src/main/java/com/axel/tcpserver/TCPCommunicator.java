@@ -18,6 +18,7 @@ import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -31,21 +32,19 @@ public class TCPCommunicator {
     private static int serverPort;
     private static List<OnTCPMessageRecievedListener> allListeners;
     private static ServerSocket ss;
-    private static Socket s;
-    private static BufferedReader in;
-    private static BufferedWriter out;
-    private static OutputStream outputStream;
+    private static List<Client> clients;
     private static Handler handler = new Handler();
-    private static ProgressDialog progressDialog;
+    //private static ProgressDialog progressDialog;
+    private static int currentID = 0;
 
     public static final int BUFFER_SIZE = 1024;
     public static boolean exit = false;
-    public static boolean isConnected = false;
 
     public static final String SendTitle = "send: ";
     public static final String RecvTitle = "recv: ";
     public static final String ExceptionTitle = "exception: ";
     public static final String InformationTitle = "info: ";
+    public static final String NewClientTitle = "new client: ";
 
     // Enum
     public enum TCPWriterErrors {
@@ -55,6 +54,7 @@ public class TCPCommunicator {
     // Constr.
     private TCPCommunicator() {
         allListeners = new ArrayList<OnTCPMessageRecievedListener>();
+        clients = new ArrayList<Client>();
     }
 
     // getInstance()
@@ -62,13 +62,16 @@ public class TCPCommunicator {
         if (uniqInstance == null) {
             uniqInstance = new TCPCommunicator();
         }
+        else {
+            allListeners.clear();
+            clients.clear();
+        }
         return uniqInstance;
     }
 
     // init()
     public TCPWriterErrors init(Activity obj, int port) {
         exit = false; // rénitialisation
-        isConnected = false;
         setServerPort(port);
         InitTCPServerTask task = new InitTCPServerTask();
         task.execute(new Void[0]);
@@ -84,11 +87,17 @@ public class TCPCommunicator {
     }
 
     // writeSocket()
-    public static TCPWriterErrors writeToSocket(String msg) {
+    public static TCPWriterErrors writeToSocket(String msg, int clientID, boolean sendToAll) {
         try {
-            appendToLog(SendTitle, msg);
-            out.write(msg);
-            out.flush();
+            // check all connected clients
+            for (Client c : clients) {
+                if (sendToAll || clientID == c.getID()) { // if client founded or send to all
+                    appendToLog(getTitleWithClientName(SendTitle, c), msg);
+                    c.out.write(msg);
+                    c.out.flush();
+                    if (! sendToAll) break;
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
             appendToLog(ExceptionTitle, e.getMessage());
@@ -128,30 +137,34 @@ public class TCPCommunicator {
                 ss = new ServerSocket(TCPCommunicator.getServerPort());
 
                 while (!exit) {
-                    s = ss.accept();
+                    Socket s = ss.accept();
 
-                    //progressDialog.dismiss();
-                    clientIsOnline();
+                    BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+                    OutputStream outputStream = s.getOutputStream();
+                    BufferedWriter out = new BufferedWriter(new OutputStreamWriter(outputStream));
 
-                    in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-                    outputStream = s.getOutputStream();
-                    out = new BufferedWriter(new OutputStreamWriter(outputStream));
-
-                    // receive a message
-                    String message = "";
-                    int charsRead = 0;
+                    // get client name & ip & id
                     char[] buffer = new char[BUFFER_SIZE];
-                    while ((charsRead = in.read(buffer)) != -1) {
-                        message += new String(buffer).substring(0, charsRead);
-                        appendToLog(RecvTitle, message);
-                        message = ""; // ready for new message
-                    }
+                    int charsRead = in.read(buffer);
+                    String name = new String(buffer).substring(0, charsRead);
+                    String ip = s.getInetAddress().getHostName();
+                    int id = newID();
 
-                    clientIsOffline();
-                    //progressDialog.show(); // this stop the app, do not use
+                    // create client instance
+                    Client c = new Client(id, s, in, out, outputStream);
+                    c.setName(name);
+                    c.setIP(ip);
+
+                    // add client
+                    clients.add(c);
+                    clientIsOnline(id, name, ip);
+
+                    // run server thread (per client)
+                    new ServerThread(c);
                 }
 
-                s.close();
+                for (Client c : clients)
+                    c.s.close();
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -161,6 +174,11 @@ public class TCPCommunicator {
 
         }
 
+    }
+
+    // newID()
+    private int newID() {
+        return ++currentID;
     }
 
     // appendToLog()
@@ -179,36 +197,71 @@ public class TCPCommunicator {
         });
     }
 
+    // getTitleWithClientName()
+    public static String getTitleWithClientName(String title, Client c) {
+        return title + "<" + c.getName() + "> ";
+    }
+
+    // isSomeoneConnected()
+    public static boolean isSomeoneConnected() {
+        return clients.size() > 0 ? true : false;
+    }
+
     // clientIsOnline()
-    public void clientIsOnline() {
-        isConnected = true;
+    public void clientIsOnline(int clientID, String clientName, String clientIP) {
+        final String name = clientName;
+        final String ip = clientIP;
+        final int count = clients.size();
+        final int id = clientID;
 
         handler.post(new Runnable() {
 
             @Override
             public void run() {
-                appendToLog(InformationTitle, "Client Connected!");
+                appendToLog(NewClientTitle, name);
 
                 for (OnTCPMessageRecievedListener listener : allListeners)
-                    listener.onClientConnection();
+                    listener.onClientConnection(id, name, ip, count);
             }
         });
     }
 
     // clientIsOffline()
-    public void clientIsOffline() {
-        isConnected = false;
+    public static void clientIsOffline(Client c) {
+        final String clientName = c.getName(); // save client name
+        final int clientID = c.getID();
+        clients.remove(c); // remove client
+        final int count = clients.size();
 
         handler.post(new Runnable() {
 
             @Override
             public void run() {
-                appendToLog(InformationTitle, "Client Disconnected!");
+                appendToLog(InformationTitle, "<" + clientName + "> Disconnected!");
 
                 for (OnTCPMessageRecievedListener listener : allListeners)
-                    listener.onClientDeconnection();
+                    listener.onClientDeconnection(clientID, count);
             }
         });
+    }
+
+    // disconnectClient()
+    public static void disconnectClient(int clientID) {
+        try {
+            for (Client c : clients) {
+                if (c.getID() == clientID) {
+                    c.s.close();
+                    c.out.close();
+                    c.in.close();
+
+                    clientIsOffline(c);
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            appendToLog(ExceptionTitle, e.getMessage());
+        }
     }
 
     // getIpAddress()
@@ -246,10 +299,12 @@ public class TCPCommunicator {
         // TODO Auto-generated method stub
         try {
             exit = true;
-            s.close();
             ss.close();
-            out.close();
-            in.close();
+            for (Client c : clients) {
+                c.s.close();
+                c.out.close();
+                c.in.close();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

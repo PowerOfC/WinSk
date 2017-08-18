@@ -106,25 +106,39 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <Button
-                            android:id="@+id/sendBtn"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.6"
-                            android:onClick="sendButtonClicked"
-                            android:text="Send"
-                            android:drawableLeft="@drawable/ic_send" />
-
-                        <Button
-                            android:id="@+id/clearBtn"
-                            android:layout_width="match_parent"
+                        <CheckBox
+                            android:id="@+id/sendToAllCheckBox"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:onClick="clearButtonClicked"
-                            android:text="Clear"
-                            android:drawableLeft="@drawable/ic_clear" />
+                            android:text="Send to all" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/sendBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:onClick="sendButtonClicked"
+                                android:text="Send"
+                                android:drawableLeft="@drawable/ic_send" />
+
+                            <Button
+                                android:id="@+id/clearBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="clearButtonClicked"
+                                android:text="Clear"
+                                android:drawableLeft="@drawable/ic_clear" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -132,6 +146,37 @@
 
                 <LinearLayout
                     android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <ListView
+                        android:id="@+id/ClientListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/DisconnectBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="disconnectButtonClicked"
+                            android:text="Disconnect"
+                            android:drawableLeft="@drawable/ic_disconnect" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"

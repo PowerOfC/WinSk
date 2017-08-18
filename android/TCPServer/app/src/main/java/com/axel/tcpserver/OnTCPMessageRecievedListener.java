@@ -6,7 +6,7 @@ package com.axel.tcpserver;
 
 public interface OnTCPMessageRecievedListener {
     public void onTCPMessageRecieved(String message, String title);
-    public void onClientConnection();
-    public void onClientDeconnection();
+    public void onClientConnection(int id, String name, String ip, int count);
+    public void onClientDeconnection(int id, int count);
 }
 
