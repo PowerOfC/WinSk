@@ -103,6 +103,7 @@ BEGIN
              MENUITEM "Clear Console", IDM_CLEAR_CONSOLE
              MENUITEM "Console Background Color", IDM_CONSOLE_COULEUR
              MENUITEM "Console Text Color", IDM_TEXTE_COULEUR
+             MENUITEM "Vider l'historique des commandes", IDM_FREE_CMD_HISTORY
              MENUITEM SEPARATOR
              MENUITEM "&Préférences", IDM_SETTINGS
         END
@@ -242,8 +243,8 @@ BEGIN
      CONTROL "", SETTINGS_TAB_CONTROL, WC_TABCONTROL, WS_CHILD | WS_VISIBLE, 5, 5, 230, 135
      /* Tab 1 */
      AUTOCHECKBOX "Activer le cryptage/décryptage", IDC_CRYPT_DECRYPT, 15, 25, 120, 10
-     AUTOCHECKBOX "Activer la vérification des commandes", IDC_CHECK_COMMANDS, 15, 45, 140, 10
-     PUSHBUTTON "Vider l'historique des commandes", IDB_FREE_CMD_HISTORY, 15, 116, 130, 14
+     AUTOCHECKBOX "Activer la vérification des commandes", IDC_CHECK_COMMANDS, 15, 45, 150, 10
+     AUTOCHECKBOX "Activer la colorisation", IDC_ENABLE_COLORIZATION, 15, 65, 100, 10
      /* Tab 2 */
      AUTOCHECKBOX "Afficher la colonne 'Type'", IDC_SHOW_EXPLORE_TYPE, 15, 25, 120, 10
      AUTOCHECKBOX "Afficher la colonne 'Extension'", IDC_SHOW_EXPLORE_EXT, 15, 45, 120, 10

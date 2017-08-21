@@ -169,6 +169,9 @@
 //                                        - Ajout de 2 checkbox dans les préférences pour afficher/cacher les colonnes Type et Extension de l'exploreDrive.
 //                          - 20/07/2017 :
 //                                        - Ajout de la commande Set_Registry_Editor.
+//                          - 21/08/2017 :
+//                                        - Déplacement de l'option 'Vider l'historique des commandes' au menu 'Edition'.
+//                                        - Ajout de la colorisation du texte de la RichConsole.
 //
 //
 // N.B (Notez Bien) :
@@ -491,6 +494,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             TextColor = RGB(255, 255, 255); /* couleur blanche */
             ACTIVE_MENU = TRUE;
             REFRESH_CONSOLE = TRUE;
+            ENABLE_COLORIZATION = TRUE;
             HIDE_CONSOLE_MSG = FALSE;
             IS_MAIN_WINDOW_ACTIVE = FALSE;//TRUE;
             ACTIVE_LIST_COMMANDES = FALSE;
@@ -802,6 +806,10 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
                       SendMessage(hwRichConsole, WM_SETTEXT, 0, (LPARAM)""); /* Vidage de l'écran */
                       }
                       break;
+                 case IDM_FREE_CMD_HISTORY:
+                     // Vidage de l'historique des commandes
+                     SendMessage(hwCommandeLine, CB_RESETCONTENT, 0, 0);
+                     break;
                  case IDB_SEND:
                       {
                       if (actualClientsNumber > 0)

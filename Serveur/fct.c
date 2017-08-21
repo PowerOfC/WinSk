@@ -112,15 +112,88 @@ void afficherSurRichConsole(char *texteAafficher)
    
    SendMessage(hwRichConsole, WM_SETTEXT, 0, (LPARAM)texte); /* Affichage à l'écran */
    
-   free(texte);
-   
+   /* On raffraichie la couleur du texte (pour que ça fonctionne sur Wine) */
    if (REFRESH_CONSOLE)
    {
       changerCouleurRichEdit(hwRichConsole, TextColor); // couleur du texte
       //SendMessage(hwRichConsole, WM_HSCROLL, SB_LEFT, 0); /* On se positionne à gauchhe */
    }
    
+   /* Colorisation */
+   richConsoleColorization(texte, len);
+   
+   free(texte);
+   
    SendMessage(hwRichConsole, WM_VSCROLL, SB_BOTTOM, 0); /* On descend à la dernière ligne */
+}
+
+//=============================================================================
+//      Fonction qui rénitialise la couleur du texte de la RichConsole
+//
+//=============================================================================
+
+void resetRichConsoleTextColor()
+{
+   int len = GetWindowTextLength(hwRichConsole) + 1;
+   char *texte = malloc(len);
+   
+   GetWindowText(hwRichConsole, texte, len);
+   
+   /* On raffraichie la couleur du texte (pour que ça fonctionne sur Wine) */
+   changerCouleurRichEdit(hwRichConsole, TextColor); // couleur du texte
+   
+   /* Colorisation */
+   richConsoleColorization(texte, len);
+   
+   free(texte);
+   
+   SendMessage(hwRichConsole, WM_VSCROLL, SB_BOTTOM, 0); /* On descend à la dernière ligne */
+}
+
+//=============================================================================
+//          Fonction qui s'occupe de colorier la RichConsole
+//
+//=============================================================================
+
+void richConsoleColorization(char *texte, int len)
+{
+   if (ENABLE_COLORIZATION)
+   {
+      /* Colorisation */
+      CHARRANGE CurrentSelection;
+      CHARRANGE Selection;
+      int i, lines = 0;
+   
+      /* On récupère la sélection courante afin de la rétablir après le traitement */
+      SendMessage(hwRichConsole, EM_EXGETSEL, 0, (LPARAM) &CurrentSelection);
+   
+      for (i = 0; i < len - 1; i++)
+      {
+         // send | recv
+         if ((texte[i] == 's' && texte[i+1] == 'e' && texte[i+2] == 'n' && texte[i+3] == 'd') || (texte[i] == 'r' && texte[i+1] == 'e' && texte[i+2] == 'c' && texte[i+3] == 'v'))
+         {
+            // Indice de début (cpMin) et un indice de fin (cpMax) de la sélection
+            Selection.cpMin = i - lines;
+            Selection.cpMax = Selection.cpMin+4; // 4 lettres > send | recv
+            // On marque le mot avec sa couleur
+            changerCouleurSelectionRichEdit(hwRichConsole, Selection, texte[i] == 's' ? SEND_COLOR : RECV_COLOR);
+         }
+         // error
+         /*else if (texte[i] == 'e' && texte[i+1] == 'r' && texte[i+2] == 'r' && texte[i+3] == 'o' && texte[i+4] == 'r')
+         {
+            // Indice de début (cpMin) et un indice de fin (cpMax) de la sélection
+            Selection.cpMin = i - lines;
+            Selection.cpMax = Selection.cpMin+5; // 5 lettres > error
+            // On marque le mot avec sa couleur
+            changerCouleurSelectionRichEdit(hwRichConsole, Selection, ERROR_COLOR);
+         }*/
+         else if (texte[i] == '\n')
+            lines++;
+      }
+      
+      /* Restauration de la sélection */
+      SendMessage(hwRichConsole, EM_EXSETSEL, 0, (LPARAM) &CurrentSelection);
+   }
 }
 
 //=============================================================================
@@ -229,6 +302,25 @@ void changerCouleurRichEdit(HWND hEdit, COLORREF couleur)
    Format.dwMask = CFM_BOLD | CFM_COLOR;
    /* On indique au Rich Edit que l'on va utiliser le format : Format */
    SendMessage(hEdit, EM_SETCHARFORMAT, SCF_ALL, (LPARAM)&Format);
+}
+
+//=============================================================================
+//     Fonction qui change la couleur de la selection dans l'edit spécifié
+//
+//=============================================================================
+
+void changerCouleurSelectionRichEdit(HWND hEdit, CHARRANGE Selection, COLORREF couleur)
+{
+   /* Formatage du texte */
+   CHARFORMAT2 Format;
+   ZeroMemory(&Format, sizeof(CHARFORMAT2));
+   Format.cbSize = sizeof(CHARFORMAT2);
+   Format.crTextColor = couleur; /* La couleur a utilisé */
+   Format.dwMask = CFM_COLOR;	/* Le formatage va concerner la couleur du texte */
+   /* On indique au Rich Edit que l'on va utiliser la sélection : Selection */
+   SendMessage(hEdit, EM_EXSETSEL, 0, (LPARAM) &Selection);
+   /* On indique au Rich Edit que l'on va utiliser le format : Format */
+   SendMessage(hEdit, EM_SETCHARFORMAT, SCF_SELECTION, (LPARAM) &Format);
 }
 
 //=============================================================================
@@ -1541,14 +1633,14 @@ void setSettingsTab(HWND hwnd, BOOL statut, unsigned short tab)
          /* On affiche les éléments de l'onglet Général */
          ShowWindow(GetDlgItem(hwnd, IDC_CRYPT_DECRYPT), SW_SHOW);
          ShowWindow(GetDlgItem(hwnd, IDC_CHECK_COMMANDS), SW_SHOW);
-         ShowWindow(GetDlgItem(hwnd, IDB_FREE_CMD_HISTORY), SW_SHOW);
+         ShowWindow(GetDlgItem(hwnd, IDC_ENABLE_COLORIZATION), SW_SHOW);
       }
       else
       {
          /* On cache les éléments de l'onglet Général */
          ShowWindow(GetDlgItem(hwnd, IDC_CRYPT_DECRYPT), SW_HIDE);
          ShowWindow(GetDlgItem(hwnd, IDC_CHECK_COMMANDS), SW_HIDE);
-         ShowWindow(GetDlgItem(hwnd, IDB_FREE_CMD_HISTORY), SW_HIDE);
+         ShowWindow(GetDlgItem(hwnd, IDC_ENABLE_COLORIZATION), SW_HIDE);
       }
    }
    else if (tab == EXPLORE_DRIVE_TAB) /* Explore Drive (Tab 2) */

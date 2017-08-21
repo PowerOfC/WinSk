@@ -35,9 +35,10 @@
 #define CRYPT_KEY             956636 // @@ entier
 //#define CRYPT_KEY             "" // si chaine vide, le mdp par défaut de la fonction crypt sera utilisé
 
-#define CHECK_COMMANDS_DEFAULT    TRUE
-#define SHOW_EXPLORE_TYPE_DEFAULT TRUE
-#define SHOW_EXPLORE_EXT_DEFAULT  FALSE
+#define CHECK_COMMANDS_DEFAULT      TRUE
+#define ENABLE_COLORIZATION_DEFAULT TRUE
+#define SHOW_EXPLORE_TYPE_DEFAULT   TRUE
+#define SHOW_EXPLORE_EXT_DEFAULT    FALSE
 
 #define IDI_ICONE             100
 #define IDI_LOCAL             101
@@ -151,7 +152,7 @@
 #define IDI_STOP_CLIENT       258
 #define IDB_DOWNS_UPLS_LIST   259
 #define LST_DOWNLOADS_UPLOADS 260
-#define IDB_FREE_CMD_HISTORY  261
+#define IDC_ENABLE_COLORIZATION 261
 #define IDB_NEW_FOLDER        262
 #define IDB_COPY              263
 #define IDB_CUT               264
@@ -197,6 +198,7 @@
 #define IDM_OPEN_CMD_LIST     403
 #define IDM_REFRESH_CONSOLE   404
 #define IDM_HIDE_CONSOLE_MSG  405
+#define IDM_FREE_CMD_HISTORY  406
 
 
 #define SCREEN_X              GetSystemMetrics(SM_CXSCREEN)
@@ -223,6 +225,14 @@
 #define LOG_FOLDER            "logs"
 #define EXPLORE_MAX_PATH      2048
 
+/* Couleurs des textes spéciaux de la RichConsole */
+//#define TEXT_COLOR            RGB(255, 255, 255)
+#define SEND_COLOR            RGB(0, 255, 0)
+#define RECV_COLOR            RGB(0, 188, 242)
+#define CANCEL_COLOR          RGB(255, 242, 0)
+#define WARNING_COLOR         RGB(255, 127, 39)
+#define ERROR_COLOR           RGB(255, 0, 0)
+
 //=============================================================================
 //                           Variables globales
 //
@@ -233,7 +243,7 @@ HINSTANCE hInst;
 
 NOTIFYICONDATA TrayIcon;
 
-BOOL REFRESH_CONSOLE, IS_MAIN_WINDOW_ACTIVE, SEND_TO_ALL, HIDE_CONSOLE_MSG, AUTOSHOW_DOWNLOAD_UPLOAD_LIST;
+BOOL REFRESH_CONSOLE, IS_MAIN_WINDOW_ACTIVE, SEND_TO_ALL, HIDE_CONSOLE_MSG, AUTOSHOW_DOWNLOAD_UPLOAD_LIST, ENABLE_COLORIZATION;
 
 BOOL CRYPT_DECRYPT, CHECK_COMMANDS, SHOW_EXPLORE_TYPE, SHOW_EXPLORE_EXT;
 
@@ -309,7 +319,10 @@ char *get_time(short format);
 BOOL enregistrerDansLog(char *log, char *fichier, BOOL ecraserAncien);
 BOOL lireLogEtAfficherSurRichConsole(char *fichier);
 void afficherSurRichConsole(char *texteAafficher);
+void resetRichConsoleTextColor();
+void richConsoleColorization(char *texte, int len);
 void changerCouleurRichEdit(HWND hEdit, COLORREF couleur);
+void changerCouleurSelectionRichEdit(HWND hEdit, CHARRANGE Selection, COLORREF couleur);
 BOOL verifierOsWindowsXPorLater();
 void afficherTrayIconBallon(char *titre, char *contenu, unsigned int temp, BOOL icone);
 char *recupNomDuProgramme(char *path);

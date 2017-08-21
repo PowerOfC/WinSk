@@ -1802,6 +1802,7 @@ BOOL APIENTRY SettingsDlgProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam
             /* On coche les checkboxs s'il le faut */
             CheckDlgButton(hDlg, IDC_CRYPT_DECRYPT, CRYPT_DECRYPT ? BST_CHECKED : BST_UNCHECKED);
             CheckDlgButton(hDlg, IDC_CHECK_COMMANDS, CHECK_COMMANDS ? BST_CHECKED : BST_UNCHECKED);
+            CheckDlgButton(hDlg, IDC_ENABLE_COLORIZATION, ENABLE_COLORIZATION ? BST_CHECKED : BST_UNCHECKED);
             CheckDlgButton(hDlg, IDC_SHOW_EXPLORE_TYPE, SHOW_EXPLORE_TYPE ? BST_CHECKED : BST_UNCHECKED);
             CheckDlgButton(hDlg, IDC_SHOW_EXPLORE_EXT, SHOW_EXPLORE_EXT ? BST_CHECKED : BST_UNCHECKED);
             break;
@@ -1846,11 +1847,10 @@ BOOL APIENTRY SettingsDlgProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam
                 case IDC_CHECK_COMMANDS:
                      CHECK_COMMANDS = ! CHECK_COMMANDS;
                      break;
-                case IDB_FREE_CMD_HISTORY:
-                     // Vidage
-                     SendMessage(hwCommandeLine, CB_RESETCONTENT, 0, 0);
-                     // Fermeture de la fenêtre 
-                     PostMessage(hDlg, WM_COMMAND, IDCANCEL, 0); //EndDialog(hDlg, 0);
+                case IDC_ENABLE_COLORIZATION:
+                     ENABLE_COLORIZATION = ! ENABLE_COLORIZATION;
+                     // Rénitialisation de la couleur du texte de la RichConsole
+                     resetRichConsoleTextColor();
                      break;
                 case IDC_SHOW_EXPLORE_TYPE:
                      SHOW_EXPLORE_TYPE = ! SHOW_EXPLORE_TYPE;
@@ -1863,6 +1863,8 @@ BOOL APIENTRY SettingsDlgProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam
                      CheckDlgButton(hDlg, IDC_CRYPT_DECRYPT, CRYPT_DECRYPT ? BST_CHECKED : BST_UNCHECKED);
                      CHECK_COMMANDS = CHECK_COMMANDS_DEFAULT;
                      CheckDlgButton(hDlg, IDC_CHECK_COMMANDS, CHECK_COMMANDS ? BST_CHECKED : BST_UNCHECKED);
+                     ENABLE_COLORIZATION = ENABLE_COLORIZATION_DEFAULT;
+                     CheckDlgButton(hDlg, IDC_ENABLE_COLORIZATION, ENABLE_COLORIZATION ? BST_CHECKED : BST_UNCHECKED);
                      SHOW_EXPLORE_TYPE = SHOW_EXPLORE_TYPE_DEFAULT;
                      CheckDlgButton(hDlg, IDC_SHOW_EXPLORE_TYPE, SHOW_EXPLORE_TYPE ? BST_CHECKED : BST_UNCHECKED);
                      SHOW_EXPLORE_EXT = SHOW_EXPLORE_EXT_DEFAULT;
