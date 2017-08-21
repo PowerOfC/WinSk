@@ -18,7 +18,6 @@ import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
-import java.util.StringTokenizer;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -58,11 +57,11 @@ public class TCPCommunicator {
     }
 
     // getInstance()
-    public static TCPCommunicator getInstance() {
+    public static TCPCommunicator getInstance(boolean clear) {
         if (uniqInstance == null) {
             uniqInstance = new TCPCommunicator();
         }
-        else {
+        else if (clear) {
             allListeners.clear();
             clients.clear();
         }

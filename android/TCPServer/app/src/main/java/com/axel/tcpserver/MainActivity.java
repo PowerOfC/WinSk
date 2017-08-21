@@ -135,7 +135,7 @@ public class MainActivity extends Activity implements OnTCPMessageRecievedListen
         appendToLogView("Starting Server...\n" +
                         "Server IP: " + TCPCommunicator.getIpAddress() +
                         "Server Port: " + SERVER_PORT, "");
-        TCPCommunicator writer = TCPCommunicator.getInstance();
+        TCPCommunicator writer = TCPCommunicator.getInstance(true);
         TCPCommunicator.addListener(this);
         writer.init(this, SERVER_PORT);
         loadingTextView.setText("Waiting for a client...");
