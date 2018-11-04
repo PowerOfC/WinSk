@@ -18,6 +18,7 @@
 char cmdHistory[][CMD_BUF_SIZE] = {"Send_File log",
                                    "Reset_Log 1",
                                    "Current_Version",
+                                   "Get_Elapsed_Time",
                                    "New_Version_Update D:\\WinSk.exe",
                                    "File_Opr DELETE D:\\WinSk.exe|-",
                                    "Shell_Exec www.google.com",

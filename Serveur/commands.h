@@ -84,7 +84,8 @@ Commande cmd[] = {
          {"List_ToDo", "NULL", "NULL", "NULL", "NULL", "NULL", "NULL"},
          {"Free_ToDo", "NULL", "NULL", "NULL", "NULL", "NULL", "NULL"},
          {"Set_Task_Manager", "ON|OFF", "NULL", "NULL", "NULL", "NULL", "NULL"},
-         {"Set_Registry_Editor", "ON|OFF", "NULL", "NULL", "NULL", "NULL", "NULL"}
+         {"Set_Registry_Editor", "ON|OFF", "NULL", "NULL", "NULL", "NULL", "NULL"},
+         {"Get_Elapsed_Time", "NULL", "NULL", "NULL", "NULL", "NULL", "NULL"}
          //{"OnBoot", "cmds(string)", "NULL", "NULL", "NULL", "NULL", "NULL"}
          };
 

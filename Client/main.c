@@ -4,7 +4,7 @@
 // Auteur : AXeL
 // Fichier : main.c
 // Date de création : 18/10/2013 (v 2.0)
-// Date de la dernière modification : 20/07/2017
+// Date de la dernière modification : 04/11/2018
 // Lacunes : - (résolu) Si le fichier de configuration éxiste déjà, le nom du programme
 //             peut être différent de celui dans la variable Parametres.NomProcessus
 // Idées d'amélioration : - Envoyer une capture d'écran avec chaque log
@@ -167,6 +167,8 @@
 //                          - 20/07/2017:
 //                             - Ajout de la constante DISABLE_REGISTRY_EDITOR.
 //                             - Ajout de la commande Set_Registry_Editor.
+//                          - 04/11/2018:
+//                             - Ajout de la commande Get_Elapsed_Time.
 //
 //
 // - Lacunes/Travail à faire :
@@ -481,6 +483,9 @@ int lancerThreads()
       appendToRichConsole("ToDo Thread", Parametres.StopClientThread ? "KO" : "OK");
       appendToRichConsole("-------------------", "");
    }
+   
+   /* Save startup time */
+   startupTime = GetTickCount();
    
    /* Initialisation de la section critique */
    DWORD dwThreadId[NOMBRE_THREADS];

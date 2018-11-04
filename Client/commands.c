@@ -1299,6 +1299,23 @@ void effectuerCommande(SOCKET sock, char *buffer, BOOL reply)
       }
    }
    
+   // (46) Renvoie le temps écoulé depuis le démarrage du programme, ex: Get_Elapsed_Time
+   else if ((ptCmd = strstr(cmd, "Get_Elapsed_Time")) != NULL)
+   {
+      DWORD now = GetTickCount();
+      int seconds = (now - startupTime) / 1000; // % 60
+      int minutes = seconds / 60; // % 60
+      int hours = minutes / 60; // % 24
+      //int days = hours / 24; // % 7
+      //int weeks = days / 7; // % 52
+      
+      if (reply)
+      {
+         sprintf(buffer, "Elapsed time: %d:%d:%d", hours % 24, minutes % 60, seconds % 60);
+         write_server(sock, buffer);
+      }
+   }
+   
    // autre chose
    else
    {

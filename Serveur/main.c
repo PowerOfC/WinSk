@@ -4,7 +4,7 @@
 // Version : 3.0
 // Auteur : AXeL
 // Date de création : 11/06/2014
-// Date de la dernière modification : 20/06/2014 - (26/07/2014 - 08/08/2014) - 10/09/2014 - 02/10/2015 - 13/07/2017
+// Date de la dernière modification : 20/06/2014 - (26/07/2014 - 08/08/2014) - 10/09/2014 - 02/10/2015 - 13/07/2017 - 04/11/2018
 // Dernières modifications :
 //                         - 15/06/2014 : Modifications générales au niveau des
 //                                        fonctions socket (C) à l'aide d'un
@@ -172,6 +172,8 @@
 //                          - 21/08/2017 :
 //                                        - Déplacement de l'option 'Vider l'historique des commandes' au menu 'Edition'.
 //                                        - Ajout de la colorisation du texte de la RichConsole.
+//                          - 04/11/2018 :
+//                                        - Ajout de la commande Get_Elapsed_Time.
 //
 //
 // N.B (Notez Bien) :
