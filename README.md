@@ -1,12 +1,12 @@
 WinSk
 =====
 
-Native client/server application, allowing you to control computer(s) remotely (this program don't use RDP [Remote Desktop Protocol](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol), only [windows socket](https://en.wikipedia.org/wiki/Winsock) is used).
+A native client/server application, allowing you to control computer(s) remotely through commands.
 
-Project contains:
+The project contains:
 
-- a client & server written in C language & exploiting [Windows API library](https://en.wikipedia.org/wiki/Windows_API) (EDI: DevC++).
-- an android server app written in Java (EDI: Android Studio 2.3).
+- A client & server written in C language & exploiting [Windows API](https://en.wikipedia.org/wiki/Windows_API) & [Winsock](https://en.wikipedia.org/wiki/Winsock) libraries (EDI: DevC++).
+- An android server app written in Java, to control the computer(s) from your phone (EDI: Android Studio 2.3).
 
 ## French description / Petite description en français
 
