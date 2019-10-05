@@ -5,7 +5,7 @@ A native client/server application, allowing you to control computer(s) remotely
 
 The project contains:
 
-- A client & server written in C language & exploiting [Windows API](https://en.wikipedia.org/wiki/Windows_API) & [Winsock](https://en.wikipedia.org/wiki/Winsock) libraries (EDI: DevC++).
+- A client & server written in C language & exploiting [Windows API](https://en.wikipedia.org/wiki/Windows_API) & [Winsock](https://en.wikipedia.org/wiki/Winsock) libraries (EDI: [DevC++ 4.9.9.2](https://sourceforge.net/projects/dev-cpp/files/Binaries/Dev-C%2B%2B%204.9.9.2/)).
 - An android server app written in Java, to control the computer(s) from your phone (EDI: Android Studio 2.3).
 
 ## French description / Petite description en français
