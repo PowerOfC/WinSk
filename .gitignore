@@ -2,6 +2,7 @@
 *.layout
 *.res
 *.win
+*.wsk
 *.DevPak
 Serveur/logs
 Serveur/recv
