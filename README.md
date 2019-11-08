@@ -33,4 +33,4 @@ Check file(s) 'main.c' for changelog(s).
 
 ## License
 
-This program is free to use or modify, no license is yet applied. Feel free to contact me if you need any further information.
+This program is licensed under the [MIT](LICENSE) license.
