@@ -373,7 +373,7 @@ DWORD  WINAPI ClientSocket(LPVOID lParam)
     CONNECTED_TO_SERVER = FALSE;
     
     // Tableau contenant les différents noms/adresses serveur à essayer de s'y connecter
-    char serversList[][100] = {PARAMETRE_SERVER/*, "192.168.1.16"*/, "192.168.1.20", "192.168.1.30"};
+    char serversList[][100] = {PARAMETRE_SERVER, "192.168.1.7", "192.168.1.10"};
     int i;
     
     while (!Parametres.StopClientThread)

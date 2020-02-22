@@ -1223,6 +1223,27 @@ int setRegistryEditor(BOOL state)
 }
 
 //=============================================================================
+//   Fonction qui permet de désactiver le lancement d'un exécutable
+//=============================================================================
+
+int disallowExeRun(char* exeName, char* exeNumber)
+{
+    ajouterModifierRegistre("CREER",
+                            "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+                            HKEY_CURRENT_USER,
+                            "DisallowRun",
+                            REG_DWORD,
+                            "1");
+    // On désactive le lancement de l'exécutable
+    return ajouterModifierRegistre("CREER",
+                            "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\DisallowRun",
+                            HKEY_CURRENT_USER,
+                            exeNumber,
+                            REG_SZ,
+                            exeName);
+}
+
+//=============================================================================
 //   Fonction qui vérifie si le chemin passé en paramètre est un fichier
 //=============================================================================
 
