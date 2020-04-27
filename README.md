@@ -25,11 +25,11 @@ The project contains:
 
 This project is mainly targeting the Windows OS, but it can also be runned & compiled on Linux using [Wine](https://www.winehq.org/).
 
-> Some features like the keylogger do not work on Linux.
+:warning: Some features like the keylogger doesn't work on Linux.
 
 ## Changelog
 
-Check file(s) 'main.c' for changelog(s).
+Check file(s) `main.c` for changelog(s).
 
 ## License
 
