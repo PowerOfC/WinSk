@@ -18,6 +18,8 @@ The project contains:
 - Stream client screen
 - Update client app
 - Explore client files/directories
+- Execute shell commands
+- Add todo tasks
 - Keylogger
 - ...
 
